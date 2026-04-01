@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life's Molecule Warehouse</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <div class="background-glob"></div>
+    <nav class="top-navbar">
+        <div class="nav-content">
+            <div class="nav-logo">
+                <img src="assets/images/logo_lmw.png" alt="Molecule Warehouse" style="height: 45px; object-fit: contain;" onerror="this.outerHTML='<span>Molecule Warehouse</span>'">
+            </div>
+            <div class="nav-links">
+                <a href="#" onclick="window.scrollTo(0,0); return false;">Home</a>
+                <a href="#" onclick="document.getElementById('analyticsModal').style.display='block'; return false;">Analytics</a>
+                <a href="#" onclick="document.getElementById('citeUsModal').style.display='block'; return false;">Cite Us</a>
+                <a href="ADB-compostos_padronizado-2.xlsx" download="LMWDatabase.xlsx">Download Data</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container" style="margin-top: 60px;">
+        <header>
+            <div style="text-align: center; margin-bottom: 2rem; padding-top: 1rem;">
+                <img src="assets/images/logo_lmw.png" alt="Molecule Warehouse Logo" style="height: 200px; max-width: 100%; object-fit: contain;" onerror="this.outerHTML='<h1>Molecule Warehouse</h1>'">
+            </div>
+
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search by name, origin, or molecular formula...">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="search-icon">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+            </div>
+
+            <div class="collection-chips" id="collectionChips">
+                <!-- Chips injected via JS -->
+            </div>
+
+            <!-- Filters Section -->
+            <div class="filters-container">
+                <div class="filter-group">
+                    <label>Origin</label>
+                    <select id="classFilter">
+                        <option value="">All Origins</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Database</label>
+                    <select id="databaseFilter">
+                        <option value="">All Databases</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Bioactivity</label>
+                    <select id="bioactivityFilter">
+                        <option value="">All Bioactivities</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>MW (g/mol)</label>
+                    <div class="range-inputs">
+                        <input type="number" id="mwMin" placeholder="Min" step="10">
+                        <input type="number" id="mwMax" placeholder="Max" step="10">
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <label>Log <i>P</i></label>
+                    <div class="range-inputs">
+                        <input type="number" id="logpMin" placeholder="Min" step="0.1">
+                        <input type="number" id="logpMax" placeholder="Max" step="0.1">
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <label>TPSA (Å²)</label>
+                    <div class="range-inputs">
+                        <input type="number" id="tpsaMin" placeholder="Min" step="10">
+                        <input type="number" id="tpsaMax" placeholder="Max" step="10">
+                    </div>
+                </div>
+                <button id="resetFilters" class="reset-btn">Reset Filters</button>
+            </div>
+        </header>
+
+        <div class="results-info">
+            <p id="resultsCounter">Loading results...</p>
+        </div>
+
+        <main id="cardGrid">
+            <!-- Cards will be injected here by JS -->
+        </main>
+
+        <div class="load-more-container" id="loadMoreContainer" style="text-align: center; margin-top: 1rem; margin-bottom: 2rem; display: none;">
+            <button id="loadMoreBtn" class="analytics-btn" style="padding: 0.75rem 2rem; font-size: 1rem; border-radius: 999px;">Load More</button>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 Life's Molecule Warehouse.</p>
+            <button id="citeUsBtn" class="reset-btn" style="margin-top: 1rem; border-color: #94a3b8; color: #64748b;">How to Cite</button>
+        </footer>
+    </div>
+
+    <!-- Modal for details (optional enhancement) -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div class="modal-body" id="modalBody">
+                <!-- Modal content -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Analytics Dashboard Modal -->
+    <div id="analyticsModal" class="modal">
+        <div class="modal-content analytics-content">
+            <span class="close-button" id="closeAnalytics">&times;</span>
+            <h2>Library Analytics</h2>
+            <div class="charts-grid">
+                <div class="chart-container">
+                    <h3>Origin Distribution</h3>
+                    <canvas id="classChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <h3>Molecular Weight (g/mol)</h3>
+                    <canvas id="mwChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <h3>Log <i>P</i> Distribution</h3>
+                    <canvas id="logpChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <h3>TPSA (Å²) Distribution</h3>
+                    <canvas id="tpsaChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cite Us Modal -->
+    <div id="citeUsModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" id="closeCiteUs">&times;</span>
+            <h2>How to Cite</h2>
+            <p style="margin-top: 1rem; color: #475569;">If you use this database in your scientific research, please cite:</p>
+            
+            <div style="margin-top: 1.5rem;">
+                <h4 style="margin-bottom: 0.5rem; color: #1e293b;">APA Format</h4>
+                <div style="background: rgba(148, 163, 184, 0.1); padding: 1rem; border-radius: 0.5rem; font-family: 'Courier New', monospace; font-size: 0.9rem; position: relative;">
+                    Life's Molecule Warehouse Database. (2026). Retrieved from [Insert URL]
+                </div>
+            </div>
+            
+            <div style="margin-top: 1.5rem;">
+                <h4 style="margin-bottom: 0.5rem; color: #1e293b;">BibTeX Format</h4>
+                <div style="background: rgba(148, 163, 184, 0.1); padding: 1rem; border-radius: 0.5rem; font-family: 'Courier New', monospace; font-size: 0.9rem; white-space: pre-wrap; position: relative;">
+@misc{lmwdatabase_2026,
+    title = {Life's Molecule Warehouse Database},
+    author = {Life's Molecule Warehouse},
+    year = {2026},
+    howpublished = {\url{[Insert URL]}}
+}</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
