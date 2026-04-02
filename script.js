@@ -14,14 +14,19 @@ document.addEventListener('DOMContentLoaded', () => {
     const loadMoreContainer = document.getElementById('loadMoreContainer');
     const loadMoreBtn = document.getElementById('loadMoreBtn');
 
-    // Filter Inputs
-    const mwMin = document.getElementById('mwMin');
-    const mwMax = document.getElementById('mwMax');
-    const logpMin = document.getElementById('logpMin');
-    const logpMax = document.getElementById('logpMax');
-    const tpsaMin = document.getElementById('tpsaMin');
-    const tpsaMax = document.getElementById('tpsaMax');
+    const mwSlider = document.getElementById('mwSlider');
+    const logpSlider = document.getElementById('logpSlider');
+    const tpsaSlider = document.getElementById('tpsaSlider');
+    const mwMinLabel = document.getElementById('mwMinLabel');
+    const mwMaxLabel = document.getElementById('mwMaxLabel');
+    const logpMinLabel = document.getElementById('logpMinLabel');
+    const logpMaxLabel = document.getElementById('logpMaxLabel');
+    const tpsaMinLabel = document.getElementById('tpsaMinLabel');
+    const tpsaMaxLabel = document.getElementById('tpsaMaxLabel');
     const resetBtn = document.getElementById('resetFilters');
+
+    // Global slider instances
+    let mwSliderInst, logpSliderInst, tpsaSliderInst;
 
     let allCompounds = (typeof compoundsData !== 'undefined') ? compoundsData : [];
     let currentFiltered = [];
@@ -136,6 +141,49 @@ document.addEventListener('DOMContentLoaded', () => {
             filterData();
         });
 
+        // Range Sliders Initialization
+        if (mwSlider) {
+            mwSliderInst = noUiSlider.create(mwSlider, {
+                start: [0, 1000],
+                connect: true,
+                range: { 'min': 0, 'max': 1000 },
+                step: 10
+            });
+            mwSliderInst.on('update', (values) => {
+                mwMinLabel.textContent = Math.round(values[0]);
+                mwMaxLabel.textContent = Math.round(values[1]);
+                filterData();
+            });
+        }
+
+        if (logpSlider) {
+            logpSliderInst = noUiSlider.create(logpSlider, {
+                start: [-5, 10],
+                connect: true,
+                range: { 'min': -5, 'max': 10 },
+                step: 0.1
+            });
+            logpSliderInst.on('update', (values) => {
+                logpMinLabel.textContent = values[0];
+                logpMaxLabel.textContent = values[1];
+                filterData();
+            });
+        }
+
+        if (tpsaSlider) {
+            tpsaSliderInst = noUiSlider.create(tpsaSlider, {
+                start: [0, 500],
+                connect: true,
+                range: { 'min': 0, 'max': 500 },
+                step: 10
+            });
+            tpsaSliderInst.on('update', (values) => {
+                tpsaMinLabel.textContent = Math.round(values[0]);
+                tpsaMaxLabel.textContent = Math.round(values[1]);
+                filterData();
+            });
+        }
+
         filterData(); // Initial load
     }
 
@@ -152,12 +200,16 @@ document.addEventListener('DOMContentLoaded', () => {
             else chip.classList.remove('active');
         });
 
-        const mw_min = parseFloat(mwMin.value) || 0;
-        const mw_max = parseFloat(mwMax.value) || Infinity;
-        const logp_min = parseFloat(logpMin.value) || -Infinity;
-        const logp_max = parseFloat(logpMax.value) || Infinity;
-        const tpsa_min = parseFloat(tpsaMin.value) || 0;
-        const tpsa_max = parseFloat(tpsaMax.value) || Infinity;
+        const mw_values = mwSliderInst ? mwSliderInst.get() : [0, 1000];
+        const logp_values = logpSliderInst ? logpSliderInst.get() : [-5, 10];
+        const tpsa_values = tpsaSliderInst ? tpsaSliderInst.get() : [0, 500];
+
+        const mw_min = parseFloat(mw_values[0]);
+        const mw_max = parseFloat(mw_values[1]);
+        const logp_min = parseFloat(logp_values[0]);
+        const logp_max = parseFloat(logp_values[1]);
+        const tpsa_min = parseFloat(tpsa_values[0]);
+        const tpsa_max = parseFloat(tpsa_values[1]);
 
         currentFiltered = allCompounds.filter(compound => {
             const textMatch = (
@@ -182,7 +234,7 @@ document.addEventListener('DOMContentLoaded', () => {
         renderCards(currentFiltered, true);
     }
 
-    const inputs = [searchInput, classFilter, databaseFilter, bioactivityFilter, scaffoldFilter, mwMin, mwMax, logpMin, logpMax, tpsaMin, tpsaMax];
+    const inputs = [searchInput, classFilter, databaseFilter, bioactivityFilter, scaffoldFilter];
     inputs.forEach(input => {
         if(input) input.addEventListener('input', filterData);
     });
@@ -195,12 +247,11 @@ document.addEventListener('DOMContentLoaded', () => {
         if(scaffoldFilter) scaffoldFilter.value = '';
         if(scaffoldGallery) scaffoldGallery.querySelectorAll('.scaffold-item').forEach(i => i.classList.remove('active'));
         if(activeScaffoldContainer) activeScaffoldContainer.style.display = 'none';
-        mwMin.value = '';
-        mwMax.value = '';
-        logpMin.value = '';
-        logpMax.value = '';
-        tpsaMin.value = '';
-        tpsaMax.value = '';
+        
+        if (mwSliderInst) mwSliderInst.set([0, 1000]);
+        if (logpSliderInst) logpSliderInst.set([-5, 10]);
+        if (tpsaSliderInst) tpsaSliderInst.set([0, 500]);
+        
         filterData();
     });
 
