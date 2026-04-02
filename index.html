@@ -70,9 +70,18 @@
                 </div>
                 <div class="filter-group">
                     <label>Scaffold Framework</label>
-                    <select id="scaffoldFilter">
-                        <option value="">All Scaffolds</option>
-                    </select>
+                    <button id="btnOpenScaffoldModal" style="padding: 0.5rem; border: 1px solid var(--card-border); border-radius: 6px; background: white; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 0.5rem; color: #475569; font-size: 0.85rem; height: 38px;">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><path d="M9 4v16"></path><path d="M15 4v16"></path></svg>
+                        Visual Gallery
+                    </button>
+                    <!-- Hidden input to maintain filter compatibility in script.js easily -->
+                    <input type="hidden" id="scaffoldFilter" value="">
+                </div>
+                <!-- Selected Scaffold Chip UI -->
+                <div id="activeScaffoldContainer" style="display: none; margin-top: 10px; width: 100%; grid-column: 1 / -1;">
+                    <span style="font-size: 0.8rem; color: var(--accent-color); font-weight: 600;">Active Scaffold:</span> 
+                    <span id="activeScaffoldName" style="background: var(--accent-color); color: white; padding: 2px 8px; border-radius: 12px; font-size: 0.8rem; margin-left: 5px;"></span>
+                    <span id="clearScaffoldBtn" style="cursor: pointer; color: #ef4444; margin-left: 10px; font-size: 0.8rem; text-decoration: underline;">Clear</span>
                 </div>
                 <div class="filter-group">
                     <label>MW (g/mol)</label>
@@ -149,6 +158,18 @@
                     <h3>TPSA (Å²) Distribution</h3>
                     <canvas id="tpsaChart"></canvas>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scaffold Visual Modal -->
+    <div id="scaffoldModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeScaffoldModal">&times;</span>
+            <h2 style="margin-top: 0; color: var(--text-color); font-size: 1.5rem;">Scaffold Framework Gallery</h2>
+            <p style="color: #64748b; font-size: 0.9rem; margin-bottom: 20px;">Click on any architectural framework below to filter the database to match that core template. Ordered by frequency in the Amazonian database.</p>
+            <div id="scaffoldGrid" class="scaffold-grid">
+                <!-- Scaffold Cards will be injected here via JS -->
             </div>
         </div>
     </div>

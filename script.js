@@ -4,7 +4,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const classFilter = document.getElementById('classFilter');
     const databaseFilter = document.getElementById('databaseFilter');
     const bioactivityFilter = document.getElementById('bioactivityFilter');
-    const scaffoldFilter = document.getElementById('scaffoldFilter');
+    const scaffoldFilter = document.getElementById('scaffoldFilter'); // hidden input
+    const btnOpenScaffoldModal = document.getElementById('btnOpenScaffoldModal');
+    const scaffoldModal = document.getElementById('scaffoldModal');
+    const closeScaffoldModal = document.getElementById('closeScaffoldModal');
+    const activeScaffoldContainer = document.getElementById('activeScaffoldContainer');
+    const activeScaffoldName = document.getElementById('activeScaffoldName');
+    const clearScaffoldBtn = document.getElementById('clearScaffoldBtn');
+    const scaffoldGrid = document.getElementById('scaffoldGrid');
     const collectionChips = document.getElementById('collectionChips');
     const resultsCounter = document.getElementById('resultsCounter');
     const loadMoreContainer = document.getElementById('loadMoreContainer');
@@ -75,21 +82,57 @@ document.addEventListener('DOMContentLoaded', () => {
             if (bioactivityFilter) bioactivityFilter.appendChild(option);
         });
 
-        // Scaffold Filter Initialization
-        const scaffoldCounts = {};
+        // Scaffold Filter Initialization (Visual)
+        const scaffoldMap = {}; // Maps SMILES -> {count, id}
         allCompounds.forEach(c => {
             if (c.scaffold_smiles) {
-                scaffoldCounts[c.scaffold_smiles] = (scaffoldCounts[c.scaffold_smiles] || 0) + 1;
+                if(!scaffoldMap[c.scaffold_smiles]) {
+                    scaffoldMap[c.scaffold_smiles] = { count: 0, id: c.scaffold_id };
+                }
+                scaffoldMap[c.scaffold_smiles].count++;
             }
         });
         
-        const sortedScaffolds = Object.keys(scaffoldCounts).sort((a, b) => scaffoldCounts[b] - scaffoldCounts[a]);
-        sortedScaffolds.forEach(s => {
-            const option = document.createElement('option');
-            option.value = s;
-            const displayName = s === 'Acyclic' ? 'Acyclic (No Rings)' : (s.length > 30 ? s.substring(0, 30) + '...' : s);
-            option.textContent = `${displayName} (${scaffoldCounts[s]})`;
-            if (scaffoldFilter) scaffoldFilter.appendChild(option);
+        const sortedScaffolds = Object.keys(scaffoldMap).sort((a, b) => scaffoldMap[b].count - scaffoldMap[a].count);
+        if(scaffoldGrid) {
+            sortedScaffolds.forEach(s => {
+                const imgName = scaffoldMap[s].id === 'acyclic' ? '' : `<img src="assets/scaffolds/${scaffoldMap[s].id}.svg" alt="scaffold" onerror="this.style.display='none'">`;
+                const displayName = s === 'Acyclic' ? 'Acyclic / Linear' : ''; // Only text for acyclic
+                
+                const cardHtml = `
+                    <div class="scaffold-card" data-smiles="${s}" data-id="${scaffoldMap[s].id}">
+                        ${imgName}
+                        <div style="font-weight: bold; margin-top: 5px; font-size: 0.85rem;">${displayName}</div>
+                        <div class="count">${scaffoldMap[s].count} compounds</div>
+                    </div>
+                `;
+                scaffoldGrid.insertAdjacentHTML('beforeend', cardHtml);
+            });
+            
+            // Add click listeners to cards
+            document.querySelectorAll('.scaffold-card').forEach(card => {
+                card.addEventListener('click', () => {
+                    const sm = card.getAttribute('data-smiles');
+                    scaffoldFilter.value = sm;
+                    scaffoldModal.style.display = 'none';
+                    activeScaffoldContainer.style.display = 'block';
+                    activeScaffoldName.textContent = sm === 'Acyclic' ? 'Acyclic' : (sm.length > 20 ? sm.substring(0,20)+'...' : sm);
+                    filterData();
+                });
+            });
+        }
+        
+        // Modal Handlers
+        if(btnOpenScaffoldModal) btnOpenScaffoldModal.addEventListener('click', () => scaffoldModal.style.display = 'block');
+        if(closeScaffoldModal) closeScaffoldModal.addEventListener('click', () => scaffoldModal.style.display = 'none');
+        if(clearScaffoldBtn) clearScaffoldBtn.addEventListener('click', () => {
+            scaffoldFilter.value = '';
+            activeScaffoldContainer.style.display = 'none';
+            filterData();
+        });
+
+        window.addEventListener('click', (e) => {
+            if (e.target === scaffoldModal) scaffoldModal.style.display = 'none';
         });
 
         filterData(); // Initial load
@@ -149,6 +192,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if(databaseFilter) databaseFilter.value = '';
         if(bioactivityFilter) bioactivityFilter.value = '';
         if(scaffoldFilter) scaffoldFilter.value = '';
+        if(activeScaffoldContainer) activeScaffoldContainer.style.display = 'none';
         mwMin.value = '';
         mwMax.value = '';
         logpMin.value = '';

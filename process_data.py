@@ -16,6 +16,7 @@ INPUT_FILES = [
     {'file': 'Blue_AmazonDB_padronizado (1).xlsx', 'default_db': 'BLUE_AMAZONDB'}
 ]
 OUTPUT_DIR = 'assets/images'
+SCAFFOLD_DIR = 'assets/scaffolds'
 SDF_DIR = 'assets/sdf'
 DATA_FILE = 'data.json'
 
@@ -52,7 +53,7 @@ def parse_activities(activity_str):
 
 def process_data():
     # Create output directories
-    for directory in [OUTPUT_DIR, SDF_DIR]:
+    for directory in [OUTPUT_DIR, SDF_DIR, SCAFFOLD_DIR]:
         if not os.path.exists(directory):
             os.makedirs(directory)
             print(f"Created directory: {directory}")
@@ -80,6 +81,8 @@ def process_data():
     df_all = pd.concat(dfs, ignore_index=True)
 
     compounds_data = []
+    scaffold_tracker = {}
+    scaffold_counter = 1
 
     for index, row in df_all.iterrows():
         try:
@@ -122,8 +125,20 @@ def process_data():
                     scaffold_smiles = Chem.MolToSmiles(scaffold)
                     if not scaffold_smiles:
                         scaffold_smiles = "Acyclic"
+                        scaffold_id = "acyclic"
+                    else:
+                        if scaffold_smiles not in scaffold_tracker:
+                            scaffold_id = f"scaf_{scaffold_counter}"
+                            scaffold_tracker[scaffold_smiles] = scaffold_id
+                            scaffold_counter += 1
+                            # Draw scaffold
+                            rdDepictor.Compute2DCoords(scaffold)
+                            Draw.MolToFile(scaffold, os.path.join(SCAFFOLD_DIR, f"{scaffold_id}.svg"), size=(150, 150), imageType='svg')
+                        else:
+                            scaffold_id = scaffold_tracker[scaffold_smiles]
                 except Exception:
                     scaffold_smiles = "Acyclic"
+                    scaffold_id = "acyclic"
                 
                 # specific image name
                 image_filename = f"mol_{compound_id}.svg"
@@ -159,6 +174,7 @@ def process_data():
                     "ro5_violations": ro5_violations,
                     "plant_part": 'N/A' if activity == 'nan' else activity,
                     "scaffold_smiles": scaffold_smiles,
+                    "scaffold_id": scaffold_id,
                     "bioactivities": parse_activities(activity),
                     "database": database_name if database_name != 'nan' else ''
                 })

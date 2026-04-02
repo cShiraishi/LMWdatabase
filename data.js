@@ -17,12 +17,13 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "Antioxidant, anti-inflammatory, anticancer, neuroprotective, anti-allergic.",
         "scaffold_smiles": "c1ccc(-c2[o+]c3ccccc3cc2O[C@H]2CCCCO2)cc1",
+        "scaffold_id": "scaf_1",
         "bioactivities": [
-            "Neuroprotective",
-            "Antioxidant",
             "Anti-allergic",
+            "Anticancer",
+            "Antioxidant",
             "Anti-inflammatory",
-            "Anticancer"
+            "Neuroprotective"
         ],
         "database": "AMAZONIADB"
     },
@@ -44,12 +45,13 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "Antioxidant, anti-inflammatory, anticancer, neuroprotective, anti-allergic.",
         "scaffold_smiles": "c1ccc(-c2[o+]c3ccccc3cc2O[C@H]2CCCCO2)cc1",
+        "scaffold_id": "scaf_1",
         "bioactivities": [
-            "Neuroprotective",
-            "Antioxidant",
             "Anti-allergic",
+            "Anticancer",
+            "Antioxidant",
             "Anti-inflammatory",
-            "Anticancer"
+            "Neuroprotective"
         ],
         "database": "AMAZONIADB"
     },
@@ -71,9 +73,10 @@ const compoundsData = [
         "ro5_violations": 3,
         "plant_part": "Antioxidant, anti-inflammatory.",
         "scaffold_smiles": "c1ccc(-c2[o+]c3ccccc3cc2O[C@H]2CCC[C@@H](CO[C@H]3CCCCO3)O2)cc1",
+        "scaffold_id": "scaf_2",
         "bioactivities": [
-            "Antioxidant",
-            "Anti-inflammatory"
+            "Anti-inflammatory",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -95,10 +98,11 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "Antioxidant, immunomodulatory, anti-inflammatory, anti-aging.",
         "scaffold_smiles": "O=C1C=CCO1",
+        "scaffold_id": "scaf_3",
         "bioactivities": [
             "Anti-aging",
-            "Antioxidant",
             "Anti-inflammatory",
+            "Antioxidant",
             "Immunomodulatory"
         ],
         "database": "AMAZONIADB"
@@ -121,11 +125,12 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "Antioxidant, anti-inflammatory, anticancer, neuroprotective.",
         "scaffold_smiles": "O=c1cc(-c2ccccc2)oc2ccc([C@H]3CCCCO3)cc12",
+        "scaffold_id": "scaf_4",
         "bioactivities": [
+            "Anti-inflammatory",
             "Neuroprotective",
-            "Antioxidant",
             "Anticancer",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -147,11 +152,12 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "Antioxidant, anti-inflammatory, anticancer, neuroprotective.",
         "scaffold_smiles": "O=c1cc(-c2ccccc2)oc2c([C@H]3CCCCO3)cccc12",
+        "scaffold_id": "scaf_5",
         "bioactivities": [
+            "Anti-inflammatory",
             "Neuroprotective",
-            "Antioxidant",
             "Anticancer",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -173,11 +179,12 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "Antioxidant, anti-inflammatory, anticancer, neuroprotective.",
         "scaffold_smiles": "O=c1cc(-c2ccccc2)oc2c([C@H]3CCCCO3)cccc12",
+        "scaffold_id": "scaf_5",
         "bioactivities": [
+            "Anti-inflammatory",
             "Neuroprotective",
-            "Antioxidant",
             "Anticancer",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -199,10 +206,11 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "Antioxidant, anti-inflammatory, anticancer.",
         "scaffold_smiles": "O=c1cc(-c2ccc(OC3CCCCO3)cc2)oc2ccccc12",
+        "scaffold_id": "scaf_6",
         "bioactivities": [
-            "Antioxidant",
+            "Anti-inflammatory",
             "Anticancer",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -224,12 +232,13 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "Antioxidant, anti-inflammatory, anticancer, anti-allergic, neuroprotective.",
         "scaffold_smiles": "O=c1c(OC2CCCCO2)c(-c2ccccc2)oc2ccccc12",
+        "scaffold_id": "scaf_7",
         "bioactivities": [
-            "Neuroprotective",
-            "Antioxidant",
             "Anti-allergic",
+            "Anticancer",
+            "Antioxidant",
             "Anti-inflammatory",
-            "Anticancer"
+            "Neuroprotective"
         ],
         "database": "AMAZONIADB"
     },
@@ -251,12 +260,13 @@ const compoundsData = [
         "ro5_violations": 3,
         "plant_part": "Antioxidant, anti-inflammatory, anticancer, anti-allergic, neuroprotective.",
         "scaffold_smiles": "O=c1c(O[C@H]2CCC[C@@H](CO[C@H]3CCCCO3)O2)c(-c2ccccc2)oc2ccccc12",
+        "scaffold_id": "scaf_8",
         "bioactivities": [
-            "Neuroprotective",
-            "Antioxidant",
             "Anti-allergic",
+            "Anticancer",
+            "Antioxidant",
             "Anti-inflammatory",
-            "Anticancer"
+            "Neuroprotective"
         ],
         "database": "AMAZONIADB"
     },
@@ -278,10 +288,11 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "Antioxidant, anti-inflammatory, anticancer.",
         "scaffold_smiles": "O=c1cc(-c2ccccc2)oc2ccccc12",
+        "scaffold_id": "scaf_9",
         "bioactivities": [
-            "Antioxidant",
+            "Anti-inflammatory",
             "Anticancer",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -303,10 +314,11 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "Antioxidant, anti-inflammatory, anticancer.",
         "scaffold_smiles": "O=c1cc(-c2ccccc2)oc2ccccc12",
+        "scaffold_id": "scaf_9",
         "bioactivities": [
-            "Antioxidant",
+            "Anti-inflammatory",
             "Anticancer",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -328,10 +340,11 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "Antioxidant, anti-inflammatory, anticancer.",
         "scaffold_smiles": "O=c1cc(-c2ccccc2)oc2ccccc12",
+        "scaffold_id": "scaf_9",
         "bioactivities": [
-            "Antioxidant",
+            "Anti-inflammatory",
             "Anticancer",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -353,11 +366,12 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "Antioxidant, anticancer, anti-inflammatory, antimicrobial.",
         "scaffold_smiles": "c1ccccc1",
+        "scaffold_id": "scaf_10",
         "bioactivities": [
-            "Antioxidant",
-            "Anticancer",
+            "Antimicrobial",
             "Anti-inflammatory",
-            "Antimicrobial"
+            "Anticancer",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -379,10 +393,11 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "Antioxidant, anti-inflammatory, anticancer.",
         "scaffold_smiles": "c1ccccc1",
+        "scaffold_id": "scaf_10",
         "bioactivities": [
-            "Antioxidant",
+            "Anti-inflammatory",
             "Anticancer",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -404,10 +419,11 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "Antioxidant, anti-inflammatory, anticancer.",
         "scaffold_smiles": "O=c1ccc2ccccc2o1",
+        "scaffold_id": "scaf_11",
         "bioactivities": [
-            "Antioxidant",
+            "Anti-inflammatory",
             "Anticancer",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -429,11 +445,12 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "Antioxidant, anti-inflammatory, anticancer, cardioprotective.",
         "scaffold_smiles": "c1ccc([C@@H]2CCc3ccccc3O2)cc1",
+        "scaffold_id": "scaf_12",
         "bioactivities": [
             "Cardioprotective",
-            "Antioxidant",
+            "Anti-inflammatory",
             "Anticancer",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -455,12 +472,13 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "Antioxidant, anti-inflammatory, anticancer, anti-obesity, neuroprotective.",
         "scaffold_smiles": "O=C(O[C@@H]1Cc2ccccc2O[C@@H]1c1ccccc1)c1ccccc1",
+        "scaffold_id": "scaf_13",
         "bioactivities": [
-            "Neuroprotective",
+            "Anti-obesity",
+            "Anticancer",
             "Antioxidant",
             "Anti-inflammatory",
-            "Anti-obesity",
-            "Anticancer"
+            "Neuroprotective"
         ],
         "database": "AMAZONIADB"
     },
@@ -482,13 +500,14 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "Antioxidant, anti-inflammatory, anticancer, anti-allergic, neuroprotective, cardioprotective.",
         "scaffold_smiles": "O=c1cc(-c2ccccc2)oc2ccccc12",
+        "scaffold_id": "scaf_9",
         "bioactivities": [
-            "Cardioprotective",
-            "Neuroprotective",
-            "Antioxidant",
             "Anti-allergic",
+            "Anticancer",
+            "Antioxidant",
+            "Cardioprotective",
             "Anti-inflammatory",
-            "Anticancer"
+            "Neuroprotective"
         ],
         "database": "AMAZONIADB"
     },
@@ -510,12 +529,13 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "Antioxidant, anti-inflammatory, anticancer, anti-allergic, neuroprotective.",
         "scaffold_smiles": "O=c1c(O[C@H]2CCCCO2)c(-c2ccccc2)oc2ccccc12",
+        "scaffold_id": "scaf_14",
         "bioactivities": [
-            "Neuroprotective",
-            "Antioxidant",
             "Anti-allergic",
+            "Anticancer",
+            "Antioxidant",
             "Anti-inflammatory",
-            "Anticancer"
+            "Neuroprotective"
         ],
         "database": "AMAZONIADB"
     },
@@ -537,10 +557,11 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "Antioxidant, anti-inflammatory, anticancer.",
         "scaffold_smiles": "O=c1cc(-c2ccccc2)oc2ccccc12",
+        "scaffold_id": "scaf_9",
         "bioactivities": [
-            "Antioxidant",
+            "Anti-inflammatory",
             "Anticancer",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -562,10 +583,11 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "Antioxidant, anti-inflammatory, anticancer.",
         "scaffold_smiles": "O=c1cc(-c2ccccc2)oc2ccccc12",
+        "scaffold_id": "scaf_9",
         "bioactivities": [
-            "Antioxidant",
+            "Anti-inflammatory",
             "Anticancer",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -587,13 +609,14 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "Antioxidant, anti-inflammatory, anticancer, cardioprotective, anti-obesity, anti-allergic.",
         "scaffold_smiles": "c1ccc([C@@H]2CCc3ccccc3O2)cc1",
+        "scaffold_id": "scaf_12",
         "bioactivities": [
-            "Cardioprotective",
-            "Antioxidant",
-            "Anti-allergic",
-            "Anti-inflammatory",
             "Anti-obesity",
-            "Anticancer"
+            "Anti-allergic",
+            "Anticancer",
+            "Antioxidant",
+            "Cardioprotective",
+            "Anti-inflammatory"
         ],
         "database": "AMAZONIADB"
     },
@@ -615,12 +638,13 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "Antioxidant, anti-inflammatory, anticancer, cardioprotective, neuroprotective.",
         "scaffold_smiles": "O=c1cc(-c2ccccc2)oc2ccccc12",
+        "scaffold_id": "scaf_9",
         "bioactivities": [
-            "Cardioprotective",
-            "Neuroprotective",
+            "Anticancer",
             "Antioxidant",
+            "Cardioprotective",
             "Anti-inflammatory",
-            "Anticancer"
+            "Neuroprotective"
         ],
         "database": "AMAZONIADB"
     },
@@ -642,10 +666,11 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "Anti-inflammatory, antioxidant, anticancer.",
         "scaffold_smiles": "O=C(/C=C/c1ccccc1)NCCc1ccccc1",
+        "scaffold_id": "scaf_15",
         "bioactivities": [
-            "Antioxidant",
+            "Anti-inflammatory",
             "Anticancer",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -667,11 +692,12 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "Stimulant, antioxidant, neuroprotective, vasodilator.",
         "scaffold_smiles": "O=c1[nH]c(=O)c2[nH]cnc2[nH]1",
+        "scaffold_id": "scaf_16",
         "bioactivities": [
-            "Neuroprotective",
-            "Antioxidant",
             "Stimulant",
-            "Vasodilator"
+            "Vasodilator",
+            "Neuroprotective",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -693,10 +719,11 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "Stimulant, vasodilator, antioxidant.",
         "scaffold_smiles": "O=c1[nH]c(=O)c2[nH]cnc2[nH]1",
+        "scaffold_id": "scaf_16",
         "bioactivities": [
+            "Stimulant",
             "Vasodilator",
-            "Antioxidant",
-            "Stimulant"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -718,11 +745,12 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "Antioxidant, anti-inflammatory, anticancer, anti-diabetic.",
         "scaffold_smiles": "O=C(/C=C/c1ccccc1)OC1CCCCC1",
+        "scaffold_id": "scaf_17",
         "bioactivities": [
             "Anti-diabetic",
-            "Antioxidant",
+            "Anti-inflammatory",
             "Anticancer",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -744,12 +772,13 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "Antioxidant, anti-inflammatory, anticancer, anti-obesity, neuroprotective (repeated).",
         "scaffold_smiles": "O=C(O[C@@H]1Cc2ccccc2O[C@@H]1c1ccccc1)c1ccccc1",
+        "scaffold_id": "scaf_13",
         "bioactivities": [
-            "Neuroprotective",
+            "Anti-obesity",
+            "Anticancer",
             "Antioxidant",
             "Anti-inflammatory",
-            "Anti-obesity",
-            "Anticancer"
+            "Neuroprotective"
         ],
         "database": "AMAZONIADB"
     },
@@ -771,12 +800,13 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "Antioxidant, anti-inflammatory, anticancer, neuroprotective, cardioprotective.",
         "scaffold_smiles": "O=C(/C=C/c1ccccc1)CC(=O)/C=C/c1ccccc1",
+        "scaffold_id": "scaf_18",
         "bioactivities": [
-            "Cardioprotective",
-            "Neuroprotective",
+            "Anticancer",
             "Antioxidant",
+            "Cardioprotective",
             "Anti-inflammatory",
-            "Anticancer"
+            "Neuroprotective"
         ],
         "database": "AMAZONIADB"
     },
@@ -798,10 +828,11 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "Stimulant, vasodilator, anti-inflammatory.",
         "scaffold_smiles": "O=c1[nH]c(=O)c2[nH]cnc2[nH]1",
+        "scaffold_id": "scaf_16",
         "bioactivities": [
+            "Stimulant",
             "Vasodilator",
-            "Anti-inflammatory",
-            "Stimulant"
+            "Anti-inflammatory"
         ],
         "database": "AMAZONIADB"
     },
@@ -823,11 +854,12 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "Antioxidant, anti-inflammatory, anticancer, cardioprotective.",
         "scaffold_smiles": "O=c1c(O[C@H]2CCCCO2)c(-c2ccccc2)oc2ccccc12",
+        "scaffold_id": "scaf_14",
         "bioactivities": [
             "Cardioprotective",
-            "Antioxidant",
+            "Anti-inflammatory",
             "Anticancer",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -849,10 +881,11 @@ const compoundsData = [
         "ro5_violations": 3,
         "plant_part": "Antioxidant, anti-inflammatory, anticancer.",
         "scaffold_smiles": "c1ccc([C@@H]2C[C@@H](c3cccc4c3O[C@H](c3ccccc3)CC4)c3ccccc3O2)cc1",
+        "scaffold_id": "scaf_19",
         "bioactivities": [
-            "Antioxidant",
+            "Anti-inflammatory",
             "Anticancer",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -874,10 +907,11 @@ const compoundsData = [
         "ro5_violations": 3,
         "plant_part": "Antioxidant, anti-inflammatory, anticancer.",
         "scaffold_smiles": "c1ccc([C@@H]2C[C@@H](c3cccc4c3O[C@H](c3ccccc3)C[C@H]4c3cccc4c3O[C@H](c3ccccc3)CC4)c3ccccc3O2)cc1",
+        "scaffold_id": "scaf_20",
         "bioactivities": [
-            "Antioxidant",
+            "Anti-inflammatory",
             "Anticancer",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -899,11 +933,12 @@ const compoundsData = [
         "ro5_violations": 3,
         "plant_part": "Antioxidant, anti-inflammatory, anticancer, cardioprotective.",
         "scaffold_smiles": "O=c1c(O[C@H]2CCC[C@@H](CO[C@H]3CCCCO3)O2)c(-c2ccccc2)oc2ccccc12",
+        "scaffold_id": "scaf_8",
         "bioactivities": [
             "Cardioprotective",
-            "Antioxidant",
+            "Anti-inflammatory",
             "Anticancer",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -925,11 +960,12 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "Antioxidant, anti-inflammatory, anticancer, cardioprotective.",
         "scaffold_smiles": "O=c1c(O[C@H]2CCCCO2)c(-c2ccccc2)oc2ccccc12",
+        "scaffold_id": "scaf_14",
         "bioactivities": [
             "Cardioprotective",
-            "Antioxidant",
+            "Anti-inflammatory",
             "Anticancer",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -951,10 +987,11 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "Antioxidant, anti-inflammatory, anticancer.",
         "scaffold_smiles": "O=c1c(O[C@H]2CCCCO2)c(-c2ccccc2)oc2ccccc12",
+        "scaffold_id": "scaf_14",
         "bioactivities": [
-            "Antioxidant",
+            "Anti-inflammatory",
             "Anticancer",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -976,12 +1013,13 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "Antioxidant, anti-inflammatory, anticancer, neuroprotective, anti-allergic (repeated).",
         "scaffold_smiles": "O=c1c(O[C@H]2CCCCO2)c(-c2ccccc2)oc2ccccc12",
+        "scaffold_id": "scaf_14",
         "bioactivities": [
-            "Neuroprotective",
-            "Antioxidant",
             "Anti-allergic",
+            "Anticancer",
+            "Antioxidant",
             "Anti-inflammatory",
-            "Anticancer"
+            "Neuroprotective"
         ],
         "database": "AMAZONIADB"
     },
@@ -1003,10 +1041,11 @@ const compoundsData = [
         "ro5_violations": 3,
         "plant_part": "Antioxidant, anti-inflammatory, anticancer.",
         "scaffold_smiles": "O=C1OCC2OC(=O)c3ccccc3-c3cccc4c3C(=O)OC(C3Cc5cccc-4c5C(=O)O3)C2OC(=O)c2ccccc2-c2ccccc21",
+        "scaffold_id": "scaf_21",
         "bioactivities": [
-            "Antioxidant",
+            "Anti-inflammatory",
             "Anticancer",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -1028,10 +1067,11 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "Antioxidant, anti-inflammatory, anticancer.",
         "scaffold_smiles": "C(=C/c1ccccc1)\\c1ccccc1",
+        "scaffold_id": "scaf_22",
         "bioactivities": [
-            "Antioxidant",
+            "Anti-inflammatory",
             "Anticancer",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -1053,10 +1093,11 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "Antioxidant, anti-inflammatory, anticancer.",
         "scaffold_smiles": "c1ccccc1",
+        "scaffold_id": "scaf_10",
         "bioactivities": [
-            "Antioxidant",
+            "Anti-inflammatory",
             "Anticancer",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -1078,10 +1119,11 @@ const compoundsData = [
         "ro5_violations": 3,
         "plant_part": "Antioxidant, anti-inflammatory, anticancer.",
         "scaffold_smiles": "O=C1OCC2OC(=O)c3ccccc3-c3cccc4c3C(=O)OC(C3Cc5cccc-4c5C(=O)O3)C2OC(=O)c2ccccc2-c2ccccc21",
+        "scaffold_id": "scaf_21",
         "bioactivities": [
-            "Antioxidant",
+            "Anti-inflammatory",
             "Anticancer",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -1103,10 +1145,11 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "Antioxidant, anti-inflammatory, anticancer.",
         "scaffold_smiles": "O=c1ccc2ccccc2o1",
+        "scaffold_id": "scaf_11",
         "bioactivities": [
-            "Antioxidant",
+            "Anti-inflammatory",
             "Anticancer",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -1128,9 +1171,10 @@ const compoundsData = [
         "ro5_violations": 3,
         "plant_part": "Antioxidant, anti-inflammatory, anticance",
         "scaffold_smiles": "c1ccc([C@@H]2CCc3ccc4c(c3O2)[C@@H]2C[C@@](c3ccccc3)(Oc3ccccc32)O4)cc1",
+        "scaffold_id": "scaf_23",
         "bioactivities": [
-            "Antioxidant",
-            "Anti-inflammatory"
+            "Anti-inflammatory",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -1152,12 +1196,13 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "Antioxidant, anti-inflammatory, anticancer, hepatoprotective, anti-diabetic.",
         "scaffold_smiles": "C1=C2C(CCC3CCCC[C@@H]23)C2CC[C@H]3CCCCC3[C@H]2C1",
+        "scaffold_id": "scaf_24",
         "bioactivities": [
-            "Antioxidant",
-            "Anti-inflammatory",
             "Anticancer",
-            "Hepatoprotective",
-            "Anti-diabetic"
+            "Antioxidant",
+            "Anti-diabetic",
+            "Anti-inflammatory",
+            "Hepatoprotective"
         ],
         "database": "AMAZONIADB"
     },
@@ -1179,11 +1224,12 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "Antioxidant, anti-inflammatory, anticancer, anti-viral, hepatoprotective.",
         "scaffold_smiles": "C1CC[C@@H]2CCC3C4CCC5CCC[C@@H]5[C@H]4CC[C@@H]3C2C1",
+        "scaffold_id": "scaf_25",
         "bioactivities": [
+            "Anticancer",
             "Antioxidant",
             "Antiviral",
             "Anti-inflammatory",
-            "Anticancer",
             "Hepatoprotective"
         ],
         "database": "AMAZONIADB"
@@ -1206,11 +1252,12 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "Antioxidant, anti-inflammatory, anticancer, anti-viral, hepatoprotective.",
         "scaffold_smiles": "C1CC[C@@H]2CCC3C4CCC5CCC[C@@H]5[C@H]4CC[C@@H]3C2C1",
+        "scaffold_id": "scaf_25",
         "bioactivities": [
+            "Anticancer",
             "Antioxidant",
             "Antiviral",
             "Anti-inflammatory",
-            "Anticancer",
             "Hepatoprotective"
         ],
         "database": "AMAZONIADB"
@@ -1233,11 +1280,12 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "Antioxidant, anti-inflammatory, anticancer, anti-viral, hepatoprotective.",
         "scaffold_smiles": "C1=C2C(CCC3CCCC[C@@H]23)C2CC[C@H]3CCCCC3[C@H]2C1",
+        "scaffold_id": "scaf_24",
         "bioactivities": [
+            "Anticancer",
             "Antioxidant",
             "Antiviral",
             "Anti-inflammatory",
-            "Anticancer",
             "Hepatoprotective"
         ],
         "database": "AMAZONIADB"
@@ -1260,12 +1308,13 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "Antioxidant, anti-inflammatory, anti-cholesterolemic, anti-diabetic, anti-obesity.",
         "scaffold_smiles": "C1=C2CCCCC2[C@H]2CCC3CCC[C@H]3[C@@H]2C1",
+        "scaffold_id": "scaf_26",
         "bioactivities": [
-            "Antioxidant",
-            "Anti-inflammatory",
-            "Hypocholesterolemic",
             "Anti-obesity",
-            "Anti-diabetic"
+            "Antioxidant",
+            "Anti-diabetic",
+            "Hypocholesterolemic",
+            "Anti-inflammatory"
         ],
         "database": "AMAZONIADB"
     },
@@ -1287,12 +1336,13 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "Antioxidant, anti-inflammatory, anticancer, neuroprotective, anti-depressant.",
         "scaffold_smiles": "O=c1c(O[C@H]2CCCCO2)c(-c2ccccc2)oc2ccccc12",
+        "scaffold_id": "scaf_14",
         "bioactivities": [
-            "Neuroprotective",
+            "Anticancer",
             "Antioxidant",
             "Anti-inflammatory",
-            "Anticancer",
-            "Anti-depressant"
+            "Anti-depressant",
+            "Neuroprotective"
         ],
         "database": "AMAZONIADB"
     },
@@ -1314,12 +1364,13 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "Anti-inflammatory, anti-cancer, cardioprotective, neuroprotective, anti-aging.",
         "scaffold_smiles": "O=C1CN=C(c2ccccn2)N1",
+        "scaffold_id": "scaf_27",
         "bioactivities": [
-            "Cardioprotective",
-            "Neuroprotective",
-            "Anti-inflammatory",
+            "Anticancer",
             "Anti-aging",
-            "Anticancer"
+            "Cardioprotective",
+            "Anti-inflammatory",
+            "Neuroprotective"
         ],
         "database": "AMAZONIADB"
     },
@@ -1341,11 +1392,12 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "Antioxidant, anti-inflammatory, anticancer, neuroprotective, anti-alzheimer.",
         "scaffold_smiles": "C1CCNCC1",
+        "scaffold_id": "scaf_28",
         "bioactivities": [
+            "Anti-inflammatory",
             "Neuroprotective",
-            "Antioxidant",
             "Anticancer",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -1367,11 +1419,12 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "Antioxidant, anti-inflammatory, anticancer, anti-cholesterolemic.",
         "scaffold_smiles": "C1CCNCC1",
+        "scaffold_id": "scaf_28",
         "bioactivities": [
-            "Antioxidant",
-            "Anticancer",
+            "Hypocholesterolemic",
             "Anti-inflammatory",
-            "Hypocholesterolemic"
+            "Anticancer",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -1393,12 +1446,13 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "Antioxidant, anti-inflammatory, anticancer, cardioprotective, anti-obesity.",
         "scaffold_smiles": "c1ccccc1",
+        "scaffold_id": "scaf_10",
         "bioactivities": [
-            "Cardioprotective",
-            "Antioxidant",
-            "Anti-inflammatory",
             "Anti-obesity",
-            "Anticancer"
+            "Anticancer",
+            "Antioxidant",
+            "Cardioprotective",
+            "Anti-inflammatory"
         ],
         "database": "AMAZONIADB"
     },
@@ -1420,11 +1474,12 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "Antioxidant, anti-inflammatory, anticancer, anti-obesity.",
         "scaffold_smiles": "O=C1C[C@@H](c2ccccc2)Oc2ccccc21",
+        "scaffold_id": "scaf_29",
         "bioactivities": [
-            "Antioxidant",
-            "Anticancer",
+            "Anti-obesity",
             "Anti-inflammatory",
-            "Anti-obesity"
+            "Anticancer",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -1446,12 +1501,13 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "Antioxidant, anti-inflammatory, anticancer, cardioprotective, anti-diabetic.",
         "scaffold_smiles": "O=c1cc(-c2ccccc2)oc2ccccc12",
+        "scaffold_id": "scaf_9",
         "bioactivities": [
-            "Cardioprotective",
-            "Antioxidant",
-            "Anti-inflammatory",
             "Anticancer",
-            "Anti-diabetic"
+            "Antioxidant",
+            "Cardioprotective",
+            "Anti-diabetic",
+            "Anti-inflammatory"
         ],
         "database": "AMAZONIADB"
     },
@@ -1473,12 +1529,13 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "Antioxidant, anti-inflammatory, anticancer, cardioprotective, anti-hyperglycemic.",
         "scaffold_smiles": "O=c1cc(-c2ccccc2)oc2c([C@H]3CCCCO3)cccc12",
+        "scaffold_id": "scaf_5",
         "bioactivities": [
-            "Cardioprotective",
-            "Antioxidant",
-            "Anti-inflammatory",
             "Anticancer",
-            "Anti-diabetic"
+            "Antioxidant",
+            "Cardioprotective",
+            "Anti-diabetic",
+            "Anti-inflammatory"
         ],
         "database": "AMAZONIADB"
     },
@@ -1500,12 +1557,13 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "Antioxidant, anti-inflammatory, anticancer, cardioprotective, anti-obesity.",
         "scaffold_smiles": "O=c1cc(-c2ccccc2)oc2c([C@H]3CCCCO3)cccc12",
+        "scaffold_id": "scaf_5",
         "bioactivities": [
-            "Cardioprotective",
-            "Antioxidant",
-            "Anti-inflammatory",
             "Anti-obesity",
-            "Anticancer"
+            "Anticancer",
+            "Antioxidant",
+            "Cardioprotective",
+            "Anti-inflammatory"
         ],
         "database": "AMAZONIADB"
     },
@@ -1527,11 +1585,12 @@ const compoundsData = [
         "ro5_violations": 3,
         "plant_part": "Antioxidant, anti-inflammatory, anticancer, neuroprotective.",
         "scaffold_smiles": "c1ccc(-c2[o+]c3ccccc3cc2O[C@H]2CCC[C@@H](CO[C@H]3CCCCO3)O2)cc1",
+        "scaffold_id": "scaf_2",
         "bioactivities": [
+            "Anti-inflammatory",
             "Neuroprotective",
-            "Antioxidant",
             "Anticancer",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -1553,12 +1612,13 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "Antioxidant, anti-inflammatory, anticancer, anti-allergic, anti-hyperglycemic.",
         "scaffold_smiles": "c1ccc(-c2[o+]c3ccccc3cc2O[C@H]2CCCCO2)cc1",
+        "scaffold_id": "scaf_1",
         "bioactivities": [
-            "Antioxidant",
             "Anti-allergic",
-            "Anti-inflammatory",
             "Anticancer",
-            "Anti-diabetic"
+            "Antioxidant",
+            "Anti-diabetic",
+            "Anti-inflammatory"
         ],
         "database": "AMAZONIADB"
     },
@@ -1580,12 +1640,13 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "Antioxidant, anti-inflammatory, anticancer, anti-obesity, anti-diabetic.",
         "scaffold_smiles": "c1ccc(-c2[o+]c3ccccc3cc2O[C@H]2CCCCO2)cc1",
+        "scaffold_id": "scaf_1",
         "bioactivities": [
-            "Antioxidant",
-            "Anti-inflammatory",
             "Anti-obesity",
             "Anticancer",
-            "Anti-diabetic"
+            "Antioxidant",
+            "Anti-diabetic",
+            "Anti-inflammatory"
         ],
         "database": "AMAZONIADB"
     },
@@ -1607,12 +1668,13 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "Antioxidant, anti-inflammatory, anticancer, cardioprotective, neuroprotective (repeated).",
         "scaffold_smiles": "c1ccc(-c2[o+]c3ccccc3cc2O[C@H]2CCCCO2)cc1",
+        "scaffold_id": "scaf_1",
         "bioactivities": [
-            "Cardioprotective",
-            "Neuroprotective",
+            "Anticancer",
             "Antioxidant",
+            "Cardioprotective",
             "Anti-inflammatory",
-            "Anticancer"
+            "Neuroprotective"
         ],
         "database": "AMAZONIADB"
     },
@@ -1634,12 +1696,13 @@ const compoundsData = [
         "ro5_violations": 3,
         "plant_part": "Antioxidant, anti-inflammatory, anticancer, anti-allergic, neuroprotective.",
         "scaffold_smiles": "c1ccc(-c2[o+]c3ccccc3cc2O[C@H]2CCC[C@@H](CO[C@H]3CCCCO3)O2)cc1",
+        "scaffold_id": "scaf_2",
         "bioactivities": [
-            "Neuroprotective",
-            "Antioxidant",
             "Anti-allergic",
+            "Anticancer",
+            "Antioxidant",
             "Anti-inflammatory",
-            "Anticancer"
+            "Neuroprotective"
         ],
         "database": "AMAZONIADB"
     },
@@ -1661,12 +1724,13 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "Antioxidant, anti-inflammatory, anticancer, cardioprotective, neuroprotective.",
         "scaffold_smiles": "c1ccc(-c2[o+]c3ccccc3cc2O[C@H]2CCCCO2)cc1",
+        "scaffold_id": "scaf_1",
         "bioactivities": [
-            "Cardioprotective",
-            "Neuroprotective",
+            "Anticancer",
             "Antioxidant",
+            "Cardioprotective",
             "Anti-inflammatory",
-            "Anticancer"
+            "Neuroprotective"
         ],
         "database": "AMAZONIADB"
     },
@@ -1688,10 +1752,11 @@ const compoundsData = [
         "ro5_violations": 3,
         "plant_part": "anti-inflammatory, anticancers and antioxidant activity",
         "scaffold_smiles": "c1ccc(-c2[o+]c3cccc(O[C@H]4CCCCO4)c3cc2O[C@H]2CCCCO2)cc1",
+        "scaffold_id": "scaf_30",
         "bioactivities": [
-            "Antioxidant",
+            "Anti-inflammatory",
             "Anticancer",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -1713,10 +1778,11 @@ const compoundsData = [
         "ro5_violations": 3,
         "plant_part": "anti-inflammatory, anticancers and antioxidant activity",
         "scaffold_smiles": "c1ccc(-c2[o+]c3cccc(O[C@H]4CCCCO4)c3cc2O[C@H]2CCCCO2)cc1",
+        "scaffold_id": "scaf_30",
         "bioactivities": [
-            "Antioxidant",
+            "Anti-inflammatory",
             "Anticancer",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -1738,10 +1804,11 @@ const compoundsData = [
         "ro5_violations": 3,
         "plant_part": "anti-inflammatory, anticancers and antioxidant activity",
         "scaffold_smiles": "c1ccc(-c2[o+]c3ccccc3cc2O[C@H]2CCCCO2)cc1",
+        "scaffold_id": "scaf_1",
         "bioactivities": [
-            "Antioxidant",
+            "Anti-inflammatory",
             "Anticancer",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -1763,10 +1830,11 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "anti-inflammatory, anticancers and antioxidant activity",
         "scaffold_smiles": "c1ccc(-c2[o+]c3ccccc3cc2O[C@H]2CCCCO2)cc1",
+        "scaffold_id": "scaf_1",
         "bioactivities": [
-            "Antioxidant",
+            "Anti-inflammatory",
             "Anticancer",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -1788,10 +1856,11 @@ const compoundsData = [
         "ro5_violations": 3,
         "plant_part": "anti-inflammatory, anticancers and antioxidant activity",
         "scaffold_smiles": "c1ccc(-c2[o+]c3ccccc3cc2O[C@H]2CCCC(CO[C@H]3CCCCO3)O2)cc1",
+        "scaffold_id": "scaf_31",
         "bioactivities": [
-            "Antioxidant",
+            "Anti-inflammatory",
             "Anticancer",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -1813,11 +1882,12 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "anti-inflammatory, anticancer, antioxidant and antimicrobial activity",
         "scaffold_smiles": "O=C1C[C@@H](c2ccccc2)Oc2ccccc21",
+        "scaffold_id": "scaf_29",
         "bioactivities": [
-            "Antioxidant",
-            "Anticancer",
+            "Antimicrobial",
             "Anti-inflammatory",
-            "Antimicrobial"
+            "Anticancer",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -1839,11 +1909,12 @@ const compoundsData = [
         "ro5_violations": 3,
         "plant_part": "anti-inflammatory, anticancer, antioxidant and antimicrobial activity",
         "scaffold_smiles": "O=c1cc(-c2ccc(O[C@H]3CCCCO3)cc2)oc2cc(O[C@H]3CCCCO3)ccc12",
+        "scaffold_id": "scaf_32",
         "bioactivities": [
-            "Antioxidant",
-            "Anticancer",
+            "Antimicrobial",
             "Anti-inflammatory",
-            "Antimicrobial"
+            "Anticancer",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -1865,11 +1936,12 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "anti-inflammatory, anticancer, antioxidant and antimicrobial activity",
         "scaffold_smiles": "O=c1cc(-c2ccccc2)oc2ccc([C@H]3CCCCO3)cc12",
+        "scaffold_id": "scaf_4",
         "bioactivities": [
-            "Antioxidant",
-            "Anticancer",
+            "Antimicrobial",
             "Anti-inflammatory",
-            "Antimicrobial"
+            "Anticancer",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -1891,11 +1963,12 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "anti-inflammatory, anticancer, antioxidant and antimicrobial activity",
         "scaffold_smiles": "O=c1cc(-c2ccccc2)oc2ccc([C@H]3CCCCO3)cc12",
+        "scaffold_id": "scaf_4",
         "bioactivities": [
-            "Antioxidant",
-            "Anticancer",
+            "Antimicrobial",
             "Anti-inflammatory",
-            "Antimicrobial"
+            "Anticancer",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -1917,11 +1990,12 @@ const compoundsData = [
         "ro5_violations": 3,
         "plant_part": "anti-inflammatory, anticancer, antioxidant and antimicrobial activity",
         "scaffold_smiles": "O=c1cc(-c2cccc(O[C@H]3CCCCO3)c2)oc2cc(O[C@H]3CCCCO3)ccc12",
+        "scaffold_id": "scaf_33",
         "bioactivities": [
-            "Antioxidant",
-            "Anticancer",
+            "Antimicrobial",
             "Anti-inflammatory",
-            "Antimicrobial"
+            "Anticancer",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -1943,11 +2017,12 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "anti-inflammatory, anticancer, antioxidant and antimicrobial activity",
         "scaffold_smiles": "O=c1cc(-c2ccccc2)oc2c([C@H]3CCCCO3)cccc12",
+        "scaffold_id": "scaf_5",
         "bioactivities": [
-            "Antioxidant",
-            "Anticancer",
+            "Antimicrobial",
             "Anti-inflammatory",
-            "Antimicrobial"
+            "Anticancer",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -1969,11 +2044,12 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "anti-inflammatory, anticancer, antioxidant and antimicrobial activity",
         "scaffold_smiles": "O=C1c2ccccc2O[C@H](c2ccccc2)[C@H]1O[C@H]1CCCCO1",
+        "scaffold_id": "scaf_34",
         "bioactivities": [
-            "Antioxidant",
-            "Anticancer",
+            "Antimicrobial",
             "Anti-inflammatory",
-            "Antimicrobial"
+            "Anticancer",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -1995,11 +2071,12 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "anti-inflammatory, anticancer, antioxidant and antimicrobial activity",
         "scaffold_smiles": "O=c1cc(-c2ccccc2)oc2ccc([C@H]3CCCCO3)cc12",
+        "scaffold_id": "scaf_4",
         "bioactivities": [
-            "Antioxidant",
-            "Anticancer",
+            "Antimicrobial",
             "Anti-inflammatory",
-            "Antimicrobial"
+            "Anticancer",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -2021,11 +2098,12 @@ const compoundsData = [
         "ro5_violations": 3,
         "plant_part": "anti-inflammatory, anticancer, antioxidant and antimicrobial activity",
         "scaffold_smiles": "O=c1cc(-c2ccccc2)oc2c(C3CCCO3)cc(C3CCCCO3)cc12",
+        "scaffold_id": "scaf_35",
         "bioactivities": [
-            "Antioxidant",
-            "Anticancer",
+            "Antimicrobial",
             "Anti-inflammatory",
-            "Antimicrobial"
+            "Anticancer",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -2047,11 +2125,12 @@ const compoundsData = [
         "ro5_violations": 3,
         "plant_part": "anti-inflammatory, anticancer, antioxidant and antimicrobial activity",
         "scaffold_smiles": "O=c1cc(-c2ccccc2)oc2c(C3CCCCO3)cc(C3CCCCO3)cc12",
+        "scaffold_id": "scaf_36",
         "bioactivities": [
-            "Antioxidant",
-            "Anticancer",
+            "Antimicrobial",
             "Anti-inflammatory",
-            "Antimicrobial"
+            "Anticancer",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -2073,11 +2152,12 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "anti-inflammatory, anticancer, antioxidant and antimicrobial activity",
         "scaffold_smiles": "O=c1cc(-c2ccccc2)oc2ccc([C@H]3CCCCO3)cc12",
+        "scaffold_id": "scaf_4",
         "bioactivities": [
-            "Antioxidant",
-            "Anticancer",
+            "Antimicrobial",
             "Anti-inflammatory",
-            "Antimicrobial"
+            "Anticancer",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -2099,11 +2179,12 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "anti-inflammatory, anticancer, antioxidant and antimicrobial activity",
         "scaffold_smiles": "O=c1cc(-c2ccccc2)oc2ccccc12",
+        "scaffold_id": "scaf_9",
         "bioactivities": [
-            "Antioxidant",
-            "Anticancer",
+            "Antimicrobial",
             "Anti-inflammatory",
-            "Antimicrobial"
+            "Anticancer",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -2125,11 +2206,12 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "anti-inflammatory, anticancer, antioxidant and antimicrobial activity",
         "scaffold_smiles": "O=c1cc(-c2ccccc2)oc2ccccc12",
+        "scaffold_id": "scaf_9",
         "bioactivities": [
-            "Antioxidant",
-            "Anticancer",
+            "Antimicrobial",
             "Anti-inflammatory",
-            "Antimicrobial"
+            "Anticancer",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -2151,11 +2233,12 @@ const compoundsData = [
         "ro5_violations": 3,
         "plant_part": "anti-inflammatory, anticancer, antioxidant and antimicrobial activity",
         "scaffold_smiles": "O=c1cc(-c2ccccc2)oc2cc(OC3CCCC(COC4CCCCO4)O3)ccc12",
+        "scaffold_id": "scaf_37",
         "bioactivities": [
-            "Antioxidant",
-            "Anticancer",
+            "Antimicrobial",
             "Anti-inflammatory",
-            "Antimicrobial"
+            "Anticancer",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -2177,11 +2260,12 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "anti-tumor, cardiovascular protection, antiviral, anti-bacterial activity",
         "scaffold_smiles": "O=c1cc(-c2ccc(O[C@H]3CCCCO3)cc2)oc2ccccc12",
+        "scaffold_id": "scaf_38",
         "bioactivities": [
+            "Antiviral",
             "Cardioprotective",
-            "Anticancer",
             "Antimicrobial",
-            "Antiviral"
+            "Anticancer"
         ],
         "database": "AMAZONIADB"
     },
@@ -2203,10 +2287,11 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "antioxidant, anti-inflammatory and anticancer activity",
         "scaffold_smiles": "O=c1cc(-c2ccccc2)oc2cc(O[C@H]3CCCCO3)ccc12",
+        "scaffold_id": "scaf_39",
         "bioactivities": [
-            "Antioxidant",
+            "Anti-inflammatory",
             "Anticancer",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -2228,11 +2313,12 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "anti-inflammatory, anticancer, antioxidant and antimicrobial activity",
         "scaffold_smiles": "O=c1cc(-c2ccc(O[C@H]3CCCCO3)cc2)oc2ccccc12",
+        "scaffold_id": "scaf_38",
         "bioactivities": [
-            "Antioxidant",
-            "Anticancer",
+            "Antimicrobial",
             "Anti-inflammatory",
-            "Antimicrobial"
+            "Anticancer",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -2254,10 +2340,11 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "anti-inflammatory, antioxidant and cardioprotective activity",
         "scaffold_smiles": "O=C1C[C@@H](c2ccccc2)Oc2ccccc21",
+        "scaffold_id": "scaf_29",
         "bioactivities": [
             "Cardioprotective",
-            "Antioxidant",
-            "Anti-inflammatory"
+            "Anti-inflammatory",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -2279,10 +2366,11 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "anti-inflammatory, antioxidant and cardioprotective activity",
         "scaffold_smiles": "O=C1C[C@@H](c2ccccc2)Oc2ccccc21",
+        "scaffold_id": "scaf_29",
         "bioactivities": [
             "Cardioprotective",
-            "Antioxidant",
-            "Anti-inflammatory"
+            "Anti-inflammatory",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -2304,10 +2392,11 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "anti-inflammatory, antioxidant and cardioprotective activity",
         "scaffold_smiles": "O=C1c2ccccc2O[C@H](c2ccccc2)[C@H]1O[C@H]1CCCCO1",
+        "scaffold_id": "scaf_34",
         "bioactivities": [
             "Cardioprotective",
-            "Antioxidant",
-            "Anti-inflammatory"
+            "Anti-inflammatory",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -2329,10 +2418,11 @@ const compoundsData = [
         "ro5_violations": 3,
         "plant_part": "anti-inflammatory, antioxidant and cardioprotective activity",
         "scaffold_smiles": "O=c1c(O[C@H]2CCC[C@@H](CO[C@H]3CCCO3)O2)c(-c2ccccc2)oc2ccccc12",
+        "scaffold_id": "scaf_40",
         "bioactivities": [
             "Cardioprotective",
-            "Antioxidant",
-            "Anti-inflammatory"
+            "Anti-inflammatory",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -2354,10 +2444,11 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "anti-inflammatory, antioxidant and cardioprotective activity",
         "scaffold_smiles": "O=c1c(O[C@H]2CCCCO2)c(-c2ccccc2)oc2ccccc12",
+        "scaffold_id": "scaf_14",
         "bioactivities": [
             "Cardioprotective",
-            "Antioxidant",
-            "Anti-inflammatory"
+            "Anti-inflammatory",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -2379,10 +2470,11 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "anti-inflammatory, antioxidant and cardioprotective activity",
         "scaffold_smiles": "O=c1c(O[C@H]2CCCCO2)c(-c2ccccc2)oc2ccccc12",
+        "scaffold_id": "scaf_14",
         "bioactivities": [
             "Cardioprotective",
-            "Antioxidant",
-            "Anti-inflammatory"
+            "Anti-inflammatory",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -2404,10 +2496,11 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "anti-inflammatory, antioxidant and cardioprotective activity",
         "scaffold_smiles": "O=c1c(O[C@@H]2CCCCO2)c(-c2ccccc2)oc2ccccc12",
+        "scaffold_id": "scaf_41",
         "bioactivities": [
             "Cardioprotective",
-            "Antioxidant",
-            "Anti-inflammatory"
+            "Anti-inflammatory",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -2429,11 +2522,12 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "anti-inflammatory, anticancer, antioxidant and antimicrobial activity",
         "scaffold_smiles": "O=C(/C=C/c1ccccc1)OC1CCCCC1",
+        "scaffold_id": "scaf_17",
         "bioactivities": [
-            "Antioxidant",
-            "Anticancer",
+            "Antimicrobial",
             "Anti-inflammatory",
-            "Antimicrobial"
+            "Anticancer",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -2455,11 +2549,12 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "anti-inflammatory, anticancer, antioxidant and antimicrobial activity",
         "scaffold_smiles": "O=C(/C=C/c1ccccc1)OC1CCCCC1",
+        "scaffold_id": "scaf_17",
         "bioactivities": [
-            "Antioxidant",
-            "Anticancer",
+            "Antimicrobial",
             "Anti-inflammatory",
-            "Antimicrobial"
+            "Anticancer",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -2481,11 +2576,12 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "anti-inflammatory, anticancer, antioxidant and antimicrobial activity",
         "scaffold_smiles": "O=C(C=Cc1ccccc1)OC1CCCCC1",
+        "scaffold_id": "scaf_42",
         "bioactivities": [
-            "Antioxidant",
-            "Anticancer",
+            "Antimicrobial",
             "Anti-inflammatory",
-            "Antimicrobial"
+            "Anticancer",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -2507,11 +2603,12 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "anti-inflammatory, anticancer, antioxidant and antimicrobial activity",
         "scaffold_smiles": "c1ccccc1",
+        "scaffold_id": "scaf_10",
         "bioactivities": [
-            "Antioxidant",
-            "Anticancer",
+            "Antimicrobial",
             "Anti-inflammatory",
-            "Antimicrobial"
+            "Anticancer",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -2533,11 +2630,12 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "anti-inflammatory, anticancer, antioxidant and antimicrobial activity",
         "scaffold_smiles": "c1ccccc1",
+        "scaffold_id": "scaf_10",
         "bioactivities": [
-            "Antioxidant",
-            "Anticancer",
+            "Antimicrobial",
             "Anti-inflammatory",
-            "Antimicrobial"
+            "Anticancer",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -2559,11 +2657,12 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "anti-inflammatory, anticancer, antioxidant and antimicrobial activity",
         "scaffold_smiles": "c1ccccc1",
+        "scaffold_id": "scaf_10",
         "bioactivities": [
-            "Antioxidant",
-            "Anticancer",
+            "Antimicrobial",
             "Anti-inflammatory",
-            "Antimicrobial"
+            "Anticancer",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -2585,11 +2684,12 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "anti-inflammatory, anticancer, antioxidant and antimicrobial activity",
         "scaffold_smiles": "O=C(/C=C/c1ccccc1)OC1CCCCC1",
+        "scaffold_id": "scaf_17",
         "bioactivities": [
-            "Antioxidant",
-            "Anticancer",
+            "Antimicrobial",
             "Anti-inflammatory",
-            "Antimicrobial"
+            "Anticancer",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -2611,11 +2711,12 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "anti-inflammatory, anticancer, antioxidant and antimicrobial activity",
         "scaffold_smiles": "c1ccc(OC2CCCCO2)cc1",
+        "scaffold_id": "scaf_43",
         "bioactivities": [
-            "Antioxidant",
-            "Anticancer",
+            "Antimicrobial",
             "Anti-inflammatory",
-            "Antimicrobial"
+            "Anticancer",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -2637,11 +2738,12 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "anti-inflammatory, anticancer, antioxidant and antimicrobial activity",
         "scaffold_smiles": "O=C(/C=C\\c1ccccc1)/C=C/c1ccccc1",
+        "scaffold_id": "scaf_44",
         "bioactivities": [
-            "Antioxidant",
-            "Anticancer",
+            "Antimicrobial",
             "Anti-inflammatory",
-            "Antimicrobial"
+            "Anticancer",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -2663,11 +2765,12 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "anti-inflammatory, anticancer, antioxidant and antimicrobial activity",
         "scaffold_smiles": "Acyclic",
+        "scaffold_id": "acyclic",
         "bioactivities": [
-            "Antioxidant",
-            "Anticancer",
+            "Antimicrobial",
             "Anti-inflammatory",
-            "Antimicrobial"
+            "Anticancer",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -2689,11 +2792,12 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "anti-inflammatory, anticancer, antioxidant and antimicrobial activity",
         "scaffold_smiles": "O=C(/C=C/c1ccccc1)O[C@@H]1CC=CCC1",
+        "scaffold_id": "scaf_45",
         "bioactivities": [
-            "Antioxidant",
-            "Anticancer",
+            "Antimicrobial",
             "Anti-inflammatory",
-            "Antimicrobial"
+            "Anticancer",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -2715,11 +2819,12 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "anti-inflammatory, anticancer, antioxidant and antimicrobial activity",
         "scaffold_smiles": "O=C(OC1CCCCO1)c1ccccc1",
+        "scaffold_id": "scaf_46",
         "bioactivities": [
-            "Antioxidant",
-            "Anticancer",
+            "Antimicrobial",
             "Anti-inflammatory",
-            "Antimicrobial"
+            "Anticancer",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -2741,11 +2846,12 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "anti-inflammatory, anticancer, antioxidant and antimicrobial activity",
         "scaffold_smiles": "c1ccccc1",
+        "scaffold_id": "scaf_10",
         "bioactivities": [
-            "Antioxidant",
-            "Anticancer",
+            "Antimicrobial",
             "Anti-inflammatory",
-            "Antimicrobial"
+            "Anticancer",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -2767,11 +2873,12 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "anti-inflammatory, anticancer, antioxidant and antimicrobial activity",
         "scaffold_smiles": "c1ccccc1",
+        "scaffold_id": "scaf_10",
         "bioactivities": [
-            "Antioxidant",
-            "Anticancer",
+            "Antimicrobial",
             "Anti-inflammatory",
-            "Antimicrobial"
+            "Anticancer",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -2793,11 +2900,12 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "anti-inflammatory, anticancer, antioxidant and antimicrobial activity",
         "scaffold_smiles": "c1ccccc1",
+        "scaffold_id": "scaf_10",
         "bioactivities": [
-            "Antioxidant",
-            "Anticancer",
+            "Antimicrobial",
             "Anti-inflammatory",
-            "Antimicrobial"
+            "Anticancer",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -2819,11 +2927,12 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "anti-inflammatory, anticancer, antioxidant and antimicrobial activity",
         "scaffold_smiles": "O=C(/C=C/c1ccccc1)OC1CCCCC1",
+        "scaffold_id": "scaf_17",
         "bioactivities": [
-            "Antioxidant",
-            "Anticancer",
+            "Antimicrobial",
             "Anti-inflammatory",
-            "Antimicrobial"
+            "Anticancer",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -2845,11 +2954,12 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "anti-inflammatory, anticancer, antioxidant and antimicrobial activity",
         "scaffold_smiles": "c1ccc(O[C@H]2CCCCO2)cc1",
+        "scaffold_id": "scaf_47",
         "bioactivities": [
-            "Antioxidant",
-            "Anticancer",
+            "Antimicrobial",
             "Anti-inflammatory",
-            "Antimicrobial"
+            "Anticancer",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -2871,11 +2981,12 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "anti-inflammatory, anticancer, antioxidant and antimicrobial activity",
         "scaffold_smiles": "c1ccccc1",
+        "scaffold_id": "scaf_10",
         "bioactivities": [
-            "Antioxidant",
-            "Anticancer",
+            "Antimicrobial",
             "Anti-inflammatory",
-            "Antimicrobial"
+            "Anticancer",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -2897,11 +3008,12 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "anti-inflammatory, anticancer, antioxidant and antimicrobial activity",
         "scaffold_smiles": "c1ccccc1",
+        "scaffold_id": "scaf_10",
         "bioactivities": [
-            "Antioxidant",
-            "Anticancer",
+            "Antimicrobial",
             "Anti-inflammatory",
-            "Antimicrobial"
+            "Anticancer",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -2923,11 +3035,12 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "anti-inflammatory, anticancer, antioxidant and antimicrobial activity",
         "scaffold_smiles": "c1ccccc1",
+        "scaffold_id": "scaf_10",
         "bioactivities": [
-            "Antioxidant",
-            "Anticancer",
+            "Antimicrobial",
             "Anti-inflammatory",
-            "Antimicrobial"
+            "Anticancer",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -2949,11 +3062,12 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "anti-inflammatory, anticancer, antioxidant and antimicrobial activity",
         "scaffold_smiles": "O=C(/C=C/c1ccccc1)OC1CCCCO1",
+        "scaffold_id": "scaf_48",
         "bioactivities": [
-            "Antioxidant",
-            "Anticancer",
+            "Antimicrobial",
             "Anti-inflammatory",
-            "Antimicrobial"
+            "Anticancer",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -2975,11 +3089,12 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "anti-inflammatory, anticancer, antioxidant and antimicrobial activity",
         "scaffold_smiles": "c1ccccc1",
+        "scaffold_id": "scaf_10",
         "bioactivities": [
-            "Antioxidant",
-            "Anticancer",
+            "Antimicrobial",
             "Anti-inflammatory",
-            "Antimicrobial"
+            "Anticancer",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -3001,11 +3116,12 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "anti-inflammatory, anticancer, antioxidant and antimicrobial activity",
         "scaffold_smiles": "c1ccccc1",
+        "scaffold_id": "scaf_10",
         "bioactivities": [
-            "Antioxidant",
-            "Anticancer",
+            "Antimicrobial",
             "Anti-inflammatory",
-            "Antimicrobial"
+            "Anticancer",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -3027,11 +3143,12 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "anti-inflammatory, anticancer, antioxidant and antimicrobial activity",
         "scaffold_smiles": "c1ccc([C@H]2CCc3ccccc3O2)cc1",
+        "scaffold_id": "scaf_49",
         "bioactivities": [
-            "Antioxidant",
-            "Anticancer",
+            "Antimicrobial",
             "Anti-inflammatory",
-            "Antimicrobial"
+            "Anticancer",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -3053,11 +3170,12 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "anti-inflammatory, anticancer, antioxidant and antimicrobial activity",
         "scaffold_smiles": "c1ccc([C@@H]2CCc3ccccc3O2)cc1",
+        "scaffold_id": "scaf_12",
         "bioactivities": [
-            "Antioxidant",
-            "Anticancer",
+            "Antimicrobial",
             "Anti-inflammatory",
-            "Antimicrobial"
+            "Anticancer",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -3079,11 +3197,12 @@ const compoundsData = [
         "ro5_violations": 3,
         "plant_part": "anti-inflammatory, anticancer, antioxidant and antimicrobial activity",
         "scaffold_smiles": "c1ccc([C@@H]2C[C@@H](c3cccc4c3O[C@H](c3ccccc3)CC4)c3ccccc3O2)cc1",
+        "scaffold_id": "scaf_19",
         "bioactivities": [
-            "Antioxidant",
-            "Anticancer",
+            "Antimicrobial",
             "Anti-inflammatory",
-            "Antimicrobial"
+            "Anticancer",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -3105,11 +3224,12 @@ const compoundsData = [
         "ro5_violations": 3,
         "plant_part": "anti-inflammatory, anticancer, antioxidant and antimicrobial activity",
         "scaffold_smiles": "c1ccc([C@@H]2C[C@H](c3cccc4c3O[C@H](c3ccccc3)C[C@@H]4c3cccc4c3O[C@H](c3ccccc3)CC4)c3ccccc3O2)cc1",
+        "scaffold_id": "scaf_50",
         "bioactivities": [
-            "Antioxidant",
-            "Anticancer",
+            "Antimicrobial",
             "Anti-inflammatory",
-            "Antimicrobial"
+            "Anticancer",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -3131,10 +3251,11 @@ const compoundsData = [
         "ro5_violations": 3,
         "plant_part": "anti-inflammatory, anticancer and antioxidant activity",
         "scaffold_smiles": "c1ccc(-c2[o+]c3ccccc3cc2O[C@H]2CCCCO2)cc1",
+        "scaffold_id": "scaf_1",
         "bioactivities": [
-            "Antioxidant",
+            "Anti-inflammatory",
             "Anticancer",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -3156,10 +3277,11 @@ const compoundsData = [
         "ro5_violations": 3,
         "plant_part": "anti-inflammatory, antioxidant and hepatoprotective activities",
         "scaffold_smiles": "O=C(OC1CC(OC(=O)c2ccccc2)C2OC(=O)c3ccccc3-c3ccccc3C(=O)OCC2O1)c1ccccc1",
+        "scaffold_id": "scaf_51",
         "bioactivities": [
+            "Anti-inflammatory",
             "Hepatoprotective",
-            "Antioxidant",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -3181,10 +3303,11 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "anti-inflammatory, antioxidant and cardioprotective activity",
         "scaffold_smiles": "O=C1C[C@@H](c2ccccc2)Oc2ccccc21",
+        "scaffold_id": "scaf_29",
         "bioactivities": [
             "Cardioprotective",
-            "Antioxidant",
-            "Anti-inflammatory"
+            "Anti-inflammatory",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -3206,11 +3329,12 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "anti-inflammatory, anticancer, antioxidant and cardioprotective activity",
         "scaffold_smiles": "O=c1c(OC2CCCCO2)c(-c2ccccc2)oc2ccccc12",
+        "scaffold_id": "scaf_7",
         "bioactivities": [
             "Cardioprotective",
-            "Antioxidant",
+            "Anti-inflammatory",
             "Anticancer",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -3232,11 +3356,12 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "anti-inflammatory, anticancer, antioxidant and cardioprotective activity",
         "scaffold_smiles": "O=c1c(OC2CCCCO2)c(-c2ccccc2)oc2ccccc12",
+        "scaffold_id": "scaf_7",
         "bioactivities": [
             "Cardioprotective",
-            "Antioxidant",
+            "Anti-inflammatory",
             "Anticancer",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -3258,11 +3383,12 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "anti-inflammatory, anticancer, antioxidant and cardioprotective activity",
         "scaffold_smiles": "O=c1c(O[C@H]2CCCCO2)c(-c2ccccc2)oc2ccccc12",
+        "scaffold_id": "scaf_14",
         "bioactivities": [
             "Cardioprotective",
-            "Antioxidant",
+            "Anti-inflammatory",
             "Anticancer",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -3284,11 +3410,12 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "anti-inflammatory, anticancer, antioxidant and antimicrobial activity",
         "scaffold_smiles": "O=c1oc2cccc3c(=O)oc4cccc1c4c23",
+        "scaffold_id": "scaf_52",
         "bioactivities": [
-            "Antioxidant",
-            "Anticancer",
+            "Antimicrobial",
             "Anti-inflammatory",
-            "Antimicrobial"
+            "Anticancer",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -3310,11 +3437,12 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "anti-inflammatory, anticancer, antioxidant and antimicrobial activity",
         "scaffold_smiles": "O=c1oc2cc(O[C@H]3CCCCO3)cc3c(=O)oc4cccc1c4c23",
+        "scaffold_id": "scaf_53",
         "bioactivities": [
-            "Antioxidant",
-            "Anticancer",
+            "Antimicrobial",
             "Anti-inflammatory",
-            "Antimicrobial"
+            "Anticancer",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -3336,11 +3464,12 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "anti-inflammatory, anticancer, antioxidant and antimicrobial activity",
         "scaffold_smiles": "O=c1oc2cc(O[C@H]3CCCCO3)cc3c(=O)oc4cccc1c4c23",
+        "scaffold_id": "scaf_53",
         "bioactivities": [
-            "Antioxidant",
-            "Anticancer",
+            "Antimicrobial",
             "Anti-inflammatory",
-            "Antimicrobial"
+            "Anticancer",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -3362,11 +3491,12 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "anti-inflammatory, antioxidant, cardioprotective and neuroprotective activities",
         "scaffold_smiles": "c1ccc(-c2ccc3ccccc3[o+]2)cc1",
+        "scaffold_id": "scaf_54",
         "bioactivities": [
             "Cardioprotective",
+            "Anti-inflammatory",
             "Neuroprotective",
-            "Antioxidant",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -3388,11 +3518,12 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "anti-inflammatory, antioxidant, cardioprotective and neuroprotective activities",
         "scaffold_smiles": "c1ccc(-c2ccc3ccccc3[o+]2)cc1",
+        "scaffold_id": "scaf_54",
         "bioactivities": [
             "Cardioprotective",
+            "Anti-inflammatory",
             "Neuroprotective",
-            "Antioxidant",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -3414,11 +3545,12 @@ const compoundsData = [
         "ro5_violations": 3,
         "plant_part": "anti-inflammatory, antioxidant, cardioprotective and neuroprotective activities",
         "scaffold_smiles": "c1ccc(-c2[o+]c3ccccc3cc2O[C@H]2CCCCO2)cc1",
+        "scaffold_id": "scaf_1",
         "bioactivities": [
             "Cardioprotective",
+            "Anti-inflammatory",
             "Neuroprotective",
-            "Antioxidant",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -3440,10 +3572,11 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "anti-inflammatory, antioxidant and cardioprotective activity",
         "scaffold_smiles": "O=C(O[C@@H]1Cc2ccccc2O[C@@H]1c1ccccc1)c1ccccc1",
+        "scaffold_id": "scaf_13",
         "bioactivities": [
             "Cardioprotective",
-            "Antioxidant",
-            "Anti-inflammatory"
+            "Anti-inflammatory",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -3465,10 +3598,11 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "anti-inflammatory, antioxidant and cardioprotective activity",
         "scaffold_smiles": "O=c1oc2cc(Oc3ccccc3)cc3c(=O)oc4cccc1c4c23",
+        "scaffold_id": "scaf_55",
         "bioactivities": [
             "Cardioprotective",
-            "Antioxidant",
-            "Anti-inflammatory"
+            "Anti-inflammatory",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -3490,10 +3624,11 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "anti-inflammatory, antioxidant and cardioprotective activity",
         "scaffold_smiles": "c1ccc(C2CCc3ccccc3O2)cc1",
+        "scaffold_id": "scaf_56",
         "bioactivities": [
             "Cardioprotective",
-            "Antioxidant",
-            "Anti-inflammatory"
+            "Anti-inflammatory",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -3515,11 +3650,12 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "anti-inflammatory, anticancer, antioxidant and cardioprotective activity",
         "scaffold_smiles": "O=c1c(O[C@H]2CCCCO2)c(-c2ccccc2)oc2ccccc12",
+        "scaffold_id": "scaf_14",
         "bioactivities": [
             "Cardioprotective",
-            "Antioxidant",
+            "Anti-inflammatory",
             "Anticancer",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -3541,11 +3677,12 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "anti-inflammatory, anticancer, antioxidant and cardioprotective activity",
         "scaffold_smiles": "O=c1c(O[C@H]2CCCCO2)c(-c2ccccc2)oc2ccccc12",
+        "scaffold_id": "scaf_14",
         "bioactivities": [
             "Cardioprotective",
-            "Antioxidant",
+            "Anti-inflammatory",
             "Anticancer",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -3567,11 +3704,12 @@ const compoundsData = [
         "ro5_violations": 3,
         "plant_part": "anti-inflammatory, antioxidant, anti-carcinogenic and hepatoprotective activities",
         "scaffold_smiles": "O=C(OC1CCC2OC(=O)c3ccccc3-c3ccccc3C(=O)OCC2O1)c1cccc(Oc2cccc3c2C(=O)OC2C(COC(=O)c4ccccc4-3)OC(OC(=O)c3ccccc3)C3OC(=O)c4ccccc4-c4ccccc4C(=O)OC23)c1",
+        "scaffold_id": "scaf_57",
         "bioactivities": [
-            "Hepatoprotective",
-            "Antioxidant",
+            "Anti-inflammatory",
             "Anticancer",
-            "Anti-inflammatory"
+            "Antioxidant",
+            "Hepatoprotective"
         ],
         "database": "AMAZONIADB"
     },
@@ -3593,11 +3731,12 @@ const compoundsData = [
         "ro5_violations": 3,
         "plant_part": "anti-inflammatory, antioxidant, anti-carcinogenic and hepatoprotective activities",
         "scaffold_smiles": "O=C(OC1OCC2CC1OC(=O)c1ccccc1-c1ccccc1C(=O)O2)c1ccc2c(c1)Oc1cc3c(cc1O2)C(=O)O/C=C/OC(OC(=O)c1cccc(Oc2cccc(-c4ccccc4)c2)c1)C1OC(=O)c2ccccc2-c2ccccc2C(=O)OC1COC(=O)c1ccccc1-3",
+        "scaffold_id": "scaf_58",
         "bioactivities": [
-            "Hepatoprotective",
-            "Antioxidant",
+            "Anti-inflammatory",
             "Anticancer",
-            "Anti-inflammatory"
+            "Antioxidant",
+            "Hepatoprotective"
         ],
         "database": "AMAZONIADB"
     },
@@ -3619,11 +3758,12 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "anti-inflammatory, antioxidant, anti-carcinogenic and antimicrobial activity",
         "scaffold_smiles": "c1ccccc1",
+        "scaffold_id": "scaf_10",
         "bioactivities": [
-            "Antioxidant",
-            "Anticancer",
+            "Antimicrobial",
             "Anti-inflammatory",
-            "Antimicrobial"
+            "Anticancer",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -3645,11 +3785,12 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "anti-inflammatory, antioxidant, anti-carcinogenic and antimicrobial activity",
         "scaffold_smiles": "c1ccccc1",
+        "scaffold_id": "scaf_10",
         "bioactivities": [
-            "Antioxidant",
-            "Anticancer",
+            "Antimicrobial",
             "Anti-inflammatory",
-            "Antimicrobial"
+            "Anticancer",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -3671,6 +3812,7 @@ const compoundsData = [
         "ro5_violations": 3,
         "plant_part": "antioxidant and cardioprotective activity",
         "scaffold_smiles": "c1ccc([C@@H]2CCc3ccc4c(c3O2)[C@@H]2C[C@@](c3ccccc3)(Oc3ccccc32)O4)cc1",
+        "scaffold_id": "scaf_23",
         "bioactivities": [
             "Cardioprotective",
             "Antioxidant"
@@ -3695,10 +3837,11 @@ const compoundsData = [
         "ro5_violations": 3,
         "plant_part": "anti-inflammatory, antioxidant and anti-carcinogenic activity.",
         "scaffold_smiles": "c1ccc(-c2[o+]c3cccc(O[C@H]4CCCCO4)c3cc2O[C@H]2CCCCO2)cc1",
+        "scaffold_id": "scaf_30",
         "bioactivities": [
-            "Antioxidant",
+            "Anti-inflammatory",
             "Anticancer",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -3720,10 +3863,11 @@ const compoundsData = [
         "ro5_violations": 3,
         "plant_part": "anti-inflammatory, antioxidant and anti-carcinogenic activity.",
         "scaffold_smiles": "O=c1cc2oc(-c3ccccc3)c(O[C@H]3CCCCO3)cc-2c(O[C@H]2CCCCO2)c1",
+        "scaffold_id": "scaf_59",
         "bioactivities": [
-            "Antioxidant",
+            "Anti-inflammatory",
             "Anticancer",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -3745,10 +3889,11 @@ const compoundsData = [
         "ro5_violations": 3,
         "plant_part": "anti-inflammatory, antioxidant and anti-carcinogenic activity.",
         "scaffold_smiles": "c1ccc(-c2[o+]c3cccc(O[C@H]4CCCCO4)c3cc2O[C@@H]2CCCCO2)cc1",
+        "scaffold_id": "scaf_60",
         "bioactivities": [
-            "Antioxidant",
+            "Anti-inflammatory",
             "Anticancer",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -3770,10 +3915,11 @@ const compoundsData = [
         "ro5_violations": 3,
         "plant_part": "anti-inflammatory, antioxidant and anti-carcinogenic activity.",
         "scaffold_smiles": "c1ccc(-c2[o+]c3cccc(O[C@H]4CCCCO4)c3cc2O[C@H]2CCCCO2)cc1",
+        "scaffold_id": "scaf_30",
         "bioactivities": [
-            "Antioxidant",
+            "Anti-inflammatory",
             "Anticancer",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -3795,10 +3941,11 @@ const compoundsData = [
         "ro5_violations": 3,
         "plant_part": "anti-inflammatory, antioxidant and anti-carcinogenic activity.",
         "scaffold_smiles": "c1ccc(-c2[o+]c3cccc(O[C@H]4CCCCO4)c3cc2O[C@H]2CCCCO2)cc1",
+        "scaffold_id": "scaf_30",
         "bioactivities": [
-            "Antioxidant",
+            "Anti-inflammatory",
             "Anticancer",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -3820,10 +3967,11 @@ const compoundsData = [
         "ro5_violations": 3,
         "plant_part": "anti-inflammatory, antioxidant and anti-carcinogenic activity.",
         "scaffold_smiles": "c1ccc(-c2[o+]c3cccc(O[C@H]4CCCCO4)c3cc2O[C@H]2CCCCO2)cc1",
+        "scaffold_id": "scaf_30",
         "bioactivities": [
-            "Antioxidant",
+            "Anti-inflammatory",
             "Anticancer",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -3845,10 +3993,11 @@ const compoundsData = [
         "ro5_violations": 3,
         "plant_part": "anti-inflammatory, antioxidant and anti-carcinogenic activity.",
         "scaffold_smiles": "c1ccc(-c2[o+]c3cccc(O[C@H]4CCCCO4)c3cc2O[C@H]2CCCCO2)cc1",
+        "scaffold_id": "scaf_30",
         "bioactivities": [
-            "Antioxidant",
+            "Anti-inflammatory",
             "Anticancer",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -3870,10 +4019,11 @@ const compoundsData = [
         "ro5_violations": 3,
         "plant_part": "anti-inflammatory, antioxidant and anti-carcinogenic activity.",
         "scaffold_smiles": "c1ccc(-c2[o+]c3ccccc3cc2O[C@H]2CCCCO2)cc1",
+        "scaffold_id": "scaf_1",
         "bioactivities": [
-            "Antioxidant",
+            "Anti-inflammatory",
             "Anticancer",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -3895,10 +4045,11 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "anti-inflammatory, antioxidant and anti-carcinogenic activity.",
         "scaffold_smiles": "c1ccc(-c2[o+]c3ccccc3cc2O[C@H]2CCCCO2)cc1",
+        "scaffold_id": "scaf_1",
         "bioactivities": [
-            "Antioxidant",
+            "Anti-inflammatory",
             "Anticancer",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -3920,11 +4071,12 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "anti-inflammatory, antioxidant, neuroprotective and cardioprotective activity",
         "scaffold_smiles": "O=c1c(O[C@H]2CCCCO2)c(-c2ccccc2)oc2ccccc12",
+        "scaffold_id": "scaf_14",
         "bioactivities": [
             "Cardioprotective",
+            "Anti-inflammatory",
             "Neuroprotective",
-            "Antioxidant",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -3946,11 +4098,12 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "anti-inflammatory, antioxidant, neuroprotective and cardioprotective activity",
         "scaffold_smiles": "O=c1c(OC2CCCCO2)c(-c2ccccc2)oc2ccccc12",
+        "scaffold_id": "scaf_7",
         "bioactivities": [
             "Cardioprotective",
+            "Anti-inflammatory",
             "Neuroprotective",
-            "Antioxidant",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -3972,11 +4125,12 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "anti-inflammatory, antioxidant, neuroprotective and cardioprotective activity",
         "scaffold_smiles": "O=c1c(OC2CCCCO2)c(-c2ccccc2)oc2ccccc12",
+        "scaffold_id": "scaf_7",
         "bioactivities": [
             "Cardioprotective",
+            "Anti-inflammatory",
             "Neuroprotective",
-            "Antioxidant",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -3998,11 +4152,12 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "anti-inflammatory, antioxidant, neuroprotective and cardioprotective activity",
         "scaffold_smiles": "O=c1cc(-c2cccc(O[C@H]3CCCCO3)c2)oc2ccccc12",
+        "scaffold_id": "scaf_61",
         "bioactivities": [
             "Cardioprotective",
+            "Anti-inflammatory",
             "Neuroprotective",
-            "Antioxidant",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -4024,11 +4179,12 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "anti-inflammatory, antioxidant, neuroprotective and cardioprotective activity",
         "scaffold_smiles": "O=c1c(O[C@@H]2CCCCO2)c(-c2ccccc2)oc2ccccc12",
+        "scaffold_id": "scaf_41",
         "bioactivities": [
             "Cardioprotective",
+            "Anti-inflammatory",
             "Neuroprotective",
-            "Antioxidant",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -4050,11 +4206,12 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "anti-inflammatory, antioxidant, neuroprotective and cardioprotective activity",
         "scaffold_smiles": "O=c1c(O[C@H]2CCCCO2)c(-c2ccccc2)oc2ccccc12",
+        "scaffold_id": "scaf_14",
         "bioactivities": [
             "Cardioprotective",
+            "Anti-inflammatory",
             "Neuroprotective",
-            "Antioxidant",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -4076,11 +4233,12 @@ const compoundsData = [
         "ro5_violations": 3,
         "plant_part": "anti-inflammatory, antioxidant, neuroprotective and cardioprotective activity",
         "scaffold_smiles": "O=c1c(OC2CCCCO2)c(-c2ccccc2)oc2ccccc12",
+        "scaffold_id": "scaf_7",
         "bioactivities": [
             "Cardioprotective",
+            "Anti-inflammatory",
             "Neuroprotective",
-            "Antioxidant",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -4102,11 +4260,12 @@ const compoundsData = [
         "ro5_violations": 3,
         "plant_part": "anti-inflammatory, antioxidant, neuroprotective and cardioprotective activity",
         "scaffold_smiles": "O=c1c(O[C@H]2CCCCO2)c(-c2ccccc2)oc2ccccc12",
+        "scaffold_id": "scaf_14",
         "bioactivities": [
             "Cardioprotective",
+            "Anti-inflammatory",
             "Neuroprotective",
-            "Antioxidant",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -4128,11 +4287,12 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "antioxidant, anti-inflammatory, anticancer and cardioprotective activities.",
         "scaffold_smiles": "O=C1C[C@@H](c2ccccc2)Oc2cccc(O[C@H]3CCCCO3)c21",
+        "scaffold_id": "scaf_62",
         "bioactivities": [
             "Cardioprotective",
-            "Antioxidant",
+            "Anti-inflammatory",
             "Anticancer",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -4154,11 +4314,12 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "antioxidant, anti-inflammatory, anticancer and cardioprotective activities.",
         "scaffold_smiles": "O=C1C[C@@H](c2ccccc2)Oc2cc(O[C@H]3CCCCO3)ccc21",
+        "scaffold_id": "scaf_63",
         "bioactivities": [
             "Cardioprotective",
-            "Antioxidant",
+            "Anti-inflammatory",
             "Anticancer",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -4180,11 +4341,12 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "antioxidant, anti-inflammatory, anticancer and cardioprotective activities.",
         "scaffold_smiles": "O=C1C[C@@H](c2ccccc2)Oc2ccccc21",
+        "scaffold_id": "scaf_29",
         "bioactivities": [
             "Cardioprotective",
-            "Antioxidant",
+            "Anti-inflammatory",
             "Anticancer",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -4206,11 +4368,12 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "antioxidant, anti-inflammatory, cardioprotective and neuroprotective activities",
         "scaffold_smiles": "c1ccc([C@@H]2CCc3ccccc3O2)cc1",
+        "scaffold_id": "scaf_12",
         "bioactivities": [
             "Cardioprotective",
+            "Anti-inflammatory",
             "Neuroprotective",
-            "Antioxidant",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -4232,11 +4395,12 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "antioxidant, anti-inflammatory, cardioprotective and neuroprotective activities",
         "scaffold_smiles": "c1ccc([C@@H]2CCc3ccccc3O2)cc1",
+        "scaffold_id": "scaf_12",
         "bioactivities": [
             "Cardioprotective",
+            "Anti-inflammatory",
             "Neuroprotective",
-            "Antioxidant",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -4258,11 +4422,12 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "antioxidant, anti-inflammatory, cardioprotective and neuroprotective activities",
         "scaffold_smiles": "O=C(O[C@@H]1Cc2ccccc2O[C@@H]1c1ccccc1)c1ccccc1",
+        "scaffold_id": "scaf_13",
         "bioactivities": [
             "Cardioprotective",
+            "Anti-inflammatory",
             "Neuroprotective",
-            "Antioxidant",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -4284,11 +4449,12 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "antioxidant, anti-inflammatory, cardioprotective and neuroprotective activities",
         "scaffold_smiles": "O=C(Oc1cccc([C@@H]2CCc3ccccc3O2)c1)c1ccccc1",
+        "scaffold_id": "scaf_64",
         "bioactivities": [
             "Cardioprotective",
+            "Anti-inflammatory",
             "Neuroprotective",
-            "Antioxidant",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -4310,11 +4476,12 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "antioxidant, anti-inflammatory, cardioprotective and neuroprotective activities",
         "scaffold_smiles": "O=C(O[C@@H]1Cc2ccccc2O[C@@H]1c1ccccc1)c1ccccc1",
+        "scaffold_id": "scaf_13",
         "bioactivities": [
             "Cardioprotective",
+            "Anti-inflammatory",
             "Neuroprotective",
-            "Antioxidant",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -4336,11 +4503,12 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "antioxidant, anti-inflammatory, cardioprotective and neuroprotective activities",
         "scaffold_smiles": "O=C(O[C@H]1Cc2ccccc2O[C@@H]1c1ccccc1)c1ccccc1",
+        "scaffold_id": "scaf_65",
         "bioactivities": [
             "Cardioprotective",
+            "Anti-inflammatory",
             "Neuroprotective",
-            "Antioxidant",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -4362,11 +4530,12 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "antioxidant and anti-inflammatory, anticancer and cardioprotective activities",
         "scaffold_smiles": "O=c1oc2cc(O[C@H]3CCCCO3)cc3c(=O)oc4cccc1c4c23",
+        "scaffold_id": "scaf_53",
         "bioactivities": [
             "Cardioprotective",
-            "Antioxidant",
+            "Anti-inflammatory",
             "Anticancer",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -4388,11 +4557,12 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "antioxidant and anti-inflammatory, anticancer and cardioprotective activities",
         "scaffold_smiles": "O=C(O[C@H]1CCCCO1)c1ccccc1",
+        "scaffold_id": "scaf_66",
         "bioactivities": [
             "Cardioprotective",
-            "Antioxidant",
+            "Anti-inflammatory",
             "Anticancer",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -4414,11 +4584,12 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "antioxidant and anti-inflammatory, anticancer and cardioprotective activities",
         "scaffold_smiles": "c1ccccc1",
+        "scaffold_id": "scaf_10",
         "bioactivities": [
             "Cardioprotective",
-            "Antioxidant",
+            "Anti-inflammatory",
             "Anticancer",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -4440,11 +4611,12 @@ const compoundsData = [
         "ro5_violations": 3,
         "plant_part": "antioxidant and anti-inflammatory, anticancer and cardioprotective activities",
         "scaffold_smiles": "O=C(OC[C@@H]1CC[C@@H](OC(=O)c2ccccc2)[C@H](OC(=O)c2ccccc2)O1)c1ccccc1",
+        "scaffold_id": "scaf_67",
         "bioactivities": [
             "Cardioprotective",
-            "Antioxidant",
+            "Anti-inflammatory",
             "Anticancer",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -4466,11 +4638,12 @@ const compoundsData = [
         "ro5_violations": 3,
         "plant_part": "antioxidant and anti-inflammatory, anticancer and cardioprotective activities",
         "scaffold_smiles": "O=C(OC[C@@H]1C[C@H](OC(=O)c2ccccc2)[C@@H](OC(=O)c2ccccc2)[C@H](OC(=O)c2ccccc2)O1)c1ccccc1",
+        "scaffold_id": "scaf_68",
         "bioactivities": [
             "Cardioprotective",
-            "Antioxidant",
+            "Anti-inflammatory",
             "Anticancer",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -4492,11 +4665,12 @@ const compoundsData = [
         "ro5_violations": 3,
         "plant_part": "antioxidant and anti-inflammatory, anticancer and cardioprotective activities",
         "scaffold_smiles": "O=C(OC[C@H]1O[C@@H](OC(=O)c2ccccc2)[C@H](OC(=O)c2ccccc2)[C@@H](OC(=O)c2ccccc2)[C@@H]1OC(=O)c1ccccc1)c1ccccc1",
+        "scaffold_id": "scaf_69",
         "bioactivities": [
             "Cardioprotective",
-            "Antioxidant",
+            "Anti-inflammatory",
             "Anticancer",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -4518,11 +4692,12 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "antioxidant and anti-inflammatory, anticancer and cardioprotective activities",
         "scaffold_smiles": "O=C(OC[C@@H]1CCCCO1)c1ccccc1",
+        "scaffold_id": "scaf_70",
         "bioactivities": [
             "Cardioprotective",
-            "Antioxidant",
+            "Anti-inflammatory",
             "Anticancer",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -4544,11 +4719,12 @@ const compoundsData = [
         "ro5_violations": 3,
         "plant_part": "antioxidant and anti-inflammatory, anticancer and cardioprotective activities",
         "scaffold_smiles": "O=C(O[C@H]1CCO[C@@H]2COC(=O)c3ccccc3-c3ccccc3C(=O)[C@@H]12)c1ccccc1",
+        "scaffold_id": "scaf_71",
         "bioactivities": [
             "Cardioprotective",
-            "Antioxidant",
+            "Anti-inflammatory",
             "Anticancer",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -4570,11 +4746,12 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "antioxidant and anti-inflammatory, anticancer and cardioprotective activities",
         "scaffold_smiles": "O=C1CNC(=O)CNC(=O)CNC(=O)C(Cc2c[nH]c3ccccc23)NC(=O)C2CCCN2C(=O)CNC(=O)CNC(=O)CN1",
+        "scaffold_id": "scaf_72",
         "bioactivities": [
             "Cardioprotective",
-            "Antioxidant",
+            "Anti-inflammatory",
             "Anticancer",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -4596,14 +4773,15 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "antioxidant, anti-inflammatory, anticancer, neuroprotective, cardioprotective, antibacterial and antiviral activities.",
         "scaffold_smiles": "O=c1c(O[C@H]2CCCCO2)c(-c2ccccc2)oc2ccccc12",
+        "scaffold_id": "scaf_14",
         "bioactivities": [
-            "Cardioprotective",
-            "Neuroprotective",
+            "Anticancer",
             "Antioxidant",
+            "Cardioprotective",
             "Antiviral",
             "Anti-inflammatory",
             "Antimicrobial",
-            "Anticancer"
+            "Neuroprotective"
         ],
         "database": "AMAZONIADB"
     },
@@ -4625,14 +4803,15 @@ const compoundsData = [
         "ro5_violations": 3,
         "plant_part": "antioxidant, anti-inflammatory, anticancer, neuroprotective, cardioprotective, antibacterial and antiviral activities.",
         "scaffold_smiles": "O=c1c(O[C@H]2CCCCO2)c(-c2cccc(O[C@H]3CCCCO3)c2)oc2ccccc12",
+        "scaffold_id": "scaf_73",
         "bioactivities": [
-            "Cardioprotective",
-            "Neuroprotective",
+            "Anticancer",
             "Antioxidant",
+            "Cardioprotective",
             "Antiviral",
             "Anti-inflammatory",
             "Antimicrobial",
-            "Anticancer"
+            "Neuroprotective"
         ],
         "database": "AMAZONIADB"
     },
@@ -4654,6 +4833,7 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "anti-inflammatory activity",
         "scaffold_smiles": "C1=C2C(CCC3CCCC[C@@H]23)C2CC[C@H]3CCCCC3[C@H]2C1",
+        "scaffold_id": "scaf_24",
         "bioactivities": [
             "Anti-inflammatory"
         ],
@@ -4677,13 +4857,14 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "anti-inflammatory, antioxidant, antidiabetic, anticacerogenic, antimicrobial, \ncardioprotective and hepatoprotective activity. ",
         "scaffold_smiles": "C1CC[C@@H]2CCC3C4CCC5CCC[C@@H]5[C@H]4CC[C@@H]3C2C1",
+        "scaffold_id": "scaf_25",
         "bioactivities": [
-            "Cardioprotective",
             "Antioxidant",
-            "Anti-inflammatory",
+            "Cardioprotective",
+            "Anti-diabetic",
             "Antimicrobial",
-            "Hepatoprotective",
-            "Anti-diabetic"
+            "Anti-inflammatory",
+            "Hepatoprotective"
         ],
         "database": "AMAZONIADB"
     },
@@ -4705,6 +4886,7 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "anti-inflammatory activity",
         "scaffold_smiles": "C1=C2C(CCC3CCCC[C@@H]23)C2CC[C@H]3CCCCC3[C@H]2C1",
+        "scaffold_id": "scaf_24",
         "bioactivities": [
             "Anti-inflammatory"
         ],
@@ -4728,13 +4910,14 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "anti-inflammatory, antioxidant, antidiabetic, anticacerogenic, antimicrobial, \ncardioprotective and hepatoprotective activity. ",
         "scaffold_smiles": "C1CC[C@@H]2CCC3C4CCC5CCC[C@@H]5[C@H]4CC[C@@H]3C2C1",
+        "scaffold_id": "scaf_25",
         "bioactivities": [
-            "Cardioprotective",
             "Antioxidant",
-            "Anti-inflammatory",
+            "Cardioprotective",
+            "Anti-diabetic",
             "Antimicrobial",
-            "Hepatoprotective",
-            "Anti-diabetic"
+            "Anti-inflammatory",
+            "Hepatoprotective"
         ],
         "database": "AMAZONIADB"
     },
@@ -4756,10 +4939,11 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "Antioxidant, anti-inflammatory, neuroprotective",
         "scaffold_smiles": "c1ccc(O[C@H]2CCCCO2)cc1",
+        "scaffold_id": "scaf_47",
         "bioactivities": [
+            "Anti-inflammatory",
             "Neuroprotective",
-            "Antioxidant",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -4781,9 +4965,10 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "Antioxidant, may have anti-inflammatory properties",
         "scaffold_smiles": "Acyclic",
+        "scaffold_id": "acyclic",
         "bioactivities": [
-            "Antioxidant",
-            "Anti-inflammatory"
+            "Anti-inflammatory",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -4805,10 +4990,11 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "Antioxidant, anti-inflammatory, anticancer",
         "scaffold_smiles": "c1ccc(CCO[C@H]2CCCCO2)cc1",
+        "scaffold_id": "scaf_74",
         "bioactivities": [
-            "Antioxidant",
+            "Anti-inflammatory",
             "Anticancer",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -4830,10 +5016,11 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "Antioxidant, ocular protector (helps prevent macular degeneration), anti-inflammatory",
         "scaffold_smiles": "C1=C[C@H](/C=C/C=C/C=C/C=C/C=C/C=C/C=C/C=C/C=C/C2=CCCCC2)CCC1",
+        "scaffold_id": "scaf_75",
         "bioactivities": [
+            "Anti-inflammatory",
             "Eye Protector",
-            "Antioxidant",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -4855,10 +5042,11 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "Antioxidant, ocular protector (helps prevent macular degeneration), anti-inflammatory",
         "scaffold_smiles": "C1=C(/C=C/C=C/C=C/C=C/C=C/C=C/C=C/C=C/C=C/C2=CCCCC2)CCCC1",
+        "scaffold_id": "scaf_76",
         "bioactivities": [
+            "Anti-inflammatory",
             "Eye Protector",
-            "Antioxidant",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -4880,6 +5068,7 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "Antioxidant properties and protection against blue light damage",
         "scaffold_smiles": "C1=C[C@H](/C=C/C=C/C=C/C=C/C=C/C=C/C=C/C=C/C=C/C2=CCCCC2)CCC1",
+        "scaffold_id": "scaf_75",
         "bioactivities": [
             "Eye Protector",
             "Antioxidant"
@@ -4904,10 +5093,11 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "Antioxidant, anti-inflammatory, may support bone health and cancer prevention",
         "scaffold_smiles": "C1=C(/C=C/C=C/C=C/C=C/C=C/C=C/C=C/C=C/C=C/C2=CCCCC2)CCCC1",
+        "scaffold_id": "scaf_76",
         "bioactivities": [
-            "Antioxidant",
+            "Anti-inflammatory",
             "Anticancer",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -4929,11 +5119,12 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "Antioxidant, anticancer, anti-inflammatory, important for eye and skin health",
         "scaffold_smiles": "C1=C[C@H](/C=C/C=C/C=C/C=C/C=C/C=C/C=C/C=C/C=C/C2=CCCCC2)CCC1",
+        "scaffold_id": "scaf_75",
         "bioactivities": [
+            "Anti-inflammatory",
             "Eye Protector",
-            "Antioxidant",
             "Anticancer",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -4955,11 +5146,12 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "Antioxidant, anticancer, anti-inflammatory, improves eye health, can be converted to vitamin A in the body",
         "scaffold_smiles": "C1=C(/C=C/C=C/C=C/C=C/C=C/C=C/C=C/C=C/C=C/C2=CCCCC2)CCCC1",
+        "scaffold_id": "scaf_76",
         "bioactivities": [
+            "Anti-inflammatory",
             "Eye Protector",
-            "Antioxidant",
             "Anticancer",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -4981,10 +5173,11 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "Antioxidant properties, anti-inflammatory, with emphasis on eye health and prevention of degenerative diseases",
         "scaffold_smiles": "C1=C(/C=C/C=C/C=C/C=C\\C=C\\C=C\\C=C\\C=C\\C=C\\C2=CCCCC2)CCCC1",
+        "scaffold_id": "scaf_77",
         "bioactivities": [
+            "Anti-inflammatory",
             "Eye Protector",
-            "Antioxidant",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -5006,6 +5199,7 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "Similar to \u03b2-carotene, with antioxidant properties and effects on eye health",
         "scaffold_smiles": "C1=C(/C=C/C=C\\C=C\\C=C\\C=C\\C=C\\C=C\\C=C\\C=C\\C2=CCCCC2)CCCC1",
+        "scaffold_id": "scaf_78",
         "bioactivities": [
             "Eye Protector",
             "Antioxidant"
@@ -5030,11 +5224,12 @@ const compoundsData = [
         "ro5_violations": 3,
         "plant_part": "Antioxidant, anti-inflammatory, cardioprotective, may aid skin health and cholesterol control",
         "scaffold_smiles": "c1ccc([C@@H]2C[C@@H](c3cccc4c3O[C@H](c3ccccc3)CC4)c3ccccc3O2)cc1",
+        "scaffold_id": "scaf_19",
         "bioactivities": [
+            "Hypocholesterolemic",
             "Cardioprotective",
-            "Antioxidant",
             "Anti-inflammatory",
-            "Hypocholesterolemic"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -5056,10 +5251,11 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "Anti-inflammatory, antioxidant, may help control glucose and protect the nervous system",
         "scaffold_smiles": "c1cc[nH+]cc1",
+        "scaffold_id": "scaf_79",
         "bioactivities": [
-            "Antioxidant",
+            "Anti-inflammatory",
             "Anti-diabetic",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -5081,9 +5277,10 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "Antioxidant, anti-inflammatory",
         "scaffold_smiles": "c1ccccc1",
+        "scaffold_id": "scaf_10",
         "bioactivities": [
-            "Antioxidant",
-            "Anti-inflammatory"
+            "Anti-inflammatory",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -5105,11 +5302,12 @@ const compoundsData = [
         "ro5_violations": 3,
         "plant_part": "Antioxidant, anti-inflammatory, anticancer, neuroprotective",
         "scaffold_smiles": "O=c1c(O[C@H]2CCC[C@@H](CO[C@H]3CCCCO3)O2)c(-c2ccccc2)oc2ccccc12",
+        "scaffold_id": "scaf_8",
         "bioactivities": [
+            "Anti-inflammatory",
             "Neuroprotective",
-            "Antioxidant",
             "Anticancer",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -5131,6 +5329,7 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "While it has an important energetic effect, excessive consumption is associated with an increased risk of metabolic diseases",
         "scaffold_smiles": "C1CC[C@@H](OC2CCCO2)OC1",
+        "scaffold_id": "scaf_80",
         "bioactivities": [
             "Anti-obesity"
         ],
@@ -5154,10 +5353,11 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "Antioxidant, anti-inflammatory, may help cardiovascular protection",
         "scaffold_smiles": "c1ccccc1",
+        "scaffold_id": "scaf_10",
         "bioactivities": [
             "Cardioprotective",
-            "Antioxidant",
-            "Anti-inflammatory"
+            "Anti-inflammatory",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -5179,10 +5379,11 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "Antioxidant, antimicrobial, with some evidence of anticancer activity",
         "scaffold_smiles": "c1ccc2c(O[C@H]3CCCCO3)cccc2c1",
+        "scaffold_id": "scaf_81",
         "bioactivities": [
-            "Antioxidant",
+            "Antimicrobial",
             "Anticancer",
-            "Antimicrobial"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -5204,10 +5405,11 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "Antioxidant, anti-inflammatory, cardiovascular protector",
         "scaffold_smiles": "c1ccccc1",
+        "scaffold_id": "scaf_10",
         "bioactivities": [
             "Cardioprotective",
-            "Antioxidant",
-            "Anti-inflammatory"
+            "Anti-inflammatory",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -5229,11 +5431,12 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "Antioxidants, antimicrobials, anti-inflammatory, may have anticancer effects",
         "scaffold_smiles": "c1ccccc1",
+        "scaffold_id": "scaf_10",
         "bioactivities": [
-            "Antioxidant",
+            "Antimicrobial",
             "Anticancer",
-            "Anti-inflammatory",
-            "Antimicrobial"
+            "Antioxidant",
+            "Anti-inflammatory"
         ],
         "database": "AMAZONIADB"
     },
@@ -5255,10 +5458,11 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "Antioxidants, anti-inflammatory, with cardiovascular protective properties",
         "scaffold_smiles": "O=C1C[C@@H](Cc2cnc[nH]2)CO1",
+        "scaffold_id": "scaf_82",
         "bioactivities": [
             "Cardioprotective",
-            "Antioxidant",
-            "Anti-inflammatory"
+            "Anti-inflammatory",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -5280,10 +5484,11 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "Antioxidants, anti-inflammatory, with cardiovascular protective properties",
         "scaffold_smiles": "c1ccccc1",
+        "scaffold_id": "scaf_10",
         "bioactivities": [
             "Cardioprotective",
-            "Antioxidant",
-            "Anti-inflammatory"
+            "Anti-inflammatory",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -5305,10 +5510,11 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "Laxative, antimicrobial, anti-inflammatory, anticancer",
         "scaffold_smiles": "O=C1c2ccccc2C(=O)c2ccccc21",
+        "scaffold_id": "scaf_83",
         "bioactivities": [
+            "Antimicrobial",
             "Anticancer",
-            "Anti-inflammatory",
-            "Antimicrobial"
+            "Anti-inflammatory"
         ],
         "database": "AMAZONIADB"
     },
@@ -5330,10 +5536,11 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "Anti-inflammatory, antioxidants, antimicrobials",
         "scaffold_smiles": "O=C1c2ccccc2Cc2ccccc21",
+        "scaffold_id": "scaf_84",
         "bioactivities": [
-            "Antioxidant",
             "Anti-inflammatory",
-            "Antimicrobial"
+            "Antimicrobial",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -5355,10 +5562,11 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "Anti-inflammatory, antioxidants, antimicrobials",
         "scaffold_smiles": "O=c1ccc2ccccc2o1",
+        "scaffold_id": "scaf_11",
         "bioactivities": [
-            "Antioxidant",
             "Anti-inflammatory",
-            "Antimicrobial"
+            "Antimicrobial",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -5380,6 +5588,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "anticancer activity",
         "scaffold_smiles": "c1ccc2c(c1)C[C@H]1NCCc3cc4c(c-2c31)OCO4",
+        "scaffold_id": "scaf_85",
         "bioactivities": [
             "Anticancer"
         ],
@@ -5403,6 +5612,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "anticancer activity",
         "scaffold_smiles": "c1ccc2c(c1)OCO2",
+        "scaffold_id": "scaf_86",
         "bioactivities": [
             "Anticancer"
         ],
@@ -5426,6 +5636,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "anticancer activity",
         "scaffold_smiles": "c1ccc2c(c1)C[C@H]1NCCc3cc4c(c-2c31)OCO4",
+        "scaffold_id": "scaf_85",
         "bioactivities": [
             "Anticancer"
         ],
@@ -5449,6 +5660,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "anticancer activity",
         "scaffold_smiles": "c1ccccc1",
+        "scaffold_id": "scaf_10",
         "bioactivities": [
             "Anticancer"
         ],
@@ -5472,6 +5684,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "anticancer activity",
         "scaffold_smiles": "c1ccc2[nH]ccc2c1",
+        "scaffold_id": "scaf_87",
         "bioactivities": [
             "Anticancer"
         ],
@@ -5495,6 +5708,7 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "anticancer activity",
         "scaffold_smiles": "c1ccc2[nH]ccc2c1",
+        "scaffold_id": "scaf_87",
         "bioactivities": [
             "Anticancer"
         ],
@@ -5518,6 +5732,7 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "anticancer activity",
         "scaffold_smiles": "c1ccc2[nH]ccc2c1",
+        "scaffold_id": "scaf_87",
         "bioactivities": [
             "Anticancer"
         ],
@@ -5541,6 +5756,7 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "anticancer activity",
         "scaffold_smiles": "c1ccc2[nH]ccc2c1",
+        "scaffold_id": "scaf_87",
         "bioactivities": [
             "Anticancer"
         ],
@@ -5564,6 +5780,7 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "anticancer activity",
         "scaffold_smiles": "c1ccc2[nH]ccc2c1",
+        "scaffold_id": "scaf_87",
         "bioactivities": [
             "Anticancer"
         ],
@@ -5587,6 +5804,7 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "anticancer activity",
         "scaffold_smiles": "c1ccc2[nH]ccc2c1",
+        "scaffold_id": "scaf_87",
         "bioactivities": [
             "Anticancer"
         ],
@@ -5610,6 +5828,7 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "anticancer activity",
         "scaffold_smiles": "c1ccc2[nH]ccc2c1",
+        "scaffold_id": "scaf_87",
         "bioactivities": [
             "Anticancer"
         ],
@@ -5633,6 +5852,7 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "anticancer activity",
         "scaffold_smiles": "c1ccc2[nH]ccc2c1",
+        "scaffold_id": "scaf_87",
         "bioactivities": [
             "Anticancer"
         ],
@@ -5656,6 +5876,7 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "anticancer activity",
         "scaffold_smiles": "c1ccc2[nH]ccc2c1",
+        "scaffold_id": "scaf_87",
         "bioactivities": [
             "Anticancer"
         ],
@@ -5679,6 +5900,7 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "anticancer activity",
         "scaffold_smiles": "O=C1OCC=C1CCCCCCCCCCCCC[C@@H]1CC[C@H]([C@H]2CCCO2)O1",
+        "scaffold_id": "scaf_88",
         "bioactivities": [
             "Anticancer"
         ],
@@ -5702,6 +5924,7 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "anticancer activity",
         "scaffold_smiles": "O=C1OCC=C1CCCCCCCCCCCCC[C@H]1CC[C@H]([C@H]2CCCO2)O1",
+        "scaffold_id": "scaf_89",
         "bioactivities": [
             "Anticancer"
         ],
@@ -5725,11 +5948,12 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "Antioxidant, Antimicrobial, Anti-inflammatory, Anticancer",
         "scaffold_smiles": "c1ccccc1",
+        "scaffold_id": "scaf_10",
         "bioactivities": [
-            "Antioxidant",
+            "Antimicrobial",
             "Anticancer",
-            "Anti-inflammatory",
-            "Antimicrobial"
+            "Antioxidant",
+            "Anti-inflammatory"
         ],
         "database": "AMAZONIADB"
     },
@@ -5751,6 +5975,7 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "Energy source, Potential anti-inflammatory (at certain concentrations), May increase the risk of heart disease at high concentrations",
         "scaffold_smiles": "Acyclic",
+        "scaffold_id": "acyclic",
         "bioactivities": [
             "Cardioprotective",
             "Anti-inflammatory"
@@ -5775,10 +6000,11 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "Anti-inflammatory, Antioxidant, Cardioprotective",
         "scaffold_smiles": "Acyclic",
+        "scaffold_id": "acyclic",
         "bioactivities": [
             "Cardioprotective",
-            "Antioxidant",
-            "Anti-inflammatory"
+            "Anti-inflammatory",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -5800,6 +6026,7 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "Energy source, Potential anti-inflammatory, May have cardiovascular health benefits",
         "scaffold_smiles": "Acyclic",
+        "scaffold_id": "acyclic",
         "bioactivities": [
             "Cardioprotective",
             "Anti-inflammatory"
@@ -5824,11 +6051,12 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "Anti-inflammatory, Cardioprotective, Reduces LDL cholesterol, Potential anticancer",
         "scaffold_smiles": "Acyclic",
+        "scaffold_id": "acyclic",
         "bioactivities": [
+            "Hypocholesterolemic",
             "Cardioprotective",
-            "Anticancer",
             "Anti-inflammatory",
-            "Hypocholesterolemic"
+            "Anticancer"
         ],
         "database": "AMAZONIADB"
     },
@@ -5850,11 +6078,12 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "Antioxidant, Cardioprotective, Anti-inflammatory, Regulates lipid metabolism",
         "scaffold_smiles": "Acyclic",
+        "scaffold_id": "acyclic",
         "bioactivities": [
+            "Anti-obesity",
             "Cardioprotective",
-            "Antioxidant",
             "Anti-inflammatory",
-            "Anti-obesity"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -5876,10 +6105,11 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "Antioxidant, Anti-inflammatory, Cardioprotective, Beneficial for brain and mental health",
         "scaffold_smiles": "Acyclic",
+        "scaffold_id": "acyclic",
         "bioactivities": [
             "Cardioprotective",
-            "Antioxidant",
-            "Anti-inflammatory"
+            "Anti-inflammatory",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -5901,6 +6131,7 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "Antioxidant, Eye protector (related to retinal health)",
         "scaffold_smiles": "C1=C(/C=C/C=C/C=C/C=C/C=C/C=C/C=C/C=C/C=C/[C@]23CCCCC2O3)CCCC1",
+        "scaffold_id": "scaf_90",
         "bioactivities": [
             "Eye Protector",
             "Antioxidant"
@@ -5925,6 +6156,7 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "Eye protector, Antioxidant",
         "scaffold_smiles": "C1=C(/C=C/C=C/C=C/C=C/C=C/C=C/C=C/C=C/C2C=C3CCCCC3O2)CCCC1",
+        "scaffold_id": "scaf_91",
         "bioactivities": [
             "Eye Protector",
             "Antioxidant"
@@ -5949,6 +6181,7 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "Antioxidant, Eye protector",
         "scaffold_smiles": "C(=C/C=C/C=C/C=C/C=C/[C@]12CCCCC1O2)\\C=C\\C=C\\C=C\\C=C\\[C@]12CCCCC1O2",
+        "scaffold_id": "scaf_92",
         "bioactivities": [
             "Eye Protector",
             "Antioxidant"
@@ -5973,11 +6206,12 @@ const compoundsData = [
         "ro5_violations": 3,
         "plant_part": "Antioxidant, Anti-inflammatory, Anticancer, Cardioprotective",
         "scaffold_smiles": "c1ccc(C2Oc3ccccc3CC2OC2(c3ccccc3)CCc3ccccc3O2)cc1",
+        "scaffold_id": "scaf_93",
         "bioactivities": [
             "Cardioprotective",
-            "Antioxidant",
+            "Anti-inflammatory",
             "Anticancer",
-            "Anti-inflammatory"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -5999,6 +6233,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "C(=C/c1ccccc1)\\c1ccccc1",
+        "scaffold_id": "scaf_22",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -6020,9 +6255,10 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "Precursor to phytosterols, Potential anti-inflammatory, Antioxidant",
         "scaffold_smiles": "C1CC2CC[C@@]34C[C@@]35CCCC[C@@H]5CC[C@H]4C2C1",
+        "scaffold_id": "scaf_94",
         "bioactivities": [
-            "Antioxidant",
-            "Anti-inflammatory"
+            "Anti-inflammatory",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -6044,10 +6280,11 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "Antioxidant, Cardioprotective, Anti-inflammatory",
         "scaffold_smiles": "C1=C2CCCCC2[C@H]2CCC3CCC[C@H]3[C@@H]2C1",
+        "scaffold_id": "scaf_26",
         "bioactivities": [
             "Cardioprotective",
-            "Antioxidant",
-            "Anti-inflammatory"
+            "Anti-inflammatory",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -6069,9 +6306,10 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "Antioxidant, Anti-inflammatory, Immune-protective",
         "scaffold_smiles": "C1=C2CCCCC2[C@H]2CCC3CCC[C@H]3[C@@H]2C1",
+        "scaffold_id": "scaf_26",
         "bioactivities": [
-            "Antioxidant",
             "Anti-inflammatory",
+            "Antioxidant",
             "Immunomodulatory"
         ],
         "database": "AMAZONIADB"
@@ -6094,10 +6332,11 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "Anti-inflammatory, Antioxidant, Cardioprotective",
         "scaffold_smiles": "C1=C2CCCCC2[C@H]2CCC3CCC[C@H]3[C@@H]2C1",
+        "scaffold_id": "scaf_26",
         "bioactivities": [
             "Cardioprotective",
-            "Antioxidant",
-            "Anti-inflammatory"
+            "Anti-inflammatory",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -6119,9 +6358,10 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "Reduces cholesterol, Potential anti-inflammatory",
         "scaffold_smiles": "C1CC[C@@H]2CC[C@H]3[C@@H]4CCCC4CC[C@@H]3C2C1",
+        "scaffold_id": "scaf_95",
         "bioactivities": [
-            "Anti-inflammatory",
-            "Hypocholesterolemic"
+            "Hypocholesterolemic",
+            "Anti-inflammatory"
         ],
         "database": "AMAZONIADB"
     },
@@ -6143,10 +6383,11 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "Antioxidant, antidiabetic, and anti-obesity activity",
         "scaffold_smiles": "c1ccc2c(c1)CCCO2",
+        "scaffold_id": "scaf_96",
         "bioactivities": [
-            "Antioxidant",
+            "Anti-obesity",
             "Anti-diabetic",
-            "Anti-obesity"
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -6168,6 +6409,7 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1OCC=C1CCCCCCCCCCCCCCC1CO1",
+        "scaffold_id": "scaf_97",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -6189,6 +6431,7 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1OCC=C1CCCCCCCCCCCCC1CO1",
+        "scaffold_id": "scaf_98",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -6210,6 +6453,7 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "anticancer activity",
         "scaffold_smiles": "O=C1OCC=C1CCCCCCCCCCCCC[C@H]1CC[C@@H]([C@@H]2CCCO2)O1",
+        "scaffold_id": "scaf_99",
         "bioactivities": [
             "Anticancer"
         ],
@@ -6233,6 +6477,7 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "anticancer activity",
         "scaffold_smiles": "O=C1OCC=C1CCCCCCCCCCCCC[C@H]1CC[C@H]([C@H]2CCCO2)O1",
+        "scaffold_id": "scaf_89",
         "bioactivities": [
             "Anticancer"
         ],
@@ -6256,6 +6501,7 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "anticancer activity",
         "scaffold_smiles": "O=C1OCC=C1CCCCCCCCCCCCC[C@H]1CC[C@H]([C@H]2CCCO2)O1",
+        "scaffold_id": "scaf_89",
         "bioactivities": [
             "Anticancer"
         ],
@@ -6279,6 +6525,7 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "anticancer activity",
         "scaffold_smiles": "O=C1CC[C@H](CCCCCCC[C@@H]2CC[C@@H](CCCC[C@@H]3CCCO3)O2)O1",
+        "scaffold_id": "scaf_100",
         "bioactivities": [
             "Anticancer"
         ],
@@ -6302,6 +6549,7 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "anticancer activity",
         "scaffold_smiles": "O=C1CC[C@H](CCCCCCC[C@@H]2CC[C@@H](CCCC[C@@H]3CCCO3)O2)O1",
+        "scaffold_id": "scaf_100",
         "bioactivities": [
             "Anticancer"
         ],
@@ -6325,6 +6573,7 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "anticancer activity",
         "scaffold_smiles": "O=C1OCC=C1CCCCCCCCCCCCC[C@H]1CC[C@H]([C@H]2CCCO2)O1",
+        "scaffold_id": "scaf_89",
         "bioactivities": [
             "Anticancer"
         ],
@@ -6348,6 +6597,7 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "anticancer activity",
         "scaffold_smiles": "O=C1OCC=C1CCCCCCCCCCCCC[C@@H]1CCCO1",
+        "scaffold_id": "scaf_101",
         "bioactivities": [
             "Anticancer"
         ],
@@ -6371,6 +6621,7 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "anticancer activity",
         "scaffold_smiles": "O=C1OCC=C1CCCCCCCCCCCCC[C@@H]1CCCO1",
+        "scaffold_id": "scaf_101",
         "bioactivities": [
             "Anticancer"
         ],
@@ -6394,6 +6645,7 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "anticancer activity",
         "scaffold_smiles": "O=C1OCC=C1CCCCCCCCCC1CCC(CCCCC2CCCO2)O1",
+        "scaffold_id": "scaf_102",
         "bioactivities": [
             "Anticancer"
         ],
@@ -6417,6 +6669,7 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1CCC(CCCCCCCC2CCC(CCCCC3CCCO3)O2)O1",
+        "scaffold_id": "scaf_103",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -6438,6 +6691,7 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1OCC=C1CCCCCCCCCC1CC[C@@H](CCCC[C@H]2CCCO2)O1",
+        "scaffold_id": "scaf_104",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -6459,6 +6713,7 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1OCC=C1CCCCCCCCCCCCC[C@H]1CC[C@H]([C@H]2CCCO2)O1",
+        "scaffold_id": "scaf_89",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -6480,6 +6735,7 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1OCC=C1CCCCCCCCCCCCCC1CCC(C2CCCO2)O1",
+        "scaffold_id": "scaf_105",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -6501,6 +6757,7 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "anticancer activity",
         "scaffold_smiles": "O=C1OCC=C1CCCCCCCCCCCCC[C@H]1CC[C@H]([C@H]2CCCO2)O1",
+        "scaffold_id": "scaf_89",
         "bioactivities": [
             "Anticancer"
         ],
@@ -6524,6 +6781,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1CC[C@H](CCCCCCCCCCCCCC2=CCOC2=O)O1",
+        "scaffold_id": "scaf_106",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -6545,6 +6803,7 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "anticancer activity",
         "scaffold_smiles": "O=C1OCC=C1CCCCCCCCCCCCC[C@H]1CC[C@@H]([C@@H]2CCCCO2)O1",
+        "scaffold_id": "scaf_107",
         "bioactivities": [
             "Anticancer"
         ],
@@ -6568,6 +6827,7 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1OCC=C1CCCCCCCCCCCCC[C@H]1CC[C@H]([C@H]2CCCO2)O1",
+        "scaffold_id": "scaf_89",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -6589,6 +6849,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "c1ccc([C@H]2OC[C@H]3[C@@H]2CO[C@@H]3c2ccccc2)cc1",
+        "scaffold_id": "scaf_108",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -6610,6 +6871,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "c1ccc([C@H]2OC[C@H]3[C@@H]2CO[C@@H]3c2ccccc2)cc1",
+        "scaffold_id": "scaf_108",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -6631,6 +6893,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "c1ccc2c(c1)C[C@@H]1NCCc3cccc-2c31",
+        "scaffold_id": "scaf_109",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -6652,6 +6915,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "c1ccc2c(c1)CC1NCCc3cccc-2c31",
+        "scaffold_id": "scaf_110",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -6673,6 +6937,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1c2ccccc2-c2c3c(cc4ccnc1c24)OCO3",
+        "scaffold_id": "scaf_111",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -6694,6 +6959,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1c2ccccc2-c2cccc3ccnc1c23",
+        "scaffold_id": "scaf_112",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -6715,6 +6981,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1c2ccccc2-c2cccc3ccnc1c23",
+        "scaffold_id": "scaf_112",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -6736,6 +7003,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "c1ccc2c[n+]3c(cc2c1)-c1cc2c(cc1CC3)OCO2",
+        "scaffold_id": "scaf_113",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -6757,6 +7025,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "c1ccc2c(c1)CC1c3cc4c(cc3CCN1C2)OCO4",
+        "scaffold_id": "scaf_114",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -6778,6 +7047,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "c1ccc([C@H]2OC[C@H]3[C@@H]2CO[C@@H]3c2ccccc2)cc1",
+        "scaffold_id": "scaf_108",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -6799,6 +7069,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "c1ccc([C@@H]2OC[C@@H]3[C@H]2CO[C@H]3c2ccccc2)cc1",
+        "scaffold_id": "scaf_115",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -6820,6 +7091,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "C=C1CCC2CC1C2",
+        "scaffold_id": "scaf_116",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -6841,6 +7113,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "C=C1CC/C=C/CC[C@H]2CC[C@H]12",
+        "scaffold_id": "scaf_117",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -6862,6 +7135,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "C1=CC2CC(C1)C2",
+        "scaffold_id": "scaf_118",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -6883,6 +7157,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "C1=CCCC=C1",
+        "scaffold_id": "scaf_119",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -6904,12 +7179,13 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "Hypocholesterolemic, genotoxicity, antigenotoxicity, antitumor, antimicrobial and cytoprotective activity",
         "scaffold_smiles": "C1=C(/C=C/C=C/C=C/C=C/C=C/C=C/C=C/C=C/C=C/C2=CCCCC2)CCCC1",
+        "scaffold_id": "scaf_76",
         "bioactivities": [
-            "Genotoxicity",
-            "Antimicrobial",
-            "Hypocholesterolemic",
             "Antigenotoxicity",
-            "Anticancer"
+            "Anticancer",
+            "Genotoxicity",
+            "Hypocholesterolemic",
+            "Antimicrobial"
         ],
         "database": "AMAZONIADB"
     },
@@ -6931,9 +7207,10 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": " Antioxidant  and Antimicrobial activity ",
         "scaffold_smiles": "Acyclic",
+        "scaffold_id": "acyclic",
         "bioactivities": [
-            "Antioxidant",
-            "Antimicrobial"
+            "Antimicrobial",
+            "Antioxidant"
         ],
         "database": "AMAZONIADB"
     },
@@ -6955,11 +7232,12 @@ const compoundsData = [
         "ro5_violations": 3,
         "plant_part": "Hypocholesterolemic, genotoxicity, antigenotoxicity, antimicrobial",
         "scaffold_smiles": "c1ccc(C2CCc3cccc([C@@H]4C[C@@H](c5ccccc5)Oc5ccccc54)c3O2)cc1",
+        "scaffold_id": "scaf_120",
         "bioactivities": [
+            "Hypocholesterolemic",
             "Genotoxicity",
             "Antigenotoxicity",
-            "Antimicrobial",
-            "Hypocholesterolemic"
+            "Antimicrobial"
         ],
         "database": "AMAZONIADB"
     },
@@ -6981,11 +7259,12 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "Hypocholesterolemic, genotoxicity, antigenotoxicity, antimicrobial",
         "scaffold_smiles": "c1ccccc1",
+        "scaffold_id": "scaf_10",
         "bioactivities": [
+            "Hypocholesterolemic",
             "Genotoxicity",
             "Antigenotoxicity",
-            "Antimicrobial",
-            "Hypocholesterolemic"
+            "Antimicrobial"
         ],
         "database": "AMAZONIADB"
     },
@@ -7007,11 +7286,12 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "Hypocholesterolemic, genotoxicity, antigenotoxicity, antimicrobial",
         "scaffold_smiles": "c1ccccc1",
+        "scaffold_id": "scaf_10",
         "bioactivities": [
+            "Hypocholesterolemic",
             "Genotoxicity",
             "Antigenotoxicity",
-            "Antimicrobial",
-            "Hypocholesterolemic"
+            "Antimicrobial"
         ],
         "database": "AMAZONIADB"
     },
@@ -7033,11 +7313,12 @@ const compoundsData = [
         "ro5_violations": 3,
         "plant_part": "Hypocholesterolemic, genotoxicity, antigenotoxicity, antimicrobial",
         "scaffold_smiles": "O=c1c(O[C@H]2CCCCO2)c(-c2ccccc2)oc2cc(O[C@H]3CCCCO3)ccc12",
+        "scaffold_id": "scaf_121",
         "bioactivities": [
+            "Hypocholesterolemic",
             "Genotoxicity",
             "Antigenotoxicity",
-            "Antimicrobial",
-            "Hypocholesterolemic"
+            "Antimicrobial"
         ],
         "database": "AMAZONIADB"
     },
@@ -7059,10 +7340,11 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "Hypocholesterolemic, genotoxicity, antigenotoxicity",
         "scaffold_smiles": "O=C1C[C@@]2(CO1)COC1CC(=O)O[C@H]12",
+        "scaffold_id": "scaf_122",
         "bioactivities": [
+            "Hypocholesterolemic",
             "Genotoxicity",
-            "Antigenotoxicity",
-            "Hypocholesterolemic"
+            "Antigenotoxicity"
         ],
         "database": "AMAZONIADB"
     },
@@ -7084,10 +7366,11 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "Hypocholesterolemic, genotoxicity, antigenotoxicity",
         "scaffold_smiles": "O=C1C=CCO1",
+        "scaffold_id": "scaf_3",
         "bioactivities": [
+            "Hypocholesterolemic",
             "Genotoxicity",
-            "Antigenotoxicity",
-            "Hypocholesterolemic"
+            "Antigenotoxicity"
         ],
         "database": "AMAZONIADB"
     },
@@ -7109,12 +7392,13 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "Hypocholesterolemic, genotoxicity, antigenotoxicity, antitumor, antimicrobial and cytoprotective activity",
         "scaffold_smiles": "C1=C(/C=C/C=C/C=C/C=C/C=C/C=C/C=C/C=C/C=C/C2=CCCCC2)CCCC1",
+        "scaffold_id": "scaf_76",
         "bioactivities": [
-            "Genotoxicity",
-            "Antimicrobial",
-            "Hypocholesterolemic",
             "Antigenotoxicity",
-            "Anticancer"
+            "Anticancer",
+            "Genotoxicity",
+            "Hypocholesterolemic",
+            "Antimicrobial"
         ],
         "database": "AMAZONIADB"
     },
@@ -7136,6 +7420,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "c1ccccc1",
+        "scaffold_id": "scaf_10",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -7157,12 +7442,13 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "Hypocholesterolemic, genotoxicity, antigenotoxicity, antitumor, antimicrobial and cytoprotective activity",
         "scaffold_smiles": "c1ccccc1",
+        "scaffold_id": "scaf_10",
         "bioactivities": [
-            "Genotoxicity",
-            "Antimicrobial",
-            "Hypocholesterolemic",
             "Antigenotoxicity",
-            "Anticancer"
+            "Anticancer",
+            "Genotoxicity",
+            "Hypocholesterolemic",
+            "Antimicrobial"
         ],
         "database": "AMAZONIADB"
     },
@@ -7184,6 +7470,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "c1ccccc1",
+        "scaffold_id": "scaf_10",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -7205,6 +7492,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "c1ccccc1",
+        "scaffold_id": "scaf_10",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -7226,6 +7514,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "c1ccccc1",
+        "scaffold_id": "scaf_10",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -7247,6 +7536,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "c1ccccc1",
+        "scaffold_id": "scaf_10",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -7268,6 +7558,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "c1ccccc1",
+        "scaffold_id": "scaf_10",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -7289,6 +7580,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "c1ccccc1",
+        "scaffold_id": "scaf_10",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -7310,6 +7602,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "Acyclic",
+        "scaffold_id": "acyclic",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -7331,6 +7624,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "Acyclic",
+        "scaffold_id": "acyclic",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -7352,6 +7646,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "Acyclic",
+        "scaffold_id": "acyclic",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -7373,6 +7668,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "Acyclic",
+        "scaffold_id": "acyclic",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -7394,6 +7690,7 @@ const compoundsData = [
         "ro5_violations": 3,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1O[C@H]2[C@@H]3OC(=O)c4ccccc4-c4ccccc4C(=O)OC[C@H]2O[C@@H](OC(=O)c2ccccc2)[C@@H]3OC(=O)c2cccc3c2[C@H]2CC(O3)C(=O)C=C12",
+        "scaffold_id": "scaf_123",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -7415,6 +7712,7 @@ const compoundsData = [
         "ro5_violations": 3,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C(O[C@H]1C[C@@H]2C[C@@H](COC(=O)c3ccccc3-c3ccccc3C(=O)O2)O1)c1ccccc1",
+        "scaffold_id": "scaf_124",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -7436,6 +7734,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1CCc2c1oc(=O)c1ccccc21",
+        "scaffold_id": "scaf_125",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -7457,6 +7756,7 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C(Oc1ccccc1)c1ccccc1",
+        "scaffold_id": "scaf_126",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -7478,6 +7778,7 @@ const compoundsData = [
         "ro5_violations": 3,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C(O[C@H]1CCO[C@@H]2COC(=O)c3ccccc3-c3ccccc3C(=O)[C@@H]12)c1ccccc1",
+        "scaffold_id": "scaf_71",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -7499,6 +7800,7 @@ const compoundsData = [
         "ro5_violations": 3,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1OC[C@H]2OC[C@@H]3OC(=O)c4ccccc4-c4ccccc4C(=O)O[C@H]3[C@@H]2OC(=O)c2ccccc2-c2ccccc21",
+        "scaffold_id": "scaf_127",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -7520,6 +7822,7 @@ const compoundsData = [
         "ro5_violations": 3,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C(OC1Cc2ccccc2OC1c1ccc(=O)c2cccc(C3Oc4ccccc4CC3OC(=O)c3ccccc3)c2c1)c1ccccc1",
+        "scaffold_id": "scaf_128",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -7541,6 +7844,7 @@ const compoundsData = [
         "ro5_violations": 3,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C(O[C@@H]1COC(=O)c2ccccc2-c2ccccc2C(=O)O[C@H]1[C@@H]1OC(=O)c2ccccc2-c2cccc3c2C(=O)O[C@H]1C3)c1ccccc1",
+        "scaffold_id": "scaf_129",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -7562,6 +7866,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "c1ccccc1",
+        "scaffold_id": "scaf_10",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -7583,6 +7888,7 @@ const compoundsData = [
         "ro5_violations": 3,
         "plant_part": "N/A",
         "scaffold_smiles": "c1ccc(C2Oc3ccccc3CC2OC2(c3ccccc3)CCc3ccccc3O2)cc1",
+        "scaffold_id": "scaf_93",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -7604,6 +7910,7 @@ const compoundsData = [
         "ro5_violations": 3,
         "plant_part": "N/A",
         "scaffold_smiles": "c1ccc([C@@H]2C[C@@H](c3cccc4c3O[C@H](c3ccccc3)CC4)c3ccccc3O2)cc1",
+        "scaffold_id": "scaf_19",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -7625,6 +7932,7 @@ const compoundsData = [
         "ro5_violations": 3,
         "plant_part": "N/A",
         "scaffold_smiles": "c1ccc([C@@H]2C[C@@H](c3cccc4c3O[C@H](c3ccccc3)C[C@H]4c3cccc4c3O[C@H](c3ccccc3)CC4)c3ccccc3O2)cc1",
+        "scaffold_id": "scaf_20",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -7646,6 +7954,7 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "N/A",
         "scaffold_smiles": "Acyclic",
+        "scaffold_id": "acyclic",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -7667,6 +7976,7 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "N/A",
         "scaffold_smiles": "Acyclic",
+        "scaffold_id": "acyclic",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -7688,6 +7998,7 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "N/A",
         "scaffold_smiles": "Acyclic",
+        "scaffold_id": "acyclic",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -7709,6 +8020,7 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "N/A",
         "scaffold_smiles": "Acyclic",
+        "scaffold_id": "acyclic",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -7730,6 +8042,7 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "N/A",
         "scaffold_smiles": "Acyclic",
+        "scaffold_id": "acyclic",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -7751,6 +8064,7 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "N/A",
         "scaffold_smiles": "Acyclic",
+        "scaffold_id": "acyclic",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -7772,6 +8086,7 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "N/A",
         "scaffold_smiles": "Acyclic",
+        "scaffold_id": "acyclic",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -7793,6 +8108,7 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "N/A",
         "scaffold_smiles": "Acyclic",
+        "scaffold_id": "acyclic",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -7814,6 +8130,7 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "N/A",
         "scaffold_smiles": "Acyclic",
+        "scaffold_id": "acyclic",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -7835,6 +8152,7 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "N/A",
         "scaffold_smiles": "Acyclic",
+        "scaffold_id": "acyclic",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -7856,6 +8174,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "C1=CCCC=C1",
+        "scaffold_id": "scaf_119",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -7877,6 +8196,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "C1CO1",
+        "scaffold_id": "scaf_130",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -7898,6 +8218,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "Acyclic",
+        "scaffold_id": "acyclic",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -7919,6 +8240,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "c1ccccc1",
+        "scaffold_id": "scaf_10",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -7940,6 +8262,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "c1ccccc1",
+        "scaffold_id": "scaf_10",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -7961,6 +8284,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "Acyclic",
+        "scaffold_id": "acyclic",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -7982,6 +8306,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1CCCCO1",
+        "scaffold_id": "scaf_131",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -8003,6 +8328,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "Acyclic",
+        "scaffold_id": "acyclic",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -8024,6 +8350,7 @@ const compoundsData = [
         "ro5_violations": 3,
         "plant_part": "N/A",
         "scaffold_smiles": "O=c1c(O[C@H]2CCCCO2)c(-c2ccccc2)oc2cc(O[C@H]3CCCCO3)ccc12",
+        "scaffold_id": "scaf_121",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -8045,6 +8372,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "Acyclic",
+        "scaffold_id": "acyclic",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -8066,6 +8394,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "Acyclic",
+        "scaffold_id": "acyclic",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -8087,6 +8416,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "Acyclic",
+        "scaffold_id": "acyclic",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -8108,6 +8438,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "c1ccccc1",
+        "scaffold_id": "scaf_10",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -8129,6 +8460,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "Acyclic",
+        "scaffold_id": "acyclic",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -8150,6 +8482,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "Acyclic",
+        "scaffold_id": "acyclic",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -8171,6 +8504,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "Acyclic",
+        "scaffold_id": "acyclic",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -8192,6 +8526,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "c1ccc2[nH]ccc2c1",
+        "scaffold_id": "scaf_87",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -8213,6 +8548,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "Acyclic",
+        "scaffold_id": "acyclic",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -8234,6 +8570,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "Acyclic",
+        "scaffold_id": "acyclic",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -8255,6 +8592,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "Acyclic",
+        "scaffold_id": "acyclic",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -8276,6 +8614,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "Acyclic",
+        "scaffold_id": "acyclic",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -8297,6 +8636,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "Acyclic",
+        "scaffold_id": "acyclic",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -8318,6 +8658,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "C1CCNC1",
+        "scaffold_id": "scaf_132",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -8339,6 +8680,7 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "N/A",
         "scaffold_smiles": "C1=CCCCC1",
+        "scaffold_id": "scaf_133",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -8360,6 +8702,7 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "N/A",
         "scaffold_smiles": "C1=C(/C=C/C=C\\C=C\\C=C\\C=C\\C=C\\C=C\\C=C\\C=C\\C2=CCCCC2)CCCC1",
+        "scaffold_id": "scaf_78",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -8381,6 +8724,7 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "N/A",
         "scaffold_smiles": "Acyclic",
+        "scaffold_id": "acyclic",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -8402,6 +8746,7 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "N/A",
         "scaffold_smiles": "C1=CCCCC1",
+        "scaffold_id": "scaf_133",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -8423,6 +8768,7 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "N/A",
         "scaffold_smiles": "C1=CC(/C=C/C=C/C=C/C=C/C=C/C=C/C=C/C=C/C=C/C2=CCCCC2)CCC1",
+        "scaffold_id": "scaf_134",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -8444,6 +8790,7 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "N/A",
         "scaffold_smiles": "C1=C(/C=C/C=C/C=C/C=C/C=C/C=C/C=C/C=C/C=C/C2=CCCCC2)CCCC1",
+        "scaffold_id": "scaf_76",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -8465,6 +8812,7 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "N/A",
         "scaffold_smiles": "C1=CCCCC1",
+        "scaffold_id": "scaf_133",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -8486,6 +8834,7 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "N/A",
         "scaffold_smiles": "C1=CCCCC1",
+        "scaffold_id": "scaf_133",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -8507,6 +8856,7 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "N/A",
         "scaffold_smiles": "Acyclic",
+        "scaffold_id": "acyclic",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -8528,6 +8878,7 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "N/A",
         "scaffold_smiles": "Acyclic",
+        "scaffold_id": "acyclic",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -8549,6 +8900,7 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "N/A",
         "scaffold_smiles": "C1=CC(/C=C/C=C/C=C/C=C/C=C/C=C/C=C/C=C/C=C/C2=CCCCC2)CCC1",
+        "scaffold_id": "scaf_134",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -8570,6 +8922,7 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "N/A",
         "scaffold_smiles": "Acyclic",
+        "scaffold_id": "acyclic",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -8591,6 +8944,7 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "N/A",
         "scaffold_smiles": "C1=C2CCCCC2[C@H]2CCC3CCC[C@H]3[C@@H]2C1",
+        "scaffold_id": "scaf_26",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -8612,6 +8966,7 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "N/A",
         "scaffold_smiles": "C1CC2CCC3=C(CC[C@H]4CCCCC34)C2C1",
+        "scaffold_id": "scaf_135",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -8633,6 +8988,7 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "N/A",
         "scaffold_smiles": "C1CC2CC[C@@]34C[C@@]35CCCC[C@@H]5CC[C@H]4C2C1",
+        "scaffold_id": "scaf_94",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -8654,6 +9010,7 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "N/A",
         "scaffold_smiles": "C1=C2[C@@H]3CCCC3CC[C@@H]2C2CCCC[C@@H]2C1",
+        "scaffold_id": "scaf_136",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -8675,6 +9032,7 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "N/A",
         "scaffold_smiles": "c1ccc2c(c1)CCCO2",
+        "scaffold_id": "scaf_96",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -8696,6 +9054,7 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "N/A",
         "scaffold_smiles": "c1ccc2c(c1)CCCO2",
+        "scaffold_id": "scaf_96",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -8717,6 +9076,7 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "N/A",
         "scaffold_smiles": "c1ccc2c(c1)CCCO2",
+        "scaffold_id": "scaf_96",
         "bioactivities": [],
         "database": "AMAZONIADB"
     },
@@ -8738,6 +9098,7 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "N/A",
         "scaffold_smiles": "C1=C\\CC[N@]2CC[C@@H]3[C@@H]4C[C@H](CCCCCC/1)C[N@@](CC/C=C/C=C/CCCCCC[C@H]3C2)C4",
+        "scaffold_id": "scaf_137",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -8759,6 +9120,7 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "N/A",
         "scaffold_smiles": "C1=C\\CC[N@]2CC[C@@H]3[C@@H]4C[C@H](CCCCCC/1)C[N@@](CC/C=C/C=C/CCCCCC[C@H]3C2)C4",
+        "scaffold_id": "scaf_137",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -8780,6 +9142,7 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "N/A",
         "scaffold_smiles": "C1=C\\CCCCCC[C@@H]2C[N@@]3C/C=C\\CCCCCCC[C@@H]4C[C@@H](C[N@@](CC\\C=C/1)C4)[C@H]2CC3",
+        "scaffold_id": "scaf_138",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -8801,6 +9164,7 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "N/A",
         "scaffold_smiles": "C1=C\\CC[N@]2CC[C@@H]3[C@@H]4C[C@H](CCCCCC/1)C[N@@](CC/C=C/C=C/CCCCCC[C@H]3C2)C4",
+        "scaffold_id": "scaf_137",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -8822,6 +9186,7 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1CC/C=C/CCCOC(=O)CNC(=O)[C@@H](Cc2ccccc2)NC(=O)CN1",
+        "scaffold_id": "scaf_139",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -8843,6 +9208,7 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1CC/C=C/CCCOC(=O)CNC(=O)[C@@H](Cc2ccccc2)NC(=O)CN1",
+        "scaffold_id": "scaf_139",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -8864,6 +9230,7 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1CC/C=C/CCCOC(=O)C[C@H](c2ccccc2)NC(=O)[C@@H](Cc2ccccc2)NC(=O)CN1",
+        "scaffold_id": "scaf_140",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -8885,6 +9252,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "C1=NCC2CCCC=C2N1",
+        "scaffold_id": "scaf_141",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -8906,6 +9274,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "C1=N[C@H]2CC[C@H]3CCC=C(N1)[C@H]32",
+        "scaffold_id": "scaf_142",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -8927,6 +9296,7 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "N/A",
         "scaffold_smiles": "C1=C\\CCCCC[C@H]2CN3CC/C=C\\CCCCCC[C@@H]4C[C@@H](CN(CC/C=C\\C/1)C4)[C@H]2CC3",
+        "scaffold_id": "scaf_143",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -8948,6 +9318,7 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "N/A",
         "scaffold_smiles": "C1=C\\CCCCCC[C@H]2CN3CC/C=C\\CCCCCCC4C[C@@H](CN(CC\\C=C/1)C4)[C@H]2CC3",
+        "scaffold_id": "scaf_144",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -8969,6 +9340,7 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "N/A",
         "scaffold_smiles": "C1=C\\C=C\\C/C=C2\\CC3CN4CCCCCCCCCCCCC5(C4)CN(CC\\C=C/1)C2CC35",
+        "scaffold_id": "scaf_145",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -8990,6 +9362,7 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "N/A",
         "scaffold_smiles": "C1=C2CCCCCCCCCC/C=C\\CCN3CCC4C1CN1CC/C=C\\C=C/CCC4(C3)C21",
+        "scaffold_id": "scaf_146",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -9011,6 +9384,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "C=C1C=CCO1",
+        "scaffold_id": "scaf_147",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -9032,6 +9406,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "C=C1C=CCO1",
+        "scaffold_id": "scaf_147",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -9053,6 +9428,7 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "N/A",
         "scaffold_smiles": "C1CCOOC1",
+        "scaffold_id": "scaf_148",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -9074,6 +9450,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1C=CC2C(=C1)CCC1C3CCCC3CCC21",
+        "scaffold_id": "scaf_149",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -9095,6 +9472,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "C=C1/C=C/COC(=O)CC2CC(=C)C[C@@H](O2)[C@H]2O[C@@H]2C1",
+        "scaffold_id": "scaf_150",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -9116,6 +9494,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1NC(=O)c2c1c1c3ccccc3n3c1c1c2c2ccccc2n1[C@H]1CCCC3O1",
+        "scaffold_id": "scaf_151",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -9137,6 +9516,7 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "N/A",
         "scaffold_smiles": "C1CCC2C(C1)CCC1[C@@H]3CCCC3CC[C@H]21",
+        "scaffold_id": "scaf_152",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -9158,6 +9538,7 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "N/A",
         "scaffold_smiles": "C1CCC2C(C1)CCC1[C@@H]3CCCC3CC[C@H]21",
+        "scaffold_id": "scaf_152",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -9179,6 +9560,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "C1CCC2C(C1)CCC1[C@@H]3CCCC3CC[C@H]21",
+        "scaffold_id": "scaf_152",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -9200,6 +9582,7 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "N/A",
         "scaffold_smiles": "C1CCC2C(C1)CCC1[C@@H]3CCCC3CC[C@H]21",
+        "scaffold_id": "scaf_152",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -9221,6 +9604,7 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1C=C2CCCCCC/C=C/CC/C=C\\C=C\\C(=O)NC(=C1)C2=O",
+        "scaffold_id": "scaf_153",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -9242,6 +9626,7 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "N/A",
         "scaffold_smiles": "C1CCC2C(C1)C[C@H]1[C@@H]3CCCC3CC[C@H]21",
+        "scaffold_id": "scaf_154",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -9263,6 +9648,7 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "N/A",
         "scaffold_smiles": "Acyclic",
+        "scaffold_id": "acyclic",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -9284,6 +9670,7 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "N/A",
         "scaffold_smiles": "Acyclic",
+        "scaffold_id": "acyclic",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -9305,6 +9692,7 @@ const compoundsData = [
         "ro5_violations": 3,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1c2cc3ccc(O[C@H]4C[C@@H](O[C@@H]5CCCCO5)CCO4)cc3cc2CCC1O[C@H]1C[C@@H](O[C@H]2C[C@@H](O[C@H]3CCCCO3)CCO2)CCO1",
+        "scaffold_id": "scaf_155",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -9326,6 +9714,7 @@ const compoundsData = [
         "ro5_violations": 3,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1c2cc3ccc(O[C@H]4C[C@@H](O[C@@H]5CCCCO5)CCO4)cc3cc2CCC1O[C@H]1C[C@@H](O[C@H]2C[C@@H](O[C@H]3CCCCO3)CCO2)CCO1",
+        "scaffold_id": "scaf_155",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -9347,6 +9736,7 @@ const compoundsData = [
         "ro5_violations": 3,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1c2cc3ccc(O[C@H]4C[C@@H](O[C@@H]5CCCCO5)CCO4)cc3cc2CCC1O[C@H]1C[C@@H](O[C@H]2C[C@@H](O[C@H]3CCCCO3)CCO2)CCO1",
+        "scaffold_id": "scaf_155",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -9368,6 +9758,7 @@ const compoundsData = [
         "ro5_violations": 3,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1c2cc3ccc(O[C@H]4C[C@@H](O[C@@H]5CCCCO5)CCO4)cc3cc2CCC1O[C@H]1C[C@@H](O[C@H]2C[C@@H](O[C@H]3CCCCO3)CCO2)CCO1",
+        "scaffold_id": "scaf_155",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -9389,6 +9780,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1c2[nH]ccc2-c2nc3ccccc3c3ccnc1c23",
+        "scaffold_id": "scaf_156",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -9410,6 +9802,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1COC2C3=C(CCN13)c1nc3ccccc3c3ccnc2c13",
+        "scaffold_id": "scaf_157",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -9431,6 +9824,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1NC(=O)c2c1c1nc[nH]c1c1[nH]c3ccccc3c21",
+        "scaffold_id": "scaf_158",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -9452,6 +9846,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "O=c1[nH]cc2c1c1c3ccccc3nc1n1cncc21",
+        "scaffold_id": "scaf_159",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -9473,6 +9868,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "Acyclic",
+        "scaffold_id": "acyclic",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -9494,6 +9890,7 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "N/A",
         "scaffold_smiles": "Acyclic",
+        "scaffold_id": "acyclic",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -9515,6 +9912,7 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "N/A",
         "scaffold_smiles": "Acyclic",
+        "scaffold_id": "acyclic",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -9536,6 +9934,7 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "N/A",
         "scaffold_smiles": "Acyclic",
+        "scaffold_id": "acyclic",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -9557,6 +9956,7 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "N/A",
         "scaffold_smiles": "Acyclic",
+        "scaffold_id": "acyclic",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -9578,6 +9978,7 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "N/A",
         "scaffold_smiles": "Acyclic",
+        "scaffold_id": "acyclic",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -9599,6 +10000,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1NC(=O)c2c1c1c3ccccc3n3c1c1c2c2ccccc2n1[C@H]1CCCC3O1",
+        "scaffold_id": "scaf_151",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -9620,6 +10022,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1NC(=O)c2c1c1c3ccccc3n3c1c1c2c2ccccc2n1[C@H]1CCCC3O1",
+        "scaffold_id": "scaf_151",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -9641,6 +10044,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "Acyclic",
+        "scaffold_id": "acyclic",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -9662,6 +10066,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1c2ccccc2C(=O)c2cc3ccccc3cc21",
+        "scaffold_id": "scaf_160",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -9683,6 +10088,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1c2ccccc2C(=O)c2cc3c(cc21)CCCC3",
+        "scaffold_id": "scaf_161",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -9704,6 +10110,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "O=c1cc2sscc-2[nH]1",
+        "scaffold_id": "scaf_162",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -9725,6 +10132,7 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1COC(=O)CCCNC(=O)[C@@H](NC(=O)CNC(=O)[C@@H]2CCCN2)COC(=O)[C@H](Cc2ccccc2)NC(=O)[C@@H]2CCCN2C(=O)CN1",
+        "scaffold_id": "scaf_163",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -9746,6 +10154,7 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1COC(=O)CCCNC(=O)[C@@H](NC(=O)CNC(=O)[C@@H]2CCCN2)COC(=O)[C@H](Cc2ccccc2)NC(=O)[C@@H]2CCCN2C(=O)CN1",
+        "scaffold_id": "scaf_163",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -9767,6 +10176,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1C2NC(=O)[C@@]3(CC4=CC=CC[C@H]4N13)SS2",
+        "scaffold_id": "scaf_164",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -9788,6 +10198,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1C2NC(=O)[C@@]3(CC4=CC=CC[C@H]4N13)SSSS2",
+        "scaffold_id": "scaf_165",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -9809,6 +10220,7 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1CNC(=O)CNC(=O)C2CSSCC(NC(=O)CN1)C(=O)N2",
+        "scaffold_id": "scaf_166",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -9830,6 +10242,7 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1CNC(=O)CNC(=O)[C@H]2CSSC[C@@H](NC(=O)CN1)C(=O)N2",
+        "scaffold_id": "scaf_167",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -9851,6 +10264,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1[C@@H]2Cc3c([nH]c4ccccc34)CN2C(=O)[C@@H]2CCCN12",
+        "scaffold_id": "scaf_168",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -9872,6 +10286,7 @@ const compoundsData = [
         "ro5_violations": 3,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1c2cc3ccc(O[C@H]4C[C@@H](O[C@@H]5CCCCO5)CCO4)cc3cc2CC[C@@H]1O[C@H]1C[C@@H](O[C@H]2C[C@@H](O[C@H]3CCCCO3)CCO2)CCO1",
+        "scaffold_id": "scaf_169",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -9893,6 +10308,7 @@ const compoundsData = [
         "ro5_violations": 3,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1c2cc3ccc(O[C@H]4C[C@@H](O[C@@H]5CCCCO5)CCO4)cc3cc2CC[C@@H]1O[C@H]1C[C@@H](O[C@H]2C[C@@H](O[C@H]3CCCCO3)CCO2)CCO1",
+        "scaffold_id": "scaf_169",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -9914,6 +10330,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "C1=C/C(=C/c2ccc[nH]2)N=C1c1ccc[nH]1",
+        "scaffold_id": "scaf_170",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -9935,6 +10352,7 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "N/A",
         "scaffold_smiles": "C1=C/C2=C/c3ccc([nH]3)CCCCCCCCCc3ccc([nH]3)C1=N2",
+        "scaffold_id": "scaf_171",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -9956,6 +10374,7 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "N/A",
         "scaffold_smiles": "C1=C/C2=C\\c3ccc([nH]3)CCCCCCCCCc3ccc([nH]3)C1=N2",
+        "scaffold_id": "scaf_172",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -9977,6 +10396,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1N[C@@H](Cc2ccccc2)C(=O)N2CCC[C@@H]12",
+        "scaffold_id": "scaf_173",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -9998,6 +10418,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1N[C@@H](Cc2c[nH]c3ccccc23)C(=O)N2CCC[C@@H]12",
+        "scaffold_id": "scaf_174",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -10019,6 +10440,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "C=C1CCCC[C@@]12C=CCCC2",
+        "scaffold_id": "scaf_175",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -10040,6 +10462,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "C=C1CCCC[C@@]12C=CC(=O)CC2",
+        "scaffold_id": "scaf_176",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -10061,6 +10484,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "C=C1CCCCC12CCCCC2",
+        "scaffold_id": "scaf_177",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -10082,6 +10506,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "C=C1C=C[C@@]2(CCCCC2=C)CC1",
+        "scaffold_id": "scaf_178",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -10103,6 +10528,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "C=C1C=C[C@@]2(CCCCC2=C)CC1",
+        "scaffold_id": "scaf_178",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -10124,6 +10550,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "C=C1CCCC[C@]12CC=CCC2",
+        "scaffold_id": "scaf_179",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -10145,6 +10572,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "C1CCCCC1",
+        "scaffold_id": "scaf_180",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -10166,6 +10594,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1C=C2C[C@@H]3CCC=C[C@@H]3C[C@@H]2N1",
+        "scaffold_id": "scaf_181",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -10187,6 +10616,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1C=C2C[C@@H]3CCC=C[C@@H]3CC2N1",
+        "scaffold_id": "scaf_182",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -10208,6 +10638,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1C=C2C[C@H]3C=CCC[C@H]3C[C@@H]2N1",
+        "scaffold_id": "scaf_183",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -10229,6 +10660,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1C=C2C[C@H]3C=CCC[C@@H]3C[C@@H]2N1",
+        "scaffold_id": "scaf_184",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -10250,6 +10682,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "C1=C2CCCC2CCC1",
+        "scaffold_id": "scaf_185",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -10271,6 +10704,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "C1=C2CCCC2CCC1",
+        "scaffold_id": "scaf_185",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -10292,6 +10726,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "C1=C2CCC[C@H]2CCC1",
+        "scaffold_id": "scaf_186",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -10313,6 +10748,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1CCCC2=C1CCC2",
+        "scaffold_id": "scaf_187",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -10334,6 +10770,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1CCCC2=C1CCC2",
+        "scaffold_id": "scaf_187",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -10355,6 +10792,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "C=C1CCCC2CC=C3CCCC3CC12",
+        "scaffold_id": "scaf_188",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -10376,6 +10814,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "C=C1CCCC2CCC3CCCC3CC12",
+        "scaffold_id": "scaf_189",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -10397,6 +10836,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "C=C1CCCC2CC=C3CCCC3CC12",
+        "scaffold_id": "scaf_188",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -10418,6 +10858,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "C=C1CCCC2CC=C3CCCC3CC12",
+        "scaffold_id": "scaf_188",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -10439,6 +10880,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "C=C1CCCC2CCC3=CCCC3CC12",
+        "scaffold_id": "scaf_190",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -10460,6 +10902,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "C=C1CCCC2CC(=O)[C@]34OC3CCC4CC12",
+        "scaffold_id": "scaf_191",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -10481,6 +10924,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "C=C1CCCC2CCC3=CC(=O)CC3CC12",
+        "scaffold_id": "scaf_192",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -10502,6 +10946,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "C=C1CCCC2CCC3=CCCC3CC12",
+        "scaffold_id": "scaf_190",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -10523,6 +10968,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "C=C1CCCC2CCC3=CCCC3CC12",
+        "scaffold_id": "scaf_190",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -10544,6 +10990,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "C1=C/CCC[C@H]2CCCC2/C=C/CC/1",
+        "scaffold_id": "scaf_193",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -10565,6 +11012,7 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "N/A",
         "scaffold_smiles": "C=C1CC[C@@H]2OCCCCC2[C@@H]1CC[C@@H]1CCC[C@@H]2OCCCCC12",
+        "scaffold_id": "scaf_194",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -10586,6 +11034,7 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "N/A",
         "scaffold_smiles": "C1CC[C@H](O[C@H]2CCC3C(CC[C@H]4[C@@H]5CCCC5CC[C@H]34)C2)OC1",
+        "scaffold_id": "scaf_195",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -10607,6 +11056,7 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "N/A",
         "scaffold_smiles": "C1CC[C@H](O[C@H]2CCC3C(CC[C@H]4[C@@H]5CCCC5CC[C@H]34)C2)OC1",
+        "scaffold_id": "scaf_195",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -10628,6 +11078,7 @@ const compoundsData = [
         "ro5_violations": 3,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C(NCCCOc1ccc(CCNC(=O)C2=NO[C@]3(C=CC=CC3)C2)cc1)C1=NO[C@]2(C=CC=CC2)C1",
+        "scaffold_id": "scaf_196",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -10649,6 +11100,7 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C(NCCCCCNC(=O)C1=NO[C@]2(C=CC=CC2)C1)C1=NO[C@]2(C=CC=CC2)C1",
+        "scaffold_id": "scaf_197",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -10670,6 +11122,7 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C(NCCCCNC(=O)C1=NO[C@]2(C=CC=CC2)C1)C1=NO[C@]2(C=CC=CC2)C1",
+        "scaffold_id": "scaf_198",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -10691,6 +11144,7 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C(CCNC(=O)C1=NOC2(C=CC=CC2)C1)CNC(=O)C1=NOC2(C=CC=CC2)C1",
+        "scaffold_id": "scaf_199",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -10712,6 +11166,7 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C(CCNC(=O)C1=NO[C@]2(C=CC=CC2)C1)CNC(=O)C1=NO[C@]2(C=CC=CC2)C1",
+        "scaffold_id": "scaf_200",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -10733,6 +11188,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1CC2C=CC=C[C@@H]2O1",
+        "scaffold_id": "scaf_201",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -10754,6 +11210,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "C1=CC[C@@]2(C=C1)CC=NO2",
+        "scaffold_id": "scaf_202",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -10775,6 +11232,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "C1=CC[C@@]2(C=C1)CC=NO2",
+        "scaffold_id": "scaf_202",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -10796,6 +11254,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "C1=CCCC=C1",
+        "scaffold_id": "scaf_119",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -10817,6 +11276,7 @@ const compoundsData = [
         "ro5_violations": 3,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C(NCCCOc1ccc(CCNC(=O)C2=NO[C@]3(C=CC=CC3)C2)cc1)C1=NO[C@]2(C=CC=CC2)C1",
+        "scaffold_id": "scaf_196",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -10838,6 +11298,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1CCOc2ccc3c(c21)NC(=O)[C@]31CC2CN3CCC[C@H]3C[C@@H]2C1",
+        "scaffold_id": "scaf_203",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -10859,6 +11320,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1CCOc2ccc3c(c21)NC(=O)[C@]31CC2CN3CCC[C@H]3C[C@@H]2C1",
+        "scaffold_id": "scaf_203",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -10880,6 +11342,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "N=C1NC2=C3C(CCCC3N1)CC2",
+        "scaffold_id": "scaf_204",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -10901,6 +11364,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "N=c1nc2c3c([nH]1)CCC3CCC2",
+        "scaffold_id": "scaf_205",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -10922,6 +11386,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "N=c1nc2c3c([nH]1)CCC3CCC2",
+        "scaffold_id": "scaf_205",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -10943,6 +11408,7 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "N/A",
         "scaffold_smiles": "C=C1C=CCO1",
+        "scaffold_id": "scaf_147",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -10964,6 +11430,7 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "N/A",
         "scaffold_smiles": "C=C1C=CCO1",
+        "scaffold_id": "scaf_147",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -10985,6 +11452,7 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "N/A",
         "scaffold_smiles": "C1COOC1",
+        "scaffold_id": "scaf_206",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -11006,6 +11474,7 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "N/A",
         "scaffold_smiles": "C1CCOOC1",
+        "scaffold_id": "scaf_148",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -11027,6 +11496,7 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "N/A",
         "scaffold_smiles": "C1CCOOC1",
+        "scaffold_id": "scaf_148",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -11048,6 +11518,7 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "N/A",
         "scaffold_smiles": "C1=CCOOC1",
+        "scaffold_id": "scaf_207",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -11069,6 +11540,7 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "N/A",
         "scaffold_smiles": "C1=CCOOC1",
+        "scaffold_id": "scaf_207",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -11090,6 +11562,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1C=C([C@H]2CC=CCC2)CC1",
+        "scaffold_id": "scaf_208",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -11111,6 +11584,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1Cc2ccccc2C(=O)/C=C/CCCCO1",
+        "scaffold_id": "scaf_209",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -11132,6 +11606,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1/C=C/C(=O)c2ccccc2CC(=O)OCCC1",
+        "scaffold_id": "scaf_210",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -11153,6 +11628,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1Cc2ccccc2C(=O)[C@@H]2O[C@@H]2CCCCO1",
+        "scaffold_id": "scaf_211",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -11174,6 +11650,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1Cc2ccccc2C(=O)[C@H]2CCS[C@@H]2CCCCO1",
+        "scaffold_id": "scaf_212",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -11195,6 +11672,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1Cc2ccccc2C(=O)[C@@H]2CCS[C@H]2CCCCO1",
+        "scaffold_id": "scaf_213",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -11216,6 +11694,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1Cc2ccccc2C(=O)[C@@H]2CCS[C@H]2CCCCO1",
+        "scaffold_id": "scaf_213",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -11237,6 +11716,7 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1CNC(=O)CNC(=O)CNC(=O)[C@@H]2CCCN2C(=O)COC(=O)CCN1",
+        "scaffold_id": "scaf_214",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -11258,6 +11738,7 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1CNC(=O)CNC(=O)C(Cc2ccccc2)NC(=O)C2CCCN2C(=O)COC(=O)CCN1",
+        "scaffold_id": "scaf_215",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -11279,6 +11760,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1CNC(=O)C(Cc2ccccc2)N1",
+        "scaffold_id": "scaf_216",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -11300,6 +11782,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1CNC(=O)C(Cc2ccccc2)N1",
+        "scaffold_id": "scaf_216",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -11321,6 +11804,7 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1CNC(=O)C(Cc2ccccc2)N1",
+        "scaffold_id": "scaf_216",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -11342,6 +11826,7 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1CNC(=O)C(Cc2ccccc2)N1",
+        "scaffold_id": "scaf_216",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -11363,6 +11848,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "C1CCC(C2CCCCO2)CC1",
+        "scaffold_id": "scaf_217",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -11384,6 +11870,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "c1ccc2c(c1)CCCO2",
+        "scaffold_id": "scaf_96",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -11405,6 +11892,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1O[C@@H](C[C@H]2CCCCO2)Cc2ccccc21",
+        "scaffold_id": "scaf_218",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -11426,6 +11914,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1O[C@@H](C[C@H]2CCCCO2)Cc2ccccc21",
+        "scaffold_id": "scaf_218",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -11447,6 +11936,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1CCCc2ccccc21",
+        "scaffold_id": "scaf_219",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -11468,6 +11958,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1CCCc2ccccc21",
+        "scaffold_id": "scaf_219",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -11489,6 +11980,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1CCCc2ccccc21",
+        "scaffold_id": "scaf_219",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -11510,6 +12002,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "C=C1CCCC(=O)C[C@H]2CC[C@H](CCCCCC(=O)OCC1)O2",
+        "scaffold_id": "scaf_220",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -11531,6 +12024,7 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "N/A",
         "scaffold_smiles": "C=C1/C=C/CCCC(=O)CCC(=O)C[C@H]2CC[C@H](COC(=O)CC3CC[C@H](CC1)O3)O2",
+        "scaffold_id": "scaf_221",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -11552,6 +12046,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "C=C1/C=C/COC(=O)CCC/C=C/C[C@@H]2O[C@H]2C1",
+        "scaffold_id": "scaf_222",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -11573,6 +12068,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "C=C1/C=C/COC(=O)CCC/C=C/C[C@@H]2O[C@H]2C1",
+        "scaffold_id": "scaf_222",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -11594,6 +12090,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "C=C1/C=C\\COC(=O)CCC/C=C/C[C@@H]2O[C@H]2C1",
+        "scaffold_id": "scaf_223",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -11615,6 +12112,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "C1CO1",
+        "scaffold_id": "scaf_130",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -11636,6 +12134,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "C=C1CC/C=C/CC(=O)C(=C)CC1",
+        "scaffold_id": "scaf_224",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -11657,6 +12156,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "C=C1[C@H]2C[C@H]2C2CC3OC(=O)C=C3C[C@@H]12",
+        "scaffold_id": "scaf_225",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -11678,6 +12178,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "C1=C[C@@H]2C3C/C=C/CCCC[C@H](O3)[C@@H]2CC1",
+        "scaffold_id": "scaf_226",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -11699,6 +12200,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1O[C@@H]2CC3O[C@H]3c3ccc(o3)CCCC[C@]13O[C@H]23",
+        "scaffold_id": "scaf_227",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -11720,6 +12222,7 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1C=C/C(=C/CCCC/C=C/CC/C=C/CCc2ccoc2)O1",
+        "scaffold_id": "scaf_228",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -11741,6 +12244,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1O[C@@H]2CC3O[C@H]3c3ccc(o3)CCCC[C@]13O[C@H]23",
+        "scaffold_id": "scaf_227",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -11762,6 +12266,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1O[C@H]2C=C1CCCCc1ccc(o1)[C@@H]1OC1C2",
+        "scaffold_id": "scaf_229",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -11783,6 +12288,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1O[C@@H]2CC3O[C@H]3c3ccc(o3)CCCCC13O[C@H]23",
+        "scaffold_id": "scaf_230",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -11804,6 +12310,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1O[C@@H]2CCCc3ccc(o3)CCCCC13O[C@H]23",
+        "scaffold_id": "scaf_231",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -11825,6 +12332,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1O[C@@H]2CC/C=C3/C=CC(CCCCC14O[C@H]24)O3",
+        "scaffold_id": "scaf_232",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -11846,6 +12354,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "C1=Cc2cccc3nccc(c23)N1",
+        "scaffold_id": "scaf_233",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -11867,6 +12376,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "C1CCC2(CC1)CC1OC1C1OC12",
+        "scaffold_id": "scaf_234",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -11888,6 +12398,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "C1CCC23CC(CC4OC42)OC3C1",
+        "scaffold_id": "scaf_235",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -11909,6 +12420,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "C=C1C2=CC3OC4CCCC[C@]14C23",
+        "scaffold_id": "scaf_236",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -11930,6 +12442,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "C=C1C2=CC3OC4CCCC[C@]14C23",
+        "scaffold_id": "scaf_236",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -11951,6 +12464,7 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "N/A",
         "scaffold_smiles": "c1cc[n+](CCCCCCCCCc2ccc[n+](CCCCCCCCCc3ccc[nH+]c3)c2)cc1",
+        "scaffold_id": "scaf_237",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -11972,6 +12486,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "N=c1[nH]c(=O)[nH]c2nc[nH]c12",
+        "scaffold_id": "scaf_238",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -11993,6 +12508,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "O=c1[nH]c2cncnc2[nH]1",
+        "scaffold_id": "scaf_239",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -12014,6 +12530,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "O=c1[nH]c2cncnc2[nH]1",
+        "scaffold_id": "scaf_239",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -12035,6 +12552,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "O=c1[nH]c(=O)c2[nH]cnc2[nH]1",
+        "scaffold_id": "scaf_16",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -12056,6 +12574,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1NC(=O)c2c1c1nc[nH]c1c1[nH]c3ccccc3c21",
+        "scaffold_id": "scaf_158",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -12077,6 +12596,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1NC(=O)C(c2c[nH]c3ccccc23)=C1c1cnc[nH]1",
+        "scaffold_id": "scaf_240",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -12098,6 +12618,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1NC(=O)C(c2c[nH]c3ccccc23)=C1c1cnc[nH]1",
+        "scaffold_id": "scaf_240",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -12119,6 +12640,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1NC(=O)C(c2c[nH]c3ccccc23)=C1c1cnc[nH]1",
+        "scaffold_id": "scaf_240",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -12140,6 +12662,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1NC(=O)C(c2c[nH]c3ccccc23)=C1c1c[nH]cn1",
+        "scaffold_id": "scaf_241",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -12161,6 +12684,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "c1cc[nH+]cc1",
+        "scaffold_id": "scaf_79",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -12182,6 +12706,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "c1cc[nH+]cc1",
+        "scaffold_id": "scaf_79",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -12203,6 +12728,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "C1=CCC=CC1",
+        "scaffold_id": "scaf_242",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -12224,6 +12750,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "c1ccccc1",
+        "scaffold_id": "scaf_10",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -12245,6 +12772,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "C1=CCC=CC1",
+        "scaffold_id": "scaf_242",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -12266,6 +12794,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "C1=CCC=CC1",
+        "scaffold_id": "scaf_242",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -12287,6 +12816,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1C=CCCC1",
+        "scaffold_id": "scaf_243",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -12308,6 +12838,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "c1ccccc1",
+        "scaffold_id": "scaf_10",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -12329,6 +12860,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "c1ccccc1",
+        "scaffold_id": "scaf_10",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -12350,6 +12882,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "c1ccccc1",
+        "scaffold_id": "scaf_10",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -12371,6 +12904,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1C=CCC=C1",
+        "scaffold_id": "scaf_244",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -12392,6 +12926,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "C1=CCCC=C1",
+        "scaffold_id": "scaf_119",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -12413,6 +12948,7 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C(NCCCCNC(=O)C1=NO[C@]2(C=CC=CC2)C1)C1=NO[C@]2(C=CC=CC2)C1",
+        "scaffold_id": "scaf_198",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -12434,6 +12970,7 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C(NCCCCCNC(=O)C1=NO[C@]2(C=CC=CC2)C1)C1=NO[C@]2(C=CC=CC2)C1",
+        "scaffold_id": "scaf_197",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -12455,6 +12992,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "Acyclic",
+        "scaffold_id": "acyclic",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -12476,6 +13014,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "c1ccccc1",
+        "scaffold_id": "scaf_10",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -12497,6 +13036,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "c1ccccc1",
+        "scaffold_id": "scaf_10",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -12518,6 +13058,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "c1ncc2ncn(C3CCCO3)c2n1",
+        "scaffold_id": "scaf_245",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -12539,6 +13080,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "c1c[nH]c(-c2ccc[nH]2)c1",
+        "scaffold_id": "scaf_246",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -12560,6 +13102,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "c1c[nH]c(-c2ccc[nH]2)c1",
+        "scaffold_id": "scaf_246",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -12581,6 +13124,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1CCCO1",
+        "scaffold_id": "scaf_247",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -12602,6 +13146,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "c1ccccc1",
+        "scaffold_id": "scaf_10",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -12623,6 +13168,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "C1CCNC1",
+        "scaffold_id": "scaf_132",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -12644,6 +13190,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1CCCCNC(=O)CN1",
+        "scaffold_id": "scaf_248",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -12665,6 +13212,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1NCC(=O)N2CCC[C@@H]12",
+        "scaffold_id": "scaf_249",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -12686,6 +13234,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1CNC(=O)[C@H](Cc2ccccc2)N1",
+        "scaffold_id": "scaf_250",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -12707,6 +13256,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1CNC(=O)CN1",
+        "scaffold_id": "scaf_251",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -12728,6 +13278,7 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "N/A",
         "scaffold_smiles": "c1ccc2c(c1)C[C@@H]1C2CC[C@H]2C1CC[C@@H]1C2CC[C@@H]2OC3CCCC[C@@H]3CCC12",
+        "scaffold_id": "scaf_252",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -12749,6 +13300,7 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "N/A",
         "scaffold_smiles": "C=C1CC[C@H]2CCCCC2[C@H]1CCC1CCCC2[C@H]1CC=C[C@@H]2Cc1ccccc1",
+        "scaffold_id": "scaf_253",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -12770,6 +13322,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1CCCCOC(=O)[C@H](Cc2ccccc2)NC(=O)CCCCCN1",
+        "scaffold_id": "scaf_254",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -12791,6 +13344,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1OCCCCC/C=C/Cc2ccccc21",
+        "scaffold_id": "scaf_255",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -12812,6 +13366,7 @@ const compoundsData = [
         "ro5_violations": 0,
         "plant_part": "N/A",
         "scaffold_smiles": "O=C1OCCCCC/C=C/Cc2ccccc21",
+        "scaffold_id": "scaf_255",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -12833,6 +13388,7 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "N/A",
         "scaffold_smiles": "C1=C(c2nccc3c2[nH]c2ccccc23)[C@@H]2CCN3CCCC/C=C\\CCC1[C@@H]1N4CCCC/C=C\\[C@H]4C[C@@]12C3",
+        "scaffold_id": "scaf_256",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -12854,6 +13410,7 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "N/A",
         "scaffold_smiles": "C1=C\\CCCCN(CCc2nccc3c2[nH]c2ccccc23)CCCC/1",
+        "scaffold_id": "scaf_257",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -12875,6 +13432,7 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "N/A",
         "scaffold_smiles": "C1=C(C2NCCc3c2[nH]c2ccccc32)[C@@H]2CCN3CCCC/C=C\\CCC1[C@@H]1N4CCCC/C=C\\[C@H]4C[C@@]12C3",
+        "scaffold_id": "scaf_258",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -12896,6 +13454,7 @@ const compoundsData = [
         "ro5_violations": 2,
         "plant_part": "N/A",
         "scaffold_smiles": "C1=C(c2nccc3c2[nH]c2ccccc23)[C@@H]2CCN3CCCC/C=C\\CCC1[C@@H]1N4CCCC/C=C\\[C@H]4C[C@@]12C3",
+        "scaffold_id": "scaf_256",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     },
@@ -12917,6 +13476,7 @@ const compoundsData = [
         "ro5_violations": 1,
         "plant_part": "N/A",
         "scaffold_smiles": "C1=C2CC/C=C\\CCCCN3CC[C@H]4[C@@H]1CN1CCCC/C=C\\CC[C@@]4(C3)[C@H]21",
+        "scaffold_id": "scaf_259",
         "bioactivities": [],
         "database": "BLUE_AMAZONDB"
     }
