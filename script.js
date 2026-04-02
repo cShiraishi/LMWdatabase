@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div class="scaffold-item" data-smiles="${s}" title="${s}">
                         ${imgTag}
                         <div style="font-weight: 600; font-size: 0.75rem;">${labelText}</div>
-                        <div class="count">${scaffoldMap[s].count} mols</div>
+                        <div class="count">${scaffoldMap[s].count} compounds</div>
                     </div>
                 `;
                 scaffoldGallery.insertAdjacentHTML('beforeend', itemHtml);
