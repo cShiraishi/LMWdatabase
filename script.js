@@ -5,13 +5,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const databaseFilter = document.getElementById('databaseFilter');
     const bioactivityFilter = document.getElementById('bioactivityFilter');
     const scaffoldFilter = document.getElementById('scaffoldFilter'); // hidden input
-    const btnOpenScaffoldModal = document.getElementById('btnOpenScaffoldModal');
-    const scaffoldModal = document.getElementById('scaffoldModal');
-    const closeScaffoldModal = document.getElementById('closeScaffoldModal');
     const activeScaffoldContainer = document.getElementById('activeScaffoldContainer');
     const activeScaffoldName = document.getElementById('activeScaffoldName');
     const clearScaffoldBtn = document.getElementById('clearScaffoldBtn');
-    const scaffoldGrid = document.getElementById('scaffoldGrid');
+    const scaffoldGallery = document.getElementById('scaffoldGallery');
     const collectionChips = document.getElementById('collectionChips');
     const resultsCounter = document.getElementById('resultsCounter');
     const loadMoreContainer = document.getElementById('loadMoreContainer');
@@ -82,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (bioactivityFilter) bioactivityFilter.appendChild(option);
         });
 
-        // Scaffold Filter Initialization (Visual)
+        // Scaffold Filter Initialization (Horizontal Gallery)
         const scaffoldMap = {}; // Maps SMILES -> {count, id}
         allCompounds.forEach(c => {
             if (c.scaffold_smiles) {
@@ -94,45 +91,49 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         
         const sortedScaffolds = Object.keys(scaffoldMap).sort((a, b) => scaffoldMap[b].count - scaffoldMap[a].count);
-        if(scaffoldGrid) {
+        if(scaffoldGallery) {
             sortedScaffolds.forEach(s => {
-                const imgName = scaffoldMap[s].id === 'acyclic' ? '' : `<img src="assets/scaffolds/${scaffoldMap[s].id}.svg" alt="scaffold" onerror="this.style.display='none'">`;
-                const displayName = s === 'Acyclic' ? 'Acyclic / Linear' : ''; // Only text for acyclic
+                const isAcyclic = scaffoldMap[s].id === 'acyclic';
+                const imgTag = isAcyclic ? '' : `<img src="assets/scaffolds/${scaffoldMap[s].id}.svg" alt="scaffold" onerror="this.parentElement.style.display='none'">`;
+                const labelText = isAcyclic ? 'Acyclic / Linear' : '';
                 
-                const cardHtml = `
-                    <div class="scaffold-card" data-smiles="${s}" data-id="${scaffoldMap[s].id}">
-                        ${imgName}
-                        <div style="font-weight: bold; margin-top: 5px; font-size: 0.85rem;">${displayName}</div>
-                        <div class="count">${scaffoldMap[s].count} compounds</div>
+                const itemHtml = `
+                    <div class="scaffold-item" data-smiles="${s}" title="${s}">
+                        ${imgTag}
+                        <div style="font-weight: 600; font-size: 0.75rem;">${labelText}</div>
+                        <div class="count">${scaffoldMap[s].count} mols</div>
                     </div>
                 `;
-                scaffoldGrid.insertAdjacentHTML('beforeend', cardHtml);
+                scaffoldGallery.insertAdjacentHTML('beforeend', itemHtml);
             });
             
-            // Add click listeners to cards
-            document.querySelectorAll('.scaffold-card').forEach(card => {
-                card.addEventListener('click', () => {
-                    const sm = card.getAttribute('data-smiles');
-                    scaffoldFilter.value = sm;
-                    scaffoldModal.style.display = 'none';
-                    activeScaffoldContainer.style.display = 'block';
-                    activeScaffoldName.textContent = sm === 'Acyclic' ? 'Acyclic' : (sm.length > 20 ? sm.substring(0,20)+'...' : sm);
+            // Add click listeners to gallery items
+            scaffoldGallery.querySelectorAll('.scaffold-item').forEach(item => {
+                item.addEventListener('click', () => {
+                    const sm = item.getAttribute('data-smiles');
+                    
+                    // Toggle logic
+                    if (scaffoldFilter.value === sm) {
+                        scaffoldFilter.value = '';
+                        item.classList.remove('active');
+                        activeScaffoldContainer.style.display = 'none';
+                    } else {
+                        scaffoldGallery.querySelectorAll('.scaffold-item').forEach(i => i.classList.remove('active'));
+                        scaffoldFilter.value = sm;
+                        item.classList.add('active');
+                        activeScaffoldContainer.style.display = 'block';
+                        activeScaffoldName.textContent = sm === 'Acyclic' ? 'Acyclic' : (sm.length > 20 ? sm.substring(0,20)+'...' : sm);
+                    }
                     filterData();
                 });
             });
         }
         
-        // Modal Handlers
-        if(btnOpenScaffoldModal) btnOpenScaffoldModal.addEventListener('click', () => scaffoldModal.style.display = 'block');
-        if(closeScaffoldModal) closeScaffoldModal.addEventListener('click', () => scaffoldModal.style.display = 'none');
         if(clearScaffoldBtn) clearScaffoldBtn.addEventListener('click', () => {
             scaffoldFilter.value = '';
+            scaffoldGallery.querySelectorAll('.scaffold-item').forEach(i => i.classList.remove('active'));
             activeScaffoldContainer.style.display = 'none';
             filterData();
-        });
-
-        window.addEventListener('click', (e) => {
-            if (e.target === scaffoldModal) scaffoldModal.style.display = 'none';
         });
 
         filterData(); // Initial load
@@ -192,6 +193,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if(databaseFilter) databaseFilter.value = '';
         if(bioactivityFilter) bioactivityFilter.value = '';
         if(scaffoldFilter) scaffoldFilter.value = '';
+        if(scaffoldGallery) scaffoldGallery.querySelectorAll('.scaffold-item').forEach(i => i.classList.remove('active'));
         if(activeScaffoldContainer) activeScaffoldContainer.style.display = 'none';
         mwMin.value = '';
         mwMax.value = '';
