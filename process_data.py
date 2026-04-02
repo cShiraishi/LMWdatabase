@@ -7,6 +7,7 @@ from rdkit.Chem import rdDepictor
 from rdkit.Chem import Descriptors
 from rdkit.Chem import Lipinski
 from rdkit.Chem import rdMolDescriptors
+from rdkit.Chem.Scaffolds import MurckoScaffold
 import zipfile
 
 # Configuration
@@ -115,6 +116,15 @@ def process_data():
                 ])
                 lipinski_pass = ro5_violations <= 1
                 
+                # Scaffold Extraction
+                try:
+                    scaffold = MurckoScaffold.GetScaffoldForMol(mol)
+                    scaffold_smiles = Chem.MolToSmiles(scaffold)
+                    if not scaffold_smiles:
+                        scaffold_smiles = "Acyclic"
+                except Exception:
+                    scaffold_smiles = "Acyclic"
+                
                 # specific image name
                 image_filename = f"mol_{compound_id}.svg"
                 image_path = os.path.join(OUTPUT_DIR, image_filename)
@@ -148,6 +158,7 @@ def process_data():
                     "lipinski_pass": lipinski_pass,
                     "ro5_violations": ro5_violations,
                     "plant_part": 'N/A' if activity == 'nan' else activity,
+                    "scaffold_smiles": scaffold_smiles,
                     "bioactivities": parse_activities(activity),
                     "database": database_name if database_name != 'nan' else ''
                 })

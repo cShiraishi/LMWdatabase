@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const classFilter = document.getElementById('classFilter');
     const databaseFilter = document.getElementById('databaseFilter');
     const bioactivityFilter = document.getElementById('bioactivityFilter');
+    const scaffoldFilter = document.getElementById('scaffoldFilter');
     const collectionChips = document.getElementById('collectionChips');
     const resultsCounter = document.getElementById('resultsCounter');
     const loadMoreContainer = document.getElementById('loadMoreContainer');
@@ -74,6 +75,23 @@ document.addEventListener('DOMContentLoaded', () => {
             if (bioactivityFilter) bioactivityFilter.appendChild(option);
         });
 
+        // Scaffold Filter Initialization
+        const scaffoldCounts = {};
+        allCompounds.forEach(c => {
+            if (c.scaffold_smiles) {
+                scaffoldCounts[c.scaffold_smiles] = (scaffoldCounts[c.scaffold_smiles] || 0) + 1;
+            }
+        });
+        
+        const sortedScaffolds = Object.keys(scaffoldCounts).sort((a, b) => scaffoldCounts[b] - scaffoldCounts[a]);
+        sortedScaffolds.forEach(s => {
+            const option = document.createElement('option');
+            option.value = s;
+            const displayName = s === 'Acyclic' ? 'Acyclic (No Rings)' : (s.length > 30 ? s.substring(0, 30) + '...' : s);
+            option.textContent = `${displayName} (${scaffoldCounts[s]})`;
+            if (scaffoldFilter) scaffoldFilter.appendChild(option);
+        });
+
         filterData(); // Initial load
     }
 
@@ -82,6 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const selectedClass = classFilter ? classFilter.value : '';
         const selectedDatabase = databaseFilter ? databaseFilter.value : '';
         const selectedBioactivity = bioactivityFilter ? bioactivityFilter.value : '';
+        const selectedScaffold = scaffoldFilter ? scaffoldFilter.value : '';
 
         // Sync chips UI
         document.querySelectorAll('.chip').forEach(chip => {
@@ -106,19 +125,20 @@ document.addEventListener('DOMContentLoaded', () => {
             const classMatch = !selectedClass || compound.class === selectedClass;
             const databaseMatch = !selectedDatabase || compound.database === selectedDatabase;
             const bioMatch = !selectedBioactivity || (compound.bioactivities && compound.bioactivities.includes(selectedBioactivity));
+            const scaffoldMatch = !selectedScaffold || compound.scaffold_smiles === selectedScaffold;
 
             const mwMatch = compound.mw >= mw_min && compound.mw <= mw_max;
             const logpMatch = compound.logp >= logp_min && compound.logp <= logp_max;
             const tpsaMatch = compound.tpsa >= tpsa_min && compound.tpsa <= tpsa_max;
 
-            return textMatch && classMatch && databaseMatch && bioMatch && mwMatch && logpMatch && tpsaMatch;
+            return textMatch && classMatch && databaseMatch && bioMatch && scaffoldMatch && mwMatch && logpMatch && tpsaMatch;
         });
 
         currentPage = 1;
         renderCards(currentFiltered, true);
     }
 
-    const inputs = [searchInput, classFilter, databaseFilter, bioactivityFilter, mwMin, mwMax, logpMin, logpMax, tpsaMin, tpsaMax];
+    const inputs = [searchInput, classFilter, databaseFilter, bioactivityFilter, scaffoldFilter, mwMin, mwMax, logpMin, logpMax, tpsaMin, tpsaMax];
     inputs.forEach(input => {
         if(input) input.addEventListener('input', filterData);
     });
@@ -128,6 +148,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if(classFilter) classFilter.value = '';
         if(databaseFilter) databaseFilter.value = '';
         if(bioactivityFilter) bioactivityFilter.value = '';
+        if(scaffoldFilter) scaffoldFilter.value = '';
         mwMin.value = '';
         mwMax.value = '';
         logpMin.value = '';
