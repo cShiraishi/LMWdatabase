@@ -21,6 +21,8 @@ body {
     line-height: 1.6;
     min-height: 100vh;
     overflow-x: hidden;
+    position: relative;
+    z-index: 0;
 }
 
 .background-glob {
@@ -33,6 +35,50 @@ body {
     z-index: -1;
     pointer-events: none;
 }
+
+/* Animated Background Molecules */
+.molecule-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -2;
+    pointer-events: none;
+}
+.molecule {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+
+@keyframes floatTop {
+    0% { transform: translateY(110vh) rotate(0deg) scale(0.8); }
+    100% { transform: translateY(-20vh) rotate(360deg) scale(0.8); }
+}
+@keyframes floatBottom {
+    0% { transform: translateY(-20vh) rotate(0deg) scale(1.2); }
+    100% { transform: translateY(110vh) rotate(-360deg) scale(1.2); }
+}
+@keyframes floatPulse {
+    0% { transform: translateY(110vh) rotate(0deg) scale(0.5); }
+    100% { transform: translateY(-20vh) rotate(180deg) scale(1.5); }
+}
+@keyframes floatWavy {
+    0% { transform: translate(0, 110vh) rotate(0deg) scale(1); }
+    50% { transform: translate(100px, 45vh) rotate(180deg) scale(1.1); }
+    100% { transform: translate(0, -20vh) rotate(360deg) scale(1); }
+}
+
+.m1 { left: 5%; animation: floatTop 45s linear infinite; }
+.m2 { left: 25%; animation: floatBottom 55s linear infinite; animation-delay: -15s; width: 140px; height: 140px;}
+.m3 { left: 45%; animation: floatWavy 60s linear infinite; animation-delay: -32s; width: 80px; height: 80px;}
+.m4 { left: 65%; animation: floatPulse 50s linear infinite; animation-delay: -7s; width: 180px; height: 180px;}
+.m5 { left: 85%; animation: floatTop 48s linear infinite; animation-delay: -25s; width: 120px; height: 120px;}
+.m6 { left: 15%; animation: floatWavy 65s linear infinite; animation-delay: -40s; width: 160px; height: 160px;}
+.m7 { left: 75%; animation: floatBottom 52s linear infinite; animation-delay: -10s; width: 90px; height: 90px;}
+.m8 { left: 35%; animation: floatTop 58s linear infinite; animation-delay: -5s; width: 110px; height: 110px;}
 
 .container {
     max-width: 98%;

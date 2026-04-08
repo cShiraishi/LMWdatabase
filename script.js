@@ -188,9 +188,9 @@ document.addEventListener('DOMContentLoaded', () => {
         // Range Sliders Initialization
         if (mwSlider) {
             mwSliderInst = noUiSlider.create(mwSlider, {
-                start: [0, 1000],
+                start: [0, 2000],
                 connect: true,
-                range: { 'min': 0, 'max': 1000 },
+                range: { 'min': 0, 'max': 2000 },
                 step: 10
             });
             mwSliderInst.on('update', (values) => {
@@ -202,9 +202,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (logpSlider) {
             logpSliderInst = noUiSlider.create(logpSlider, {
-                start: [-5, 10],
+                start: [-6, 20],
                 connect: true,
-                range: { 'min': -5, 'max': 10 },
+                range: { 'min': -6, 'max': 20 },
                 step: 0.1
             });
             logpSliderInst.on('update', (values) => {
@@ -216,9 +216,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (tpsaSlider) {
             tpsaSliderInst = noUiSlider.create(tpsaSlider, {
-                start: [0, 500],
+                start: [0, 1000],
                 connect: true,
-                range: { 'min': 0, 'max': 500 },
+                range: { 'min': 0, 'max': 1000 },
                 step: 10
             });
             tpsaSliderInst.on('update', (values) => {
@@ -244,9 +244,9 @@ document.addEventListener('DOMContentLoaded', () => {
             else chip.classList.remove('active');
         });
 
-        const mw_values = mwSliderInst ? mwSliderInst.get() : [0, 1000];
-        const logp_values = logpSliderInst ? logpSliderInst.get() : [-5, 10];
-        const tpsa_values = tpsaSliderInst ? tpsaSliderInst.get() : [0, 500];
+        const mw_values = mwSliderInst ? mwSliderInst.get() : [0, 2000];
+        const logp_values = logpSliderInst ? logpSliderInst.get() : [-6, 20];
+        const tpsa_values = tpsaSliderInst ? tpsaSliderInst.get() : [0, 1000];
 
         const mw_min = parseFloat(mw_values[0]);
         const mw_max = parseFloat(mw_values[1]);
@@ -292,9 +292,9 @@ document.addEventListener('DOMContentLoaded', () => {
         if(scaffoldGallery) scaffoldGallery.querySelectorAll('.scaffold-item').forEach(i => i.classList.remove('active'));
         if(activeScaffoldContainer) activeScaffoldContainer.style.display = 'none';
         
-        if (mwSliderInst) mwSliderInst.set([0, 1000]);
-        if (logpSliderInst) logpSliderInst.set([-5, 10]);
-        if (tpsaSliderInst) tpsaSliderInst.set([0, 500]);
+        if (mwSliderInst) mwSliderInst.set([0, 2000]);
+        if (logpSliderInst) logpSliderInst.set([-6, 20]);
+        if (tpsaSliderInst) tpsaSliderInst.set([0, 1000]);
         
         filterData();
     });
@@ -437,15 +437,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Analytics Dashboard
     const analyticsBtn = document.getElementById('analyticsBtn');
+    const analyticsHeaderBtn = document.getElementById('analyticsHeaderBtn');
     const analyticsModal = document.getElementById('analyticsModal');
     const closeAnalytics = document.getElementById('closeAnalytics');
     let charts = {};
 
+    function openAnalyticsDashboard() {
+        analyticsModal.style.display = 'block';
+        generateCharts();
+    }
+
     if (analyticsBtn) {
-        analyticsBtn.addEventListener('click', () => {
-            analyticsModal.style.display = 'block';
-            generateCharts();
-        });
+        analyticsBtn.addEventListener('click', openAnalyticsDashboard);
+    }
+    
+    if (analyticsHeaderBtn) {
+        analyticsHeaderBtn.addEventListener('click', openAnalyticsDashboard);
     }
 
     closeAnalytics.addEventListener('click', () => {
