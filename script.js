@@ -96,42 +96,86 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         
         const sortedScaffolds = Object.keys(scaffoldMap).sort((a, b) => scaffoldMap[b].count - scaffoldMap[a].count);
+        
+        function getScaffoldHtml(s, index, isModal = false) {
+            const isAcyclic = scaffoldMap[s].id === 'acyclic';
+            const imgTag = isAcyclic ? '<div style="height: 80px; display: flex; align-items: center; justify-content: center;"><svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#94a3b8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 11h10M4 11h1M19 11h1M7 7l-2 4 2 4M17 7l2 4-2 4"/></svg></div>' : `<img src="assets/scaffolds/${scaffoldMap[s].id}.svg" alt="scaffold" onerror="this.parentElement.style.display='none'">`;
+            const labelText = isAcyclic ? 'Acyclic / Linear' : `Framework #${index + 1}`;
+            const className = isModal ? 'scaffold-card' : 'scaffold-item';
+            
+            return `
+                <div class="${className}" data-smiles="${s}" title="${s}">
+                    ${imgTag}
+                    <div class="label" style="font-weight: 700; font-size: 0.7rem; color: var(--accent-color); margin-bottom: 2px;">${labelText}</div>
+                    <div class="count">${scaffoldMap[s].count} compounds</div>
+                </div>
+            `;
+        }
+
         if(scaffoldGallery) {
-            sortedScaffolds.forEach(s => {
-                const isAcyclic = scaffoldMap[s].id === 'acyclic';
-                const imgTag = isAcyclic ? '' : `<img src="assets/scaffolds/${scaffoldMap[s].id}.svg" alt="scaffold" onerror="this.parentElement.style.display='none'">`;
-                const labelText = isAcyclic ? 'Acyclic / Linear' : '';
-                
-                const itemHtml = `
-                    <div class="scaffold-item" data-smiles="${s}" title="${s}">
-                        ${imgTag}
-                        <div style="font-weight: 600; font-size: 0.75rem;">${labelText}</div>
-                        <div class="count">${scaffoldMap[s].count} compounds</div>
-                    </div>
-                `;
-                scaffoldGallery.insertAdjacentHTML('beforeend', itemHtml);
+            // Only show top 40 in the horizontal gallery for performance and UX
+            const topScaffolds = sortedScaffolds.slice(0, 40);
+            topScaffolds.forEach((s, index) => {
+                scaffoldGallery.insertAdjacentHTML('beforeend', getScaffoldHtml(s, index));
             });
             
-            // Add click listeners to gallery items
-            scaffoldGallery.querySelectorAll('.scaffold-item').forEach(item => {
-                item.addEventListener('click', () => {
-                    const sm = item.getAttribute('data-smiles');
-                    
-                    // Toggle logic
-                    if (scaffoldFilter.value === sm) {
-                        scaffoldFilter.value = '';
-                        item.classList.remove('active');
-                        activeScaffoldContainer.style.display = 'none';
-                    } else {
-                        scaffoldGallery.querySelectorAll('.scaffold-item').forEach(i => i.classList.remove('active'));
-                        scaffoldFilter.value = sm;
-                        item.classList.add('active');
-                        activeScaffoldContainer.style.display = 'block';
-                        activeScaffoldName.textContent = sm === 'Acyclic' ? 'Acyclic' : (sm.length > 20 ? sm.substring(0,20)+'...' : sm);
-                    }
-                    filterData();
+            // Add click listeners to gallery items (needs to be done after injection)
+            const addGalleryListeners = (container) => {
+                container.querySelectorAll('.scaffold-item, .scaffold-card').forEach(item => {
+                    item.addEventListener('click', () => {
+                        const sm = item.getAttribute('data-smiles');
+                        if (scaffoldFilter.value === sm) {
+                            scaffoldFilter.value = '';
+                            document.querySelectorAll('.scaffold-item, .scaffold-card').forEach(i => i.classList.remove('active'));
+                            if(activeScaffoldContainer) activeScaffoldContainer.style.display = 'none';
+                        } else {
+                            document.querySelectorAll('.scaffold-item, .scaffold-card').forEach(i => i.classList.remove('active'));
+                            scaffoldFilter.value = sm;
+                            item.classList.add('active');
+                            if(activeScaffoldContainer) activeScaffoldContainer.style.display = 'block';
+                            const isAcyclicS = sm === 'Acyclic' || sm === '';
+                            const rank = sortedScaffolds.indexOf(sm) + 1;
+                            if(activeScaffoldName) activeScaffoldName.textContent = isAcyclicS ? 'Acyclic' : `Framework #${rank}`;
+                            
+                            // Scroll to results automatically for better functionality
+                            setTimeout(() => {
+                                resultsCounter.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                            }, 100);
+                        }
+                        filterData();
+                        // If in modal, close it
+                        if(scaffoldModal && scaffoldModal.style.display === 'block') scaffoldModal.style.display = 'none';
+                    });
                 });
-            });
+            };
+            
+            addGalleryListeners(scaffoldGallery);
+
+            // Scroll Navigation
+            const scrollLeftBtn = document.getElementById('scrollLeftBtn');
+            const scrollRightBtn = document.getElementById('scrollRightBtn');
+            if(scrollLeftBtn) scrollLeftBtn.addEventListener('click', () => scaffoldGallery.scrollBy({left: -400, behavior: 'smooth'}));
+            if(scrollRightBtn) scrollRightBtn.addEventListener('click', () => scaffoldGallery.scrollBy({left: 400, behavior: 'smooth'}));
+            
+            // "View All" Modal Logic
+            const viewAllBtn = document.getElementById('viewAllScaffoldsBtn');
+            const scaffoldModal = document.getElementById('scaffoldModal');
+            const scaffoldGrid = document.getElementById('scaffoldGrid');
+            const closeScaffoldBtn = document.getElementById('closeScaffoldModal');
+            
+            if(viewAllBtn && scaffoldModal && scaffoldGrid) {
+                viewAllBtn.addEventListener('click', () => {
+                    scaffoldGrid.innerHTML = '';
+                    sortedScaffolds.forEach((s, index) => {
+                        scaffoldGrid.insertAdjacentHTML('beforeend', getScaffoldHtml(s, index, true));
+                    });
+                    addGalleryListeners(scaffoldGrid);
+                    scaffoldModal.style.display = 'block';
+                });
+                
+                if(closeScaffoldBtn) closeScaffoldBtn.addEventListener('click', () => scaffoldModal.style.display = 'none');
+                window.addEventListener('click', (e) => { if(e.target === scaffoldModal) scaffoldModal.style.display = 'none'; });
+            }
         }
         
         if(clearScaffoldBtn) clearScaffoldBtn.addEventListener('click', () => {
