@@ -71,6 +71,10 @@ body {
     100% { transform: translate(0, -20vh) rotate(360deg) scale(1); }
 }
 
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
 .m1 { left: 5%; animation: floatTop 45s linear infinite; }
 .m2 { left: 25%; animation: floatBottom 55s linear infinite; animation-delay: -15s; width: 140px; height: 140px;}
 .m3 { left: 45%; animation: floatWavy 60s linear infinite; animation-delay: -32s; width: 80px; height: 80px;}
@@ -670,4 +674,157 @@ footer {
     color: #475569;
     margin-top: 5px;
     font-weight: 600;
+}
+
+/* Mode Tabs Styles */
+.mode-tabs-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.mode-tab {
+    padding: 0.8rem 2rem;
+    border: 2px solid transparent;
+    background: white;
+    color: #64748b;
+    border-radius: 999px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.mode-tab svg {
+    opacity: 0.5;
+    transition: all 0.3s;
+}
+
+.mode-tab:hover {
+    transform: translateY(-2px);
+    color: var(--accent-color);
+    border-color: rgba(234, 88, 12, 0.2);
+}
+
+.mode-tab.active {
+    background: var(--accent-color);
+    color: white;
+    border-color: var(--accent-color);
+    box-shadow: 0 10px 15px -3px rgba(234, 88, 12, 0.3);
+}
+
+.mode-tab.active svg {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* Peptide Specific Styles */
+.peptide-sequence {
+    font-family: 'Courier New', monospace;
+    background: #f1f5f9;
+    padding: 0.5rem;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    word-break: break-all;
+    color: #1e293b;
+    margin: 0.5rem 0;
+    border: 1px dashed #cbd5e1;
+    display: block;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.peptide-badge {
+    font-size: 0.65rem;
+    background: rgba(56, 189, 248, 0.1);
+    color: #0369a1;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-weight: 600;
+    border: 1px solid rgba(56, 189, 248, 0.2);
+}
+
+.amino-acid-display {
+    display: flex;
+    gap: 2px;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.aa-char {
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.65rem;
+    border-radius: 3px;
+    color: white;
+    font-weight: bold;
+}
+
+/* Amino Acid Color Map Classes */
+.aa-nonpolar { background-color: #94a3b8; }
+.aa-polar { background-color: #10b981; }
+.aa-acidic { background-color: #ef4444; }
+.aa-basic { background-color: #3b82f6; }
+.aa-aromatic { background-color: #f59e0b; }
+
+/* Network Analysis Specific Styles */
+.network-content {
+    background: white;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+#networkSvg {
+    cursor: grab;
+    background: radial-gradient(circle, #f8fafc 0%, #f1f5f9 100%);
+}
+
+#networkSvg:active {
+    cursor: grabbing;
+}
+
+#networkTooltip {
+    transition: opacity 0.2s;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    border-color: var(--accent-color);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+#networkTooltip strong {
+    color: var(--accent-color);
+    display: block;
+    margin-bottom: 5px;
+}
+
+.control-group select, .control-group input[type="range"] {
+    cursor: pointer;
+}
+
+#minEdgeWeight {
+    accent-color: var(--accent-color);
+}
+
+#networkLegend div {
+    font-weight: 600;
+}
+
+/* Animation for nodes */
+@keyframes pulse {
+    0% { r: 8; opacity: 1; }
+    50% { r: 10; opacity: 0.7; }
+    100% { r: 8; opacity: 1; }
+}
+
+.network-node-pulse {
+    animation: pulse 2s infinite ease-in-out;
 }
